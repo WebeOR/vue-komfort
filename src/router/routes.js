@@ -6,6 +6,7 @@ import Home from '../views/Home.vue';
 */
 
 const About = () => import( /* webpackChunkName: "about" */ '../views/About.vue');
+const Buderus = () => import( /* webpackChunkName: "about" */ '../views/buderus');
 
 export default [
   {
@@ -17,5 +18,10 @@ export default [
     path: '/about',
     name: 'about',
     component: About
-  }
+  },
+  {
+    path: '/buderus',
+    name: 'Buderus',
+    component: Buderus
+  },
 ];
