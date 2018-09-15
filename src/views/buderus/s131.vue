@@ -1,32 +1,23 @@
 <template>
+
   <section id="s131" class="product">
-
     <div class="product__container">
-
       <h2 class="product__name">Buderus </h2>
-
       <div class="container_flex-row">
-
         <div class="product__slider-container" flickity>
-
           <div class="carousel-cell">
             <img src="assets/img/buderus/131-1.jpg" alt="Buderus S131" class="product__image">
           </div>
-
           <div class="carousel-cell">
             <img src="assets/img/buderus/131-2.jpg" alt="Buderus S131" class="product__image">
           </div>
-
           <div class="carousel-cell">
             <img src="assets/img/buderus/131-3.jpg" alt="Buderus S131" class="product__image">
           </div>
-
         </div>
 
         <div class="product__description-container">
-
           <span class="product__characteristics-title">Характеристики:</span>
-
           <ul class="product__characteristics-list">
             <li class="product__characteristics-item">
               Новая конструкция теплообменника;
@@ -59,7 +50,7 @@
           <table style="border-collapse:collapse;table-layout:fixed" width="580" border="0" cellspacing="0" cellpadding="0">
             <colgroup>
               <col width="300">
-              <col width="140" span="2">
+                <col width="140" span="2">
             </colgroup>
             <tbody>
               <tr height="30">
@@ -121,11 +112,6 @@
                 <td>Цена, руб</td>
                 <td>48 190</td>
                 <td>62 820</td>
-              </tr>
-              <tr style="display:none" height="0">
-                <td style="width:225pt" width="300"></td>
-                <td style="width:105pt" width="140"></td>
-                <td style="width:105pt" width="140"></td>
               </tr>
             </tbody>
           </table>
