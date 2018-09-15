@@ -1,11 +1,11 @@
 import 'babel-polyfill';
 
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
 
-import './registerServiceWorker'
+import './registerServiceWorker';
 
 import VueFilters from 'vue2-filters';
 import VueMoment from './assets/js/vue-moment.js'; // забираю кастомную сборку, потому что на NPM косячная
@@ -32,6 +32,6 @@ for (const key in filters) {
   Vue.filter(key, filters[key]);
 }
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-new Vue({ router , store , render: h => h(App) }).$mount('#wrapper')
+new Vue({ router , store , render: h => h(App) }).$mount('#wrapper');
