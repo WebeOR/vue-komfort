@@ -2,7 +2,11 @@
   <fade-transition appear>
     <div id="wrapper">
       <div id="nav">
-        <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link>
+        <ul>
+          <li v-for="({ name }) in routes" :key="name.id">
+            <router-link :to="{ name }">{{ name }}</router-link>
+          </li>
+        </ul>
       </div>
       <fade-transition mode="out-in" appear>
         <router-view />
@@ -13,24 +17,27 @@
 
 <script>
 
-import { FadeTransition } from 'vue2-transitions';
-import index from './buderus';
-import index from './chimneys';
-import index from './energy-tt';  
-import index from './ermak';
-import index from './index';
-import index from './kastor';
-import index from './kentatsu';
-import index from './nmk';
-import index from './nmk-stoves';
-import index from './stoves';
-import index from './stoves';
-import index from './zota';
-import index from './zota-electrical';    
+  import { FadeTransition } from 'vue2-transitions';
 
-export default {
-  components: { FadeTransition }
-}
+  export default {
+    name: 'Komfort-App',
+    components: { FadeTransition },
+    data: () => ({
+      routes: [
+        { name: 'Buderus' },
+        { name: 'Chimneys' },
+        { name: 'EnergyTT' },
+        { name: 'Ermak' },
+        { name: 'Kastor' },
+        { name: 'Kentatsu' },
+        { name: 'NMK' },
+        { name: 'NmkStoves' },
+        { name: 'Termokraft' },
+        { name: 'Zota' },
+        { name: 'ZotaElectrical' }
+      ]
+    })
+  };
 
 </script>
 

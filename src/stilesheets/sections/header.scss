@@ -4,64 +4,72 @@
 @import '../partials/_mixins';
 
 .header {
-	z-index: $header-zindex;
-	height: $header-height-S;
-	background: $headerBg;
-	user-select: none;
-	.nav-is-fixed & {
-		/* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
-	@include MQ(L) {
-		height: $header-height-L;
-		@include clearfix;
-		@include MDShadow-1;
-	}
+  z-index: $header-zindex;
+  height: $header-height-S;
+  background: $headerBg;
+  user-select: none;
+
+  .nav-is-fixed & {
+    /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @include MQ(L) {
+    height: $header-height-L;
+    @include clearfix;
+    @include MDShadow-1;
+  }
 }
 
 .cd-logo {
-	position: relative;
-	top: 12px;
-	left: 5%;
-	@include MQ(maxL) {
-		.nav-on-left & {
-			left: auto;
-			right: 5%;
-		}
-	}
-	@include MQ(L) {
-		top: 12px;
-		left: 2%;
-	}
+  position: relative;
+  top: 12px;
+  left: 5%;
+
+  @include MQ(maxL) {
+    .nav-on-left & {
+      left: auto;
+      right: 5%;
+    }
+  }
+
+  @include MQ(L) {
+    top: 12px;
+    left: 2%;
+  }
 }
 
 .logo__svg {
-	fill: $headerSvg;
-	transform: scale(0.7);
+  fill: $headerSvg;
+  transform: scale(0.7);
 }
 
 .cd-header-buttons {
-	position: absolute;
-	display: inline-block;
-	top: 3px;
-	right: 5%;
-	li {
-		display: inline-block;
-	}
-	@include MQ(maxL) {
-		.nav-on-left & {
-			right: auto;
-			left: 5%;
-			li {
-				float: right;
-			}
-		}
-	}
-	@include MQ(L) {
-		top: 15px;
-		right: 2em;
-	}
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  right: 5%;
+
+  li {
+    display: inline-block;
+  }
+
+  @include MQ(maxL) {
+    .nav-on-left & {
+      right: auto;
+      left: 5%;
+
+      li {
+        float: right;
+      }
+    }
+  }
+
+  @include MQ(L) {
+    top: 15px;
+    right: 2em;
+  }
 }
