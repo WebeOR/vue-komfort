@@ -1,0 +1,136 @@
+// center vertically and/or horizontally an absolute positioned element
+
+@import '_variables';
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// antialiasing mode font rendering
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null) {
+    object-fit: $fit;
+    @if $position {
+        object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    }
+    @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+}
+
+@mixin box-shadow($radius) {
+	box-shadow: 0 0 $radius 0 rgba($blacked, .3);
+}
+
+// rem fallback - credits: http://zerosixthree.se/
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+@mixin select_none {
+	user-select: none;
+	cursor: default;
+}
+
+@mixin transition($time) {
+	transition: ($time) ease-in-out;
+}
+
+// making sharper Waves border
+
+@mixin waves-dark($waves-dark-color, $waves-opacity) {
+	.waves-effect.waves-dark .waves-ripple {
+		background: rgba($waves-dark-color, $waves-opacity);
+		$gradient:
+			rgba($waves-dark-color, $waves-opacity) 0,
+			rgba($waves-dark-color, $waves-opacity) 40%,
+			rgba($waves-dark-color, $waves-opacity) 50%,
+			rgba($waves-dark-color, $waves-opacity) 70%,
+			rgba($waves-dark-color, 0) 70%;
+		background: radial-gradient($gradient);
+	}
+}
+
+@mixin waves-light($waves-light-color, $waves-opacity) {
+	.waves-effect.waves-light .waves-ripple {
+		background: rgba($waves-light-color, $waves-opacity);
+		$gradient:
+			rgba($waves-light-color, $waves-opacity) 0,
+			rgba($waves-light-color, $waves-opacity) 40%,
+			rgba($waves-light-color, $waves-opacity) 50%,
+			rgba($waves-light-color, $waves-opacity) 70%,
+			rgba($waves-light-color, 0) 70%;
+		background: radial-gradient($gradient);
+	}
+}
+
+// Material Design Shadows
+// http://materializecss.com/shadow.html
+
+@mixin MDShadow-1 {
+	box-shadow:
+		0 2px 2px 0 rgba($blacked, 0.14),
+		0 1px 5px 0 rgba($blacked, 0.12),
+		0 3px 1px -2px rgba($blacked, 0.2)
+}
+
+@mixin MDShadow-2 {
+	box-shadow:
+		0 4px 5px 0 rgba($blacked, 0.14),
+		0 1px 10px 0 rgba($blacked, 0.12),
+		0 2px 4px -1px rgba($blacked, 0.3)
+}
+
+@mixin MDShadow-3 {
+	box-shadow:
+		0 6px 10px 0 rgba($blacked, 0.14),
+		0 1px 18px 0 rgba($blacked, 0.12),
+		0 3px 5px -1px rgba($blacked, 0.3)
+}
+
+@mixin MDShadow-4 {
+	box-shadow:
+		0 8px 10px 1px rgba($blacked, 0.14),
+		0 3px 14px 2px rgba($blacked, 0.12),
+		0 5px 5px -3px rgba($blacked, 0.3)
+}
+
+@mixin MDShadow-5 {
+	box-shadow:
+		0 16px 24px 2px rgba($blacked, 0.14),
+		0 6px 30px 5px rgba($blacked, 0.12),
+		0 8px 10px -5px rgba($blacked, 0.3)
+}

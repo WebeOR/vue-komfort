@@ -1,0 +1,23 @@
+@import '../../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../partials/_variables';
+@import '../partials/_layout';
+@import '../partials/_mixins';
+/*Fonts Settings*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $primaryFont;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:visited,
+p, span, ul, li, ol, hr {
+	font-family: $regularFont;
+	font-weight: 400;
+	text-decoration: none;
+	word-break: normal;
+	list-style: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}

@@ -1,0 +1,52 @@
+<form action="" method="post">
+	<div class="form__container">
+
+		<h4 class="form__title">Задать вопрос:</h4>
+
+		<div class="form__name">
+			<label class="form__label" for="formName">Имя:</label>
+			<input
+			class="form__input"
+			value=""
+			id="formName"
+			type="text"
+			name="formName"
+			pattern="[a-zA-Zа-яА-Я]{4,}"
+			placeholder="Введите ваше имя"
+			required
+			/>
+		</div>
+
+		<div class="form__phone">
+			<label class="form__label" for="formPhone">Телефон:</label>
+			<input
+			class="form__input"
+			value=""
+			id="formPhone"
+			type="text"
+			name="formPhone"
+			pattern="[0-9]{9,20}"
+			placeholder="Правильный формат +7 123 200 00 00"
+			required
+			/>
+		</div>
+
+		<div class="form__textarea">
+			<label class="form__label" for="formText">Ваше сообщение:</label>
+
+			<textarea
+			class="form__input"
+			value="Введите сообщение"
+			id="formText"
+			type="text"
+			name="formText"
+			pattern="[a-zA-Zа-яА-Я]{0,140}"
+			placeholder="Задайте любой вопрос :)"
+			required
+			></textarea>
+		</div>
+
+		<span class="form__button" ripple-dark><input class="form__submit" type="submit" id="send" value="Отправить" /></span>
+
+	</div>
+</form>

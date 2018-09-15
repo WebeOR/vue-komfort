@@ -14,6 +14,19 @@
 <script>
 
 import { FadeTransition } from 'vue2-transitions';
+import index from './buderus';
+import index from './chimneys';
+import index from './energy-tt';  
+import index from './ermak';
+import index from './index';
+import index from './kastor';
+import index from './kentatsu';
+import index from './nmk';
+import index from './nmk-stoves';
+import index from './stoves';
+import index from './stoves';
+import index from './zota';
+import index from './zota-electrical';    
 
 export default {
   components: { FadeTransition }

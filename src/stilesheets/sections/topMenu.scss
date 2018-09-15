@@ -1,0 +1,829 @@
+@import '../../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../partials/_variables';
+@import '../partials/_layout';
+@import '../partials/_mixins';
+
+input {
+    font-family: $primaryFont;
+    font-size: 1.1rem;
+}
+
+input[type="search"]::-ms-clear {
+    /* removes close icon - IE */
+    display: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.cd-nav-trigger,
+.cd-search-trigger {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* hide text */
+    color: transparent;
+    z-index: $header-zindex;
+}
+
+.cd-search-trigger {
+    &::after,
+    &::before {
+        /* search icon */
+        content: '';
+        position: absolute;
+        transition: opacity 0.3s;
+        /* Force Hardware Acceleration in WebKit */
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+
+    &::before {
+        /* lens */
+        top: 11px;
+        left: 11px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 3px solid $headerSymbs;
+    }
+
+    &::after {
+        /* handle */
+        height: 3px;
+        width: 8px;
+        background: $headerSymbs;
+        bottom: 14px;
+        right: 11px;
+        transform: rotate(45deg);
+    }
+
+    span {
+        /* container for the X icon */
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        &::after,
+        &::before {
+            /* close icon */
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 3px;
+            width: 22px;
+            top: 50%;
+            margin-top: -2px;
+            left: 50%;
+            margin-left: -11px;
+            background: $headerSymbs;
+            opacity: 0;
+            /* Force Hardware Acceleration in WebKit */
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &.search-is-visible {
+        &::after,
+        &::before {
+            /* hide search icon */
+            opacity: 0;
+        }
+
+        span::after,
+        span::before {
+            /* show close icon */
+            opacity: 1;
+        }
+
+        span::before {
+            transform: rotate(135deg);
+        }
+
+        span::after {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.cd-nav-trigger {
+    span,
+    span::after,
+    span::before {
+        /* hamburger icon in CSS */
+        position: absolute;
+        display: inline-block;
+        height: 3px;
+        width: 24px;
+        background: $headerSymbs;
+    }
+
+    span {
+        /* line in the center */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -2px;
+        transition: background 0.3s 0.3s;
+
+        &::after,
+        &::before {
+            /* other 2 lines */
+            content: '';
+            right: 0;
+            /* Force Hardware Acceleration in WebKit */
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            transform-origin: (0% 50%);
+            transition: transform 0.3s 0.3s;
+        }
+
+        &::before {
+            /* menu icon top line */
+            top: -6px;
+        }
+
+        &::after {
+            /* menu icon bottom line */
+            top: 6px;
+        }
+    }
+
+    &.nav-is-visible {
+        span {
+            /* hide line in the center */
+            background: rgba($headerSymbs, 0);
+
+            &::after,
+            &::before {
+                /* keep visible other 2 lines */
+                background: rgba($headerSymbs, 1);
+            }
+
+            &::before {
+                transform: translateX(4px) translateY(-3px) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateX(4px) translateY(2px) rotate(-45deg);
+            }
+        }
+    }
+    @include MQ(L) {
+        display: none;
+    }
+}
+
+.cd-primary-nav,
+.cd-primary-nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: $nav-width-S;
+    background: $headerBgSnd;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: $below-zindex;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translateX(0) translateZ(0);
+    transition: transform 0.3s;
+
+    a {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        color: $headerMenu;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px solid lighten($headerSymbs, 5%);
+        transform: translateZ(0);
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    &.is-hidden {
+        /* secondary navigations hidden by default */
+        transform: translateX(100%);
+    }
+
+    &.moves-out > li > a {
+        /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@include MQ(maxL) {
+    .nav-on-left .cd-primary-nav,
+    .nav-on-left .cd-primary-nav ul {
+        right: auto;
+        left: 0;
+    }
+}
+
+.cd-primary-nav {
+    .see-all a {
+        /* different style for the See all button on mobile and tablet */
+        color: $headerSymbs;
+    }
+
+    .cd-nav-gallery .cd-nav-item,
+    .cd-nav-icons .cd-nav-item {
+        /* items with picture (or icon) and title */
+        height: 80px;
+        line-height: 80px;
+
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .cd-nav-gallery .cd-nav-item {
+        padding-left: 90px;
+
+        img {
+            position: absolute;
+            display: block;
+            height: 40px;
+            width: auto;
+            left: 20px;
+            top: 50%;
+            margin-top: -20px;
+        }
+    }
+
+    .cd-nav-icons .cd-nav-item {
+        padding-left: 75px;
+
+        p {
+            color: $headerSymbs;
+            font-size: 0.9rem;
+            /* hide description on small devices */
+            display: none;
+        }
+
+        &::before {
+            /* item icon */
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -20px;
+            size: 40px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 40px 40px;
+        }
+    }
+    @include MQ(maxL) {
+        /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
+        visibility: hidden;
+        transition: visibility 0s 0.3s;
+
+        &.nav-is-visible {
+            visibility: visible;
+            transition: visibility 0s 0s;
+        }
+    }
+}
+@include MQ(L) {
+    .cd-primary-nav {
+        padding: 0 100px 0 0;
+        size: auto;
+        float: right;
+        overflow: visible;
+        background: transparent;
+        @include clearfix;
+
+        &.moves-out > li > a {
+            /* reset mobile style */
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        ul {
+            position: static;
+            height: auto;
+            width: auto;
+            background: transparent;
+            overflow: visible;
+            z-index: 80;
+
+            &.is-hidden {
+                /* reset mobile style */
+                transform: translateX(0);
+            }
+
+            &.moves-out > li > a {
+                /* reset mobile style */
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        > li {
+            float: left;
+            margin-left: 1em;
+        }
+
+        > li > a {
+            /* main navigation buttons style */
+            position: relative;
+            height: $header-height-L;
+            line-height: $header-height-L;
+            padding: 0 30px;
+            color: $headerSymbs;
+            border-bottom: none;
+            transition: color 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                color: $headerSymbsHover;
+            }
+
+            &.selected {
+                color: $headerSymbsHover;
+                box-shadow: inset 0 -2px 0 $headerSymbsHover;
+            }
+        }
+
+        .go-back,
+        .see-all {
+            display: none;
+        }
+
+        .cd-nav-gallery,
+        .cd-nav-icons,
+        .cd-secondary-nav {
+            /* dropdown menu style */
+            position: absolute;
+            top: $header-height-L;
+            width: 1180px;
+            background: $headerBgSnd;
+            padding: 48px 64px;
+            @include MDShadow-4;
+            transform: translateX(0);
+            @include clearfix;
+            transition: opacity 0.3s 0s, visibility 0s 0s;
+
+            &.is-hidden {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            }
+
+            > .see-all {
+                /* this is the BIG See all button at the bottom of the dropdown menu */
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 80px;
+                width: 100%;
+                overflow: hidden;
+                /* reset some inherited style */
+                margin: 0;
+                padding: 0;
+                border: none;
+
+                a {
+                    position: absolute;
+                    size: 100%;
+                    top: 0;
+                    left: 0;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 80px;
+                    border-top: 1px solid $headerMenu;
+                    /* reset some inherited style */
+                    border-bottom: none;
+                    margin: 0;
+                    padding: 0;
+                    transition: color 0.2s, background 0.2s, border 0.2s;
+
+                    &:hover {
+                        background: $white;
+                        border-color: $asphalt;
+                        color: $asphalt;
+                    }
+                }
+            }
+        }
+
+        .cd-secondary-nav {
+            > li {
+                /* change the height according to your needs - you can even set height: auto */
+                height: 400px;
+                /* here you set the number of columns - use width percentage */
+                @include column(.25); // see partials > _layout.scss
+                padding-left: 2%;
+                border-left: 1px solid $headerMenu;
+                overflow: hidden;
+                -webkit-overflow-scrolling: touch;
+
+                &:nth-child(4n+2) {
+                    /* +2 because we have 2 list items with display:none */
+                    margin-right: 0;
+                    border-right: none;
+                }
+
+                > a {
+                    /* secondary nav title */
+                    font-size: 1.1rem;
+                    color: $headerMenu;
+                    font-weight: bold;
+                    margin-bottom: 0.6em;
+                }
+            }
+
+            a {
+                height: 30px;
+                line-height: 30px;
+                padding: 0 18% 0 0;
+                color: $headerMenu;
+                border-bottom: none;
+
+                &:hover {
+                    color: lighten($headerMenu, 5%);
+                }
+            }
+
+            ul {
+                /* Force Hardware Acceleration in WebKit */
+                transform: translateZ(0);
+            }
+
+            ul ul {
+                /* tertiary navigation */
+                position: absolute;
+                top: 0;
+                left: 0;
+                size: 100%;
+
+                &.is-hidden {
+                    transform: translateX(100%);
+                }
+
+                .go-back {
+                    display: block;
+
+                    a {
+                        color: transparent;
+                    }
+                }
+
+                .see-all {
+                    display: block;
+                }
+            }
+
+            .moves-out > li > a {
+                /* push the navigation items to the left - and lower down opacity - when tertiary nav slides in */
+                transform: translateX(-100%);
+            }
+        }
+
+        .cd-nav-gallery {
+            li {
+                /* set here number of columns - use width percentage */
+                @include column(.22);
+                margin: 0 4% 40px 0;
+
+                &:nth-child(4n+2) {
+                    /* +2 because we have two additional list items with display:none */
+                    margin-right: 0;
+                }
+            }
+
+            .cd-nav-item {
+                border-bottom: none;
+                padding: 0;
+                height: auto;
+                line-height: 1.2;
+
+                img {
+                    position: static;
+                    margin-top: 0;
+                    size: 100% auto;
+                    margin-bottom: 0.6em;
+                }
+
+                h3 {
+                    color: $headerMenu;
+                    font-weight: bold;
+                    padding: 0 0.4em;
+                }
+            }
+        }
+
+        .cd-nav-icons {
+            li {
+                /* set here number of columns - use width percentage */
+                @include column(.32);
+                margin: 0 2% 20px 0;
+
+                &:nth-child(3n+2) {
+                    /* +2 because we have two additional list items with display:none */
+                    margin-right: 0;
+                }
+            }
+
+            .cd-nav-item {
+                border-bottom: none;
+                height: 80px;
+                line-height: 1.2;
+                padding: 24px 0 0 85px;
+                position: relative;
+
+                &:hover {
+                    background: lighten($headerMenu, 8%);
+                }
+
+                h3 {
+                    color: $headerMenu;
+                    font-weight: bold;
+                }
+
+                p {
+                    display: block;
+                }
+
+                &::before {
+                    left: 25px;
+                }
+            }
+        }
+    }
+}
+
+.go-back a,
+.has-children > a {
+    position: relative;
+
+    &::after,
+    &::before {
+        /* arrow icon in CSS - for element with nested unordered lists */
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        display: inline-block;
+        height: 2px;
+        width: 10px;
+        background: $headerMenu;
+        backface-visibility: hidden;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+    @include MQ(L) {
+        &::after,
+        &::before {
+            background: $headerMenu;
+        }
+
+        &:hover::after,
+        &:hover::before {
+            background: $headerMenuHover;
+        }
+    }
+}
+
+.has-children > a {
+    padding-right: 40px;
+
+    &::after,
+    &::before {
+        /* arrow goes on the right side - children navigation */
+        right: 20px;
+        transform-origin: 9px 50%;
+    }
+}
+
+.cd-primary-nav .go-back a {
+    padding-left: 40px;
+
+    &::after,
+    &::before {
+        /* arrow goes on the left side - go back button */
+        left: 20px;
+        transform-origin: 1px 50%;
+    }
+}
+@include MQ(L) {
+    .has-children > a {
+        &::after,
+        &::before {
+            right: 10%;
+        }
+    }
+
+    .cd-primary-nav > .has-children > a {
+        $cross-right: 25px;
+        /* main navigation arrows on larger devices */
+        padding-right: 40px !important;
+
+        &::after,
+        &::before {
+            width: 9px;
+            transform-origin: 50% 50%;
+            background: $headerBgSnd;
+            backface-visibility: hidden;
+            transition: width 0.3s, transform 0.3s;
+        }
+
+        &::before {
+            right: $cross-right;
+        }
+
+        &::after {
+            right: $cross-right - 5px;
+        }
+
+        &.selected::after,
+        &.selected::before {
+            width: 14px;
+        }
+
+        &.selected::before {
+            transform: translateX(5px) rotate(-45deg);
+        }
+
+        &.selected::after {
+            transform: rotate(45deg);
+        }
+    }
+
+    .cd-secondary-nav > .has-children > a::after,
+    .cd-secondary-nav > .has-children > a::before {
+        /* remove arrows on secondary nav titles */
+        display: none;
+    }
+
+    .cd-primary-nav .go-back a {
+        padding-left: 20px;
+
+        &::after,
+        &::before {
+            left: 1px;
+        }
+    }
+}
+
+.cd-search {
+    z-index: $header-zindex;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: $header-height-S;
+    width: 1180px;
+    height: $search-height-S;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+
+    form {
+        height: 100%;
+        width: 100%;
+    }
+
+    input {
+        appearance: none;
+        size: 60% 100%;
+        padding: 0 5%;
+        background: $headerBgSnd;
+        border-radius: 0;
+        border: none;
+        @include placeholder {
+            color: darken($headerSvg, 10%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .nav-is-fixed & {
+        position: fixed;
+    }
+    @include MQ(L) {
+        width: 65%;
+        height: $search-height-L;
+        top: $wrapperTop;
+
+        form {
+            background: linear-gradient(90deg, $headerBg 55%, transparent);
+        }
+
+        input {
+            padding: 0 1.5em;
+            font-size: 2rem;
+            font-weight: 300;
+            background: transparent;
+            @include placeholder
+        }
+    }
+}
+
+.cd-overlay {
+    /* shadow layer visible when navigation is active */
+    position: fixed;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba($asphalt, .8);
+    visibility: hidden;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s;
+    }
+    @include MQ(maxL) {
+        &.is-visible {
+            transform: translateX(-$nav-width-S);
+        }
+
+        .nav-on-left &.is-visible {
+            transform: translateX($nav-width-S);
+        }
+
+        &.is-visible.search-is-visible,
+        .nav-on-left &.is-visible.search-is-visible {
+            transform: translateX(0);
+        }
+    }
+}
+/* --------------------------------
+
+support for no js
+
+-------------------------------- */
+.no-js .cd-primary-nav {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    visibility: visible;
+    z-index: 80;
+}
+
+.no-js .cd-search {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+@include MQ(L) {
+    .no-js .cd-primary-nav {
+        position: absolute;
+        z-index: 80;
+        display: inline-block;
+        width: auto;
+        top: 0;
+        right: 150px;
+        padding: 0;
+    }
+
+    .no-js .nav-is-fixed .cd-primary-nav {
+        position: fixed;
+    }
+}

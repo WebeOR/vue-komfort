@@ -1,0 +1,29 @@
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import 'partials/_variables';
+@import 'partials/_layout';
+@import 'partials/_mixins';
+
+@import 'layout/intro';
+@import 'sections/products';
+
+.container_flex-row {
+    padding: 0 5px
+}
+
+.product__image,
+.product__image_half {
+    height: 250px
+}
+
+.product__image-container {
+    max-width: none
+}
+
+.product__link {
+    padding: 5px;
+    border-radius: 0;
+    box-shadow: none;
+    &:hover {
+        @include MDShadow-1
+    }
+}

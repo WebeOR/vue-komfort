@@ -1,0 +1,83 @@
+$wrapperTop: 5vh;
+
+// z-index
+$below-zindex: 10;
+$content-zindex: 20;
+$header-zindex: 30;
+$overlay-zindex: 90;
+$modal-zindex: 100;
+
+// header size
+$header-height-S: 50px;
+$header-height-L: 70px;
+
+// Navigation size
+$nav-width-S: 260px;
+
+// Search size
+$search-height-S: 50px;
+$search-height-L: 70px;
+
+//Fonts
+$primaryFont: 'PT Sans', sans-serif;
+$regularFont: 'Open Sans', sans-serif;
+
+// colors
+
+//Blue
+$blue: #3d70aa;
+$river-blue: #3498db;
+$deep-blue: #2980b9;
+
+//Green
+$emerald: #2ecc71;
+$nephritis: #27ae60;
+
+//Dark
+$asphalt: #34495e;
+$midnight: #2c3e50;
+
+//Gray
+$concrete: #95a5a6;
+$asbestos: #7f8c8d;
+
+//White
+$cloud: #ecf0f1;
+$silver: #bdc3c7;
+
+//Red
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+
+//Yellow
+$sun: #f1c40f;
+$orange: #f39c12;
+
+// colors
+$red: #F44336;
+$green: #BDDD6A; //#b9e067
+$blue: #2c8be3;
+$moloko: #E5E8EE;
+$gray: #333333;
+$white: #fff;
+$blacked: #000;
+
+$ripple-opacity: .6;
+
+//
+//
+//	Color Schemes
+//
+//
+
+//	Header
+
+$headerBg: $red;
+$headerBgSnd: $white;
+$headerMenu: $red;
+$headerMenuHover: lighten($red, 10%);
+$headerSvg: $white;
+$headerSymbs: $white;
+$headerSymbsHover: $white;
+$headerSearch: $white;
+$headerSearcHover: $white;

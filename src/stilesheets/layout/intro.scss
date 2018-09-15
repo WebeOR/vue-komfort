@@ -1,0 +1,69 @@
+@import '../../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../partials/_variables';
+@import '../partials/_layout';
+@import '../partials/_mixins';
+
+.intro {
+    position: relative;
+    &__back-image-container {
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 70vh;
+        @include MDShadow-2;
+    }
+    &__back-image {
+        width: 100%;
+    }
+    &__overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        size: 100%;
+        padding: 0 60px;
+        background-color: rgba($blacked, .6);
+    }
+    &__title {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+        color: $white;
+    }
+    &__subtitle {
+        text-align: center;
+        margin: 20px auto;
+        color: $white;
+    }
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    &__link {
+        display: inline-block;
+        padding: 7px 9px;
+        margin: 5px;
+        color: $white $red;
+        border-radius: 2px;
+        @include MDShadow-1;
+        @include transition(.3s);
+        &:hover {
+            color: $white lighten($red, 10%);
+        }
+        &:active {
+            @include MDShadow-2;
+        }
+    }
+    &__additional-text {
+        text-align: center;
+        margin: 20px auto;
+        color: $white;
+    }
+    &__list-title {
+        margin: 20px auto;
+        color: $white;
+    }
+}
