@@ -1,17 +1,51 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
+  'root': true,
+  'env': {
+    'browser': true,
+    'node': false,
+    'commonjs': true,
+    'es6': true
   },
   'extends': [
-    'plugin:vue/essential',
     'eslint:recommended'
   ],
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  'parser': 'babel-eslint',
+  'parserOptions': {
+    'sourceType': 'module',
+    'allowImportExportEverywhere': true,
+    'ecmaVersion': 2018
   },
-  parserOptions: {
-    parser: 'babel-eslint'
-  }
-}
+  'rules': {
+    'indent': [
+      'error',
+      2
+    ],
+    'quotes': [
+      'error',
+      'single'
+    ],
+    'semi': [
+      'error',
+      'always'
+    ],
+    'no-unused-vars': [
+      'error',
+      {
+        'vars': 'all',
+        'args': 'after-used',
+        'ignoreRestSiblings': true
+      }
+    ],
+    'no-console': 'off',
+    'no-debugger': 'off'
+  },
+  'globals': {
+    'process': true,
+    'mixpanel': true,
+    'jQuery': false
+  },
+  'plugins': [
+    'html',
+    'vue'
+  ]
+};
