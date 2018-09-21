@@ -1930,7 +1930,7 @@
 
   </main>
 </template>
-<style>
+<style lang="scss">
 .product {
   padding: 0 30px;
 
@@ -2061,7 +2061,7 @@ $headerSymbs: $white;
 $headerSymbsHover: $white;
 $headerSearch: $white;
 $headerSearcHover: $white;
-    
+
 // breakpoints
 $S: 0;
 $M: 992px;
@@ -2499,7 +2499,8 @@ $L: 1200px;
 
 .carousel-cell-image {
   display: block;
-  max-size: 100%;
+  max-width: 100%;
+  max-height: 100%;
   margin: 0 auto;
   opacity: 0;
   background-size: cover;

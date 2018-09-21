@@ -1,5 +1,4 @@
 <template>
-
   <main id="main" class="main">
 
     <section id="intro" class="intro">
@@ -14,9 +13,7 @@
 
           <h1 class="intro__title">Твёрдотопливные котлы Termokraft</h1>
 
-          <span class="intro__subtitle">
-            Выберите интересующий Вас вариант, и свяжитесь с менеджером, чтобы уточнить наличие и стоимость:
-            </span>
+          <span class="intro__subtitle"> Выберите интересующий Вас вариант, и свяжитесь с менеджером, чтобы уточнить наличие и стоимость: </span>
 
           <ul class="intro__list">
             <li><a href="#" data-roll="fakel" class="intro__link" ripple-light>Fakel</a></li>
@@ -29,8 +26,8 @@
           </ul>
 
           <span class="intro__additional-text">
-            Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России.
-            </span>
+              Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России.
+              </span>
 
           <span class="intro__list-title">Другие семейства твёрдотопливных котлов:</span>
 
@@ -153,10 +150,10 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-                Твердотопливные стальные котлы FAKEL предназначены для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления с естественной или принудительной циркуляцией.<br>
-                Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации, автоматическая регулировка мощности прямодействующим регулятором тяги.
-      Благодаря продуманной конструкции котлы FAKEL обеспечивают нагрев воздуха в помещениях площадью до 200 м&sup2;.
-      Различная производительность котлов FAKEL позволяет подобрать модель с такой мощностью, которая гарантирует самую высокую эффективность и наиболее экономичную работу в Вашем доме.</span>
+                  Твердотопливные стальные котлы FAKEL предназначены для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления с естественной или принудительной циркуляцией.<br>
+                  Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации, автоматическая регулировка мощности прямодействующим регулятором тяги.
+        Благодаря продуманной конструкции котлы FAKEL обеспечивают нагрев воздуха в помещениях площадью до 200 м&sup2;.
+        Различная производительность котлов FAKEL позволяет подобрать модель с такой мощностью, которая гарантирует самую высокую эффективность и наиболее экономичную работу в Вашем доме.</span>
 
         </div>
 
@@ -220,20 +217,20 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">Комбинированный котел Taifun предназначен для отопления индивидуальных жилых домов площадью от 100 до 300 м&sup2;, оборудованных системами водяного отопления с естественной или принудительной циркуляцией.
-  Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации, автоматическая регулировка мощности прямодействующим регулятором тяги. </span>
+    Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации, автоматическая регулировка мощности прямодействующим регулятором тяги. </span>
 
           <div class="product__table-container" align="center">
             <table style="border-collapse:collapse" border="0" cellspacing="0" cellpadding="0" width="833">
               <colgroup>
                 <col width="73">
-                  <col width="128">
-                    <col width="63">
-                      <col width="94">
-                        <col width="127">
-                          <col width="86">
-                            <col width="115">
-                              <col width="60">
-                                <col width="87">
+                <col width="128">
+                <col width="63">
+                <col width="94">
+                <col width="127">
+                <col width="86">
+                <col width="115">
+                <col width="60">
+                <col width="87">
               </colgroup>
               <tbody>
                 <tr height="25">
@@ -380,21 +377,21 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-            Котлы URAGAN предназначены для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления с естественной или принудительной циркуляцией, а также приготовления пищи.<br>
-            Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации. Котлы URAGAN обеспечивают нагрев воздуха в помещениях площадью до 200м&sup2;.</span>
+              Котлы URAGAN предназначены для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления с естественной или принудительной циркуляцией, а также приготовления пищи.<br>
+              Особенностями данного котла являются небольшие габаритные размеры, экономичность, надежность, простота обслуживания и эксплуатации. Котлы URAGAN обеспечивают нагрев воздуха в помещениях площадью до 200м&sup2;.</span>
 
           <div class="product__table-container" align="center">
             <table style="border-collapse:collapse" border="0" cellspacing="0" cellpadding="0" width="855">
               <colgroup>
                 <col width="91">
-                  <col width="128">
-                    <col width="63">
-                      <col width="94">
-                        <col width="127">
-                          <col width="86">
-                            <col width="115">
-                              <col width="64">
-                                <col width="87">
+                <col width="128">
+                <col width="63">
+                <col width="94">
+                <col width="127">
+                <col width="86">
+                <col width="115">
+                <col width="64">
+                <col width="87">
               </colgroup>
               <tbody>
                 <tr height="25">
@@ -547,21 +544,21 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-            Полуавтоматические твердотопливные котлы ZEUS предназначенны для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления. Котлы ZEUS обеспечивают нагрев воздуха в помещениях площадью от 50 до 600м2&sup2;. Основной вид топлива – каменный уголь. Благодаря усовершенствованной конструкции котел ZEUS значительно улучшил свои характеристики среди подобных российских аналогов.
-            </span>
+              Полуавтоматические твердотопливные котлы ZEUS предназначенны для отопления индивидуальных жилых домов и зданий коммунально-бытового назначения, оборудованных системами водяного отопления. Котлы ZEUS обеспечивают нагрев воздуха в помещениях площадью от 50 до 600м2&sup2;. Основной вид топлива – каменный уголь. Благодаря усовершенствованной конструкции котел ZEUS значительно улучшил свои характеристики среди подобных российских аналогов.
+              </span>
 
           <div class="product__table-container" align="center">
             <table style="border-collapse:collapse" border="0" cellspacing="0" cellpadding="0" width="958">
               <colgroup>
                 <col width="107">
-                  <col width="80">
-                    <col width="110">
-                      <col width="150">
-                        <col width="159">
-                          <col width="100">
-                            <col width="100">
-                              <col width="80">
-                                <col width="72">
+                <col width="80">
+                <col width="110">
+                <col width="150">
+                <col width="159">
+                <col width="100">
+                <col width="100">
+                <col width="80">
+                <col width="72">
               </colgroup>
               <tbody>
                 <tr height="60">
@@ -738,22 +735,22 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-Компактные размеры, экономичность, простота обслуживания и эксплуатации, универсальность по видам топлива.<br>
-Глубокая и ёмкая топочная камера позволяет загружать дрова длиною 600 и 700 мм соответственно.<br>
-Стандартные патрубки G2’’ позволяют делать левое, правое либо диагональное подключение к системе.<br>
-Круглое сечение дымохода удобно как при встраивании котла в кирпичную трубу, так и при переходе на круглую трубу типа сэндвич (с использованием переходника с шибером).<br>
-Большие размеры топочной дверцы котла удобны при загрузке топлива. Дверца зольника с термостойким уплотнителем позволяет точно регулировать подачу воздуха в зону горения.<br>
-Зольная камера с вместительным зольным ящиком позволяет комфортно и удобно производить чистку котла.<br>
-Наружные поверхности котла облицованы защитно-декоративными панелями, которые снижают потерю тепла теплоносителя, уменьшают инфракрасное излучение и предохраняют владельца от контакта с горячими поверхностями корпуса.<br>
-Варочная плита с чугунной конфоркой позволяет приготавливать и разогревать пищу. Через открытую конфорку, возможно, производить чистку котла и загрузку угля.<br>
-Предусмотрена возможность установки блока ТЭН и регулятора горения
-            </span>
+  Компактные размеры, экономичность, простота обслуживания и эксплуатации, универсальность по видам топлива.<br>
+  Глубокая и ёмкая топочная камера позволяет загружать дрова длиною 600 и 700 мм соответственно.<br>
+  Стандартные патрубки G2’’ позволяют делать левое, правое либо диагональное подключение к системе.<br>
+  Круглое сечение дымохода удобно как при встраивании котла в кирпичную трубу, так и при переходе на круглую трубу типа сэндвич (с использованием переходника с шибером).<br>
+  Большие размеры топочной дверцы котла удобны при загрузке топлива. Дверца зольника с термостойким уплотнителем позволяет точно регулировать подачу воздуха в зону горения.<br>
+  Зольная камера с вместительным зольным ящиком позволяет комфортно и удобно производить чистку котла.<br>
+  Наружные поверхности котла облицованы защитно-декоративными панелями, которые снижают потерю тепла теплоносителя, уменьшают инфракрасное излучение и предохраняют владельца от контакта с горячими поверхностями корпуса.<br>
+  Варочная плита с чугунной конфоркой позволяет приготавливать и разогревать пищу. Через открытую конфорку, возможно, производить чистку котла и загрузку угля.<br>
+  Предусмотрена возможность установки блока ТЭН и регулятора горения
+              </span>
 
           <div class="product__table-container" align="center">
             <table style="border-collapse:collapse" border="0" cellspacing="0" cellpadding="0" width="694">
               <colgroup>
                 <col width="454">
-                  <col span="2" width="120">
+                <col span="2" width="120">
               </colgroup>
               <tbody>
                 <tr height="40">
@@ -975,14 +972,14 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-            Комбинированный котел URAGAN PROF предназначен для отопления индивидуальных жилых домов площадью от 150 до 450 м&sup2;, оборудованных системами водяного отопления с естественной или принудительной циркуляцией.
-            </span>
+              Комбинированный котел URAGAN PROF предназначен для отопления индивидуальных жилых домов площадью от 150 до 450 м&sup2;, оборудованных системами водяного отопления с естественной или принудительной циркуляцией.
+              </span>
 
           <div class="product__table-container" align="center">
             <table style='border-collapse:collapse' border="0" cellspacing="0" cellpadding="0" width="1140">
               <colgroup>
                 <col width="420">
-                  <col span="3" width="240">
+                <col span="3" width="240">
               </colgroup>
               <tbody>
                 <tr height="40">
@@ -1187,13 +1184,15 @@
                 Комплектуется дымососом, чугунными колосниками, терморегулятором, панелью управления и защитной арматурой;
               </li>
               <li class="product__characteristics-item">
-                Оснащен автоматикой. Пульт системы контроля позволяет управлять дымососом, вентилятором наддува, горелкой а также отображает на цифровых дисплеях основные рабочие параметры работы котла. Так же автоматика реагирует на достижение предельных значений температуры воды на выходе из котла и на значение давления воды в котле;
+                Оснащен автоматикой. Пульт системы контроля позволяет управлять дымососом, вентилятором наддува, горелкой а также отображает на цифровых дисплеях основные рабочие параметры работы котла. Так же автоматика реагирует на достижение предельных значений температуры
+                воды на выходе из котла и на значение давления воды в котле;
               </li>
               <li class="product__characteristics-item">
                 Удобная топочная дверца;
               </li>
               <li class="product__characteristics-item">
-                Имеет возможность установки поддона с рядом форсунок для сжигания топлива в кипящем слое. Котел с кипящим слоем позволяет добиться устойчивого процесса горения при использовании низкосортных, переувлажненных или высокозольных бурых и каменных углей, что не реализуемо на традиционных котлах с использованием колосниковой решетки;
+                Имеет возможность установки поддона с рядом форсунок для сжигания топлива в кипящем слое. Котел с кипящим слоем позволяет добиться устойчивого процесса горения при использовании низкосортных, переувлажненных или высокозольных бурых и каменных углей, что
+                не реализуемо на традиционных котлах с использованием колосниковой решетки;
               </li>
               <li class="product__characteristics-item">
                 Цикл горения твердого топлива на одной загрузке до 8-10 часов; Рабочее давление котла в системе отопления до 4 атмосфер;
@@ -1206,14 +1205,14 @@
 
           <span class="product__description-title">Особенности и преимущества:</span>
           <span class="product__description-text_wide">
-            Жаротрубный комбинированный котел FAKEL M (Факел М) (КВР) предназначен для отопления малоэтажных строений площадью от 1000 до 8000 м&sup2;, оборудованных системами водяного отопления.
-            </span>
+              Жаротрубный комбинированный котел FAKEL M (Факел М) (КВР) предназначен для отопления малоэтажных строений площадью от 1000 до 8000 м&sup2;, оборудованных системами водяного отопления.
+              </span>
 
           <div class="product__table-container" align="center">
             <table style="border-collapse:collapse" border="0" cellspacing="0" cellpadding="0" width="880">
               <colgroup>
                 <col width="475">
-                  <col span="9" width="45">
+                <col span="9" width="45">
               </colgroup>
               <tbody>
                 <tr height="40">
@@ -1428,575 +1427,494 @@
 
   </main>
 </template>
-<style>
-    $wrapperTop: 5vh;
 
-// z-index
-$below-zindex: 10;
-$content-zindex: 20;
-$header-zindex: 30;
-$overlay-zindex: 90;
-$modal-zindex: 100;
-
-// header size
-$header-height-S: 50px;
-$header-height-L: 70px;
-
-// Navigation size
-$nav-width-S: 260px;
-
-// Search size
-$search-height-S: 50px;
-$search-height-L: 70px;
-
-//Fonts
-$primaryFont: 'PT Sans',
-sans-serif;
-$regularFont: 'Open Sans',
-sans-serif;
-
-// colors
-
-//Blue
-$blue: #3d70aa;
-$river-blue: #3498db;
-$deep-blue: #2980b9;
-
-//Green
-$emerald: #2ecc71;
-$nephritis: #27ae60;
-
-//Dark
-$asphalt: #34495e;
-$midnight: #2c3e50;
-
-//Gray
-$concrete: #95a5a6;
-$asbestos: #7f8c8d;
-
-//White
-$cloud: #ecf0f1;
-$silver: #bdc3c7;
-
-//Red
-$alizarin: #e74c3c;
-$pomegranate: #c0392b;
-
-//Yellow
-$sun: #f1c40f;
-$orange: #f39c12;
-
-// colors
-$red: #F44336;
-$green: #BDDD6A; //#b9e067
-$blue: #2c8be3;
-$moloko: #E5E8EE;
-$gray: #333333;
-$white: #fff;
-$blacked: #000;
-
-$ripple-opacity: .6;
-
-//
-//
-//	Color Schemes
-//
-//
-
-//	Header
-
-$headerBg: $red;
-$headerBgSnd: $white;
-$headerMenu: $red;
-$headerMenuHover: lighten($red, 10%);
-$headerSvg: $white;
-$headerSymbs: $white;
-$headerSymbsHover: $white;
-$headerSearch: $white;
-$headerSearcHover: $white;
-    
-// breakpoints
-$S: 0;
-$M: 992px;
-$L: 1200px;
-
-// media queries
-@mixin MQ($canvas) {
-  @if $canvas==S {
-    @media only screen and (min-width: $S) {
-      @content;
+<style lang="scss">
+  $wrapperTop: 5vh;
+  // z-index
+  $below-zindex: 10;
+  $content-zindex: 20;
+  $header-zindex: 30;
+  $overlay-zindex: 90;
+  $modal-zindex: 100;
+  // header size
+  $header-height-S: 50px;
+  $header-height-L: 70px;
+  // Navigation size
+  $nav-width-S: 260px;
+  // Search size
+  $search-height-S: 50px;
+  $search-height-L: 70px;
+  //Fonts
+  $primaryFont: 'PT Sans',
+  sans-serif;
+  $regularFont: 'Open Sans',
+  sans-serif;
+  // colors
+  //Blue
+  $blue: #3d70aa;
+  $river-blue: #3498db;
+  $deep-blue: #2980b9;
+  //Green
+  $emerald: #2ecc71;
+  $nephritis: #27ae60;
+  //Dark
+  $asphalt: #34495e;
+  $midnight: #2c3e50;
+  //Gray
+  $concrete: #95a5a6;
+  $asbestos: #7f8c8d;
+  //White
+  $cloud: #ecf0f1;
+  $silver: #bdc3c7;
+  //Red
+  $alizarin: #e74c3c;
+  $pomegranate: #c0392b;
+  //Yellow
+  $sun: #f1c40f;
+  $orange: #f39c12;
+  // colors
+  $red: #F44336;
+  $green: #BDDD6A; //#b9e067
+  $blue: #2c8be3;
+  $moloko: #E5E8EE;
+  $gray: #333333;
+  $white: #fff;
+  $blacked: #000;
+  $ripple-opacity: .6;
+  //
+  //
+  //	Color Schemes
+  //
+  //
+  //	Header
+  $headerBg: $red;
+  $headerBgSnd: $white;
+  $headerMenu: $red;
+  $headerMenuHover: lighten($red, 10%);
+  $headerSvg: $white;
+  $headerSymbs: $white;
+  $headerSymbsHover: $white;
+  $headerSearch: $white;
+  $headerSearcHover: $white;
+  // breakpoints
+  $S: 0;
+  $M: 992px;
+  $L: 1200px;
+  // media queries
+  @mixin MQ($canvas) {
+    @if $canvas==S {
+      @media only screen and (min-width: $S) {
+        @content;
+      }
+    }
+    @else if $canvas==M {
+      @media only screen and (min-width: $M) {
+        @content;
+      }
+    }
+    @else if $canvas==L {
+      @media only screen and (min-width: $L) {
+        @content;
+      }
     }
   }
 
-  @else if $canvas==M {
-    @media only screen and (min-width: $M) {
-      @content;
+  // super light grid - it works with the .cd-container class inside style.scss
+  @mixin column($percentage, $float-direction:left) {
+    width: 100% * $percentage;
+    float: $float-direction;
+  }
+
+  // center vertically and/or horizontally an absolute positioned element
+  @import '../../stylesheets/partials/_variables.scss';
+  @mixin center($xy:xy) {
+    @if $xy==xy {
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      @include transform(translateX(-50%) translateY(-50%));
+    }
+    @else if $xy==x {
+      left: 50%;
+      right: auto;
+      @include transform(translateX(-50%));
+    }
+    @else if $xy==y {
+      top: 50%;
+      bottom: auto;
+      @include transform(translateY(-50%));
     }
   }
 
-  @else if $canvas==L {
-    @media only screen and (min-width: $L) {
-      @content;
+  // antialiasing mode font rendering
+  @mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  /*
+    This mixin can be used to set the object-fit:
+    @include object-fit(contain);
+    or object-fit and object-position:
+    @include object-fit(cover, top);
+  */
+
+  @mixin object-fit($fit: fill, $position: null) {
+    object-fit: $fit;
+    @if $position {
+      object-position: $position;
+      font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    }
+    @else {
+      font-family: 'object-fit: #{$fit}';
     }
   }
-}
 
-// super light grid - it works with the .cd-container class inside style.scss
-@mixin column($percentage, $float-direction:left) {
-  width: 100% * $percentage;
-  float: $float-direction;
-}
-
-    // center vertically and/or horizontally an absolute positioned element
-
-@import '_variables';
-
-@mixin center($xy:xy) {
-  @if $xy==xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    @include transform(translateX(-50%) translateY(-50%));
+  @mixin box-shadow($radius) {
+    box-shadow: 0 0 $radius 0 rgba($blacked, .3);
   }
 
-  @else if $xy==x {
-    left: 50%;
-    right: auto;
-    @include transform(translateX(-50%));
+  // rem fallback - credits: http://zerosixthree.se/
+  @function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
   }
 
-  @else if $xy==y {
-    top: 50%;
-    bottom: auto;
-    @include transform(translateY(-50%));
-  }
-}
-
-// antialiasing mode font rendering
-@mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/*
-  This mixin can be used to set the object-fit:
-  @include object-fit(contain);
-  or object-fit and object-position:
-  @include object-fit(cover, top);
-*/
-@mixin object-fit($fit: fill, $position: null) {
-  object-fit: $fit;
-
-  @if $position {
-    object-position: $position;
-    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  @mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
   }
 
-  @else {
-    font-family: 'object-fit: #{$fit}';
+  @mixin select_none {
+    user-select: none;
+    cursor: default;
   }
-}
 
-@mixin box-shadow($radius) {
-  box-shadow: 0 0 $radius 0 rgba($blacked, .3);
-}
-
-// rem fallback - credits: http://zerosixthree.se/
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-
-@mixin select_none {
-  user-select: none;
-  cursor: default;
-}
-
-@mixin transition($time) {
-  transition: ($time) ease-in-out;
-}
-
-// making sharper Waves border
-
-@mixin waves-dark($waves-dark-color, $waves-opacity) {
-  .waves-effect.waves-dark .waves-ripple {
-    background: rgba($waves-dark-color, $waves-opacity);
-    $gradient:
-      rgba($waves-dark-color, $waves-opacity) 0,
-      rgba($waves-dark-color, $waves-opacity) 40%,
-      rgba($waves-dark-color, $waves-opacity) 50%,
-      rgba($waves-dark-color, $waves-opacity) 70%,
-      rgba($waves-dark-color, 0) 70%;
-    background: radial-gradient($gradient);
+  @mixin transition($time) {
+    transition: ($time) ease-in-out;
   }
-}
 
-@mixin waves-light($waves-light-color, $waves-opacity) {
-  .waves-effect.waves-light .waves-ripple {
-    background: rgba($waves-light-color, $waves-opacity);
-    $gradient:
-      rgba($waves-light-color, $waves-opacity) 0,
-      rgba($waves-light-color, $waves-opacity) 40%,
-      rgba($waves-light-color, $waves-opacity) 50%,
-      rgba($waves-light-color, $waves-opacity) 70%,
-      rgba($waves-light-color, 0) 70%;
-    background: radial-gradient($gradient);
+  // making sharper Waves border
+  @mixin waves-dark($waves-dark-color, $waves-opacity) {
+    .waves-effect.waves-dark .waves-ripple {
+      background: rgba($waves-dark-color, $waves-opacity);
+      $gradient: rgba($waves-dark-color, $waves-opacity) 0, rgba($waves-dark-color, $waves-opacity) 40%, rgba($waves-dark-color, $waves-opacity) 50%, rgba($waves-dark-color, $waves-opacity) 70%, rgba($waves-dark-color, 0) 70%;
+      background: radial-gradient($gradient);
+    }
   }
-}
 
-// Material Design Shadows
-// http://materializecss.com/shadow.html
+  @mixin waves-light($waves-light-color, $waves-opacity) {
+    .waves-effect.waves-light .waves-ripple {
+      background: rgba($waves-light-color, $waves-opacity);
+      $gradient: rgba($waves-light-color, $waves-opacity) 0, rgba($waves-light-color, $waves-opacity) 40%, rgba($waves-light-color, $waves-opacity) 50%, rgba($waves-light-color, $waves-opacity) 70%, rgba($waves-light-color, 0) 70%;
+      background: radial-gradient($gradient);
+    }
+  }
 
-@mixin MDShadow-1 {
-  box-shadow:
-    0 2px 2px 0 rgba($blacked, 0.14),
-    0 1px 5px 0 rgba($blacked, 0.12),
-    0 3px 1px -2px rgba($blacked, 0.2)
-}
+  // Material Design Shadows
+  // http://materializecss.com/shadow.html
+  @mixin MDShadow-1 {
+    box-shadow: 0 2px 2px 0 rgba($blacked, 0.14), 0 1px 5px 0 rgba($blacked, 0.12), 0 3px 1px -2px rgba($blacked, 0.2)
+  }
 
-@mixin MDShadow-2 {
-  box-shadow:
-    0 4px 5px 0 rgba($blacked, 0.14),
-    0 1px 10px 0 rgba($blacked, 0.12),
-    0 2px 4px -1px rgba($blacked, 0.3)
-}
+  @mixin MDShadow-2 {
+    box-shadow: 0 4px 5px 0 rgba($blacked, 0.14), 0 1px 10px 0 rgba($blacked, 0.12), 0 2px 4px -1px rgba($blacked, 0.3)
+  }
 
-@mixin MDShadow-3 {
-  box-shadow:
-    0 6px 10px 0 rgba($blacked, 0.14),
-    0 1px 18px 0 rgba($blacked, 0.12),
-    0 3px 5px -1px rgba($blacked, 0.3)
-}
+  @mixin MDShadow-3 {
+    box-shadow: 0 6px 10px 0 rgba($blacked, 0.14), 0 1px 18px 0 rgba($blacked, 0.12), 0 3px 5px -1px rgba($blacked, 0.3)
+  }
 
-@mixin MDShadow-4 {
-  box-shadow:
-    0 8px 10px 1px rgba($blacked, 0.14),
-    0 3px 14px 2px rgba($blacked, 0.12),
-    0 5px 5px -3px rgba($blacked, 0.3)
-}
+  @mixin MDShadow-4 {
+    box-shadow: 0 8px 10px 1px rgba($blacked, 0.14), 0 3px 14px 2px rgba($blacked, 0.12), 0 5px 5px -3px rgba($blacked, 0.3)
+  }
 
-@mixin MDShadow-5 {
-  box-shadow:
-    0 16px 24px 2px rgba($blacked, 0.14),
-    0 6px 30px 5px rgba($blacked, 0.12),
-    0 8px 10px -5px rgba($blacked, 0.3)
-}
-.intro {
+  @mixin MDShadow-5 {
+    box-shadow: 0 16px 24px 2px rgba($blacked, 0.14), 0 6px 30px 5px rgba($blacked, 0.12), 0 8px 10px -5px rgba($blacked, 0.3)
+  }
+
+  .intro {
     position: relative;
     &__back-image-container {
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        display: block;
-        height: 70vh;
-        @include MDShadow-2;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 70vh;
+      @include MDShadow-2;
     }
     &__back-image {
-        width: 100%;
+      width: 100%;
     }
     &__overlay {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        size: 100%;
-        padding: 0 60px;
-        background-color: rgba($blacked, .6);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      size: 100%;
+      padding: 0 60px;
+      background-color: rgba($blacked, .6);
     }
     &__title {
-        display: block;
-        text-align: center;
-        font-size: 3rem;
-        color: $white;
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+      color: $white;
     }
     &__subtitle {
-        text-align: center;
-        margin: 20px auto;
-        color: $white;
+      text-align: center;
+      margin: 20px auto;
+      color: $white;
     }
     &__list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      width: 100%;
     }
     &__link {
-        display: inline-block;
-        padding: 7px 9px;
-        margin: 5px;
-        color: $white $red;
-        border-radius: 2px;
-        @include MDShadow-1;
-        @include transition(.3s);
-        &:hover {
-            color: $white lighten($red, 10%);
-        }
-        &:active {
-            @include MDShadow-2;
-        }
+      display: inline-block;
+      padding: 7px 9px;
+      margin: 5px;
+      color: $white $red;
+      border-radius: 2px;
+      @include MDShadow-1;
+      @include transition(.3s);
+      &:hover {
+        color: $white lighten($red, 10%);
+      }
+      &:active {
+        @include MDShadow-2;
+      }
     }
     &__additional-text {
-        text-align: center;
-        margin: 20px auto;
-        color: $white;
+      text-align: center;
+      margin: 20px auto;
+      color: $white;
     }
     &__list-title {
-        margin: 20px auto;
-        color: $white;
-    }
-}
-.product {
-  &__container {
-    background-color: $white
-  }
-
-  &__column {
-    flex: 1 1 24%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    margin: 0.5vh;
-    border-radius: 2px;
-    @include MDShadow-1;
-    @include transition(.3s);
-
-    &:hover {
-      @include MDShadow-2;
+      margin: 20px auto;
+      color: $white;
     }
   }
 
-  &__column-half {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 50%
-  }
-
-  &__name {
-    display: block;
-    text-align: center;
-    padding: 10px 0 5px;
-    margin: 10px 200px 35px;
-    border: solid $blacked;
-    border-width: 0 0 2px;
-  }
-
-  &__title {
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: $white lighten($red, 5%);
-  }
-
-  &__image-container {
-    flex: 1 1 50%;
-    display: flex;
-    max-width: 50%;
-    justify-content: center;
-  }
-
-  &__slider-container {
-    flex: 1 1 50%;
-    display: block;
-    max-width: 50%;
-    height: $height;
-  }
-
-  &__image {
-    size: auto $height;
-
-    &_half {
-      @extend .product__image;
-      max-width: 100%;
-      height: auto
+  .product {
+    &__container {
+      background-color: $white
     }
-  }
-
-  &__image_wide {
-    width: 100%;
-  }
-
-  &__description-container {
-    flex: 1 1 50%;
-    min-height: $height;
-    padding-right: 40px;
-    border: solid $border-color;
-    border-width: 0 0 0 1px;
-  }
-
-  &__characteristics-list {
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-  }
-
-  &__characteristics-title {
-    display: block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    line-height: 2;
-    background-color: darken($white, 5%);
-  }
-
-  &__characteristics-item {
-    font-size: 0.9rem;
-    line-height: 1.7;
-    list-style-type: disc !important;
-
-    &_columned {
+    &__column {
+      flex: 1 1 24%;
       display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+      margin: 0.5vh;
+      border-radius: 2px;
+      @include MDShadow-1;
+      @include transition(.3s);
+      &:hover {
+        @include MDShadow-2;
+      }
     }
-  }
-
-  &__column-1 {
-    flex: auto;
-  }
-
-  &__column-2 {
-    flex: auto;
-    text-align: right;
-  }
-
-  &__description-title {
-    text-align: center;
-    width: 100%;
-    padding: 10px 20px;
-    margin: auto 100px;
-    margin-top: 50px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    background-color: darken($white, 5%);
-    border: solid $border-color;
-    border-width: 0 0 1px;
-  }
-
-  &__description-text {
-    display: block;
-    width: 80%;
-    margin: 30px auto 0px;
-    font-size: 0.9rem;
-    line-height: 1.5;
-
-    &_wide {
+    &__column-half {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 50%
+    }
+    &__name {
       display: block;
-      width: 100%;
-      padding: 10px 100px;
-      font-size: 0.9rem;
-      line-height: 1.7;
-    }
-  }
-
-  &__banner {
-    display: block;
-  }
-
-  &__link {
-    display: block;
-    padding: 10px 15px;
-    margin: 5px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: $white $red;
-    border-radius: 2px;
-    @include MDShadow-1;
-    @include transition(.3s);
-
-    &:hover {
-      color: $white lighten($red, 10%);
-    }
-
-    &:active {
-      @include MDShadow-2;
-    }
-  }
-
-  &__table-container {
-    margin: 25px auto;
-  }
-
-  &__price {
-    font-size: 2rem;
-    text-align: center;
-    margin: 50px auto;
-
-    &_narrow {
-      width: 100%;
-      padding: 5px;
       text-align: center;
+      padding: 10px 0 5px;
+      margin: 10px 200px 35px;
+      border: solid $blacked;
+      border-width: 0 0 2px;
+    }
+    &__title {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
       font-size: 1.5rem;
       color: $white lighten($red, 5%);
     }
-
-    &_wide {
-      @extend .product__price;
-      flex: 1 1 100%;
-      margin: 20px auto;
+    &__image-container {
+      flex: 1 1 50%;
+      display: flex;
+      max-width: 50%;
+      justify-content: center;
+    }
+    &__slider-container {
+      flex: 1 1 50%;
+      display: block;
+      max-width: 50%;
+      height: $height;
+    }
+    &__image {
+      size: auto $height;
+      &_half {
+        @extend .product__image;
+        max-width: 100%;
+        height: auto
+      }
+    }
+    &__image_wide {
+      width: 100%;
+    }
+    &__description-container {
+      flex: 1 1 50%;
+      min-height: $height;
+      padding-right: 40px;
+      border: solid $border-color;
+      border-width: 0 0 0 1px;
+    }
+    &__characteristics-list {
+      margin-top: 10px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+    &__characteristics-title {
+      display: block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      line-height: 2;
+      background-color: darken($white, 5%);
+    }
+    &__characteristics-item {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      list-style-type: disc !important;
+      &_columned {
+        display: flex;
+      }
+    }
+    &__column-1 {
+      flex: auto;
+    }
+    &__column-2 {
+      flex: auto;
+      text-align: right;
+    }
+    &__description-title {
+      text-align: center;
+      width: 100%;
+      padding: 10px 20px;
+      margin: auto 100px;
+      margin-top: 50px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      background-color: darken($white, 5%);
+      border: solid $border-color;
+      border-width: 0 0 1px;
+    }
+    &__description-text {
+      display: block;
+      width: 80%;
+      margin: 30px auto 0px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      &_wide {
+        display: block;
+        width: 100%;
+        padding: 10px 100px;
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+    }
+    &__banner {
+      display: block;
+    }
+    &__link {
+      display: block;
+      padding: 10px 15px;
+      margin: 5px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: $white $red;
+      border-radius: 2px;
+      @include MDShadow-1;
+      @include transition(.3s);
+      &:hover {
+        color: $white lighten($red, 10%);
+      }
+      &:active {
+        @include MDShadow-2;
+      }
+    }
+    &__table-container {
+      margin: 25px auto;
+    }
+    &__price {
+      font-size: 2rem;
+      text-align: center;
+      margin: 50px auto;
+      &_narrow {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $white lighten($red, 5%);
+      }
+      &_wide {
+        @extend .product__price;
+        flex: 1 1 100%;
+        margin: 20px auto;
+      }
     }
   }
-}
 
-.carousel-cell {
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-cell-image {
-  display: block;
-  max-size: 100%;
-  margin: 0 auto;
-  opacity: 0;
-  background-size: cover;
-  transition: opacity .4s ease-in-out;
-
-  &.flickity-lazyloaded,
-  &.flickity-lazyerror {
-    opacity: 1;
+  .carousel-cell {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
   }
-}
 
-.flickity-page-dots {
-  bottom: 2%;
-
-  .dot {
-    opacity: 0.8;
-    size: 12px;
-    background: transparent;
-    border: 2px solid $red;
-    @include MDShadow-2;
-    @include transition(.3s);
-
-    &:hover {
+  .carousel-cell-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    background-size: cover;
+    transition: opacity .4s ease-in-out;
+    &.flickity-lazyloaded,
+    &.flickity-lazyerror {
       opacity: 1;
     }
+  }
 
-    &.is-selected {
-      background: $red;
-      box-shadow: 0 0 5px rgba($red, .5);
+  .flickity-page-dots {
+    bottom: 2%;
+    .dot {
+      opacity: 0.8;
+      size: 12px;
+      background: transparent;
+      border: 2px solid $red;
+      @include MDShadow-2;
+      @include transition(.3s);
+      &:hover {
+        opacity: 1;
+      }
+      &.is-selected {
+        background: $red;
+        box-shadow: 0 0 5px rgba($red, .5);
+      }
     }
   }
-}
 
-tr,
-td {
-  padding: 5px;
-  color: $blacked;
-  font-size: 11.0pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: Calibri, sans-serif;
-  text-align: center;
-  vertical-align: middle;
-  border: .5pt solid $blacked;
-}
+  tr,
+  td {
+    padding: 5px;
+    color: $blacked;
+    font-size: 11.0pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid $blacked;
+  }
 </style>

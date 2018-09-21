@@ -41,8 +41,13 @@
 
 </script>
 
-
 <style lang="scss">
+
+  // @AlexQuidditch
+  // сюда впихнуть всё, что в base.css
+  // по файлам распихать то, что к ним относится
+
+  @import './stylesheets/base.scss';
 
   #wrapper {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
