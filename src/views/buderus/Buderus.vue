@@ -200,7 +200,6 @@
 
     </section>
 
-
     <div class="s-devider">
       <div class="line"></div>
     </div>
@@ -237,8 +236,9 @@
 
 </script>
 
-
-<style>
+<style lang="scss">
+ @import './stylesheets/sections/buderus.scss';
+ 
     $wrapperTop: 5vh;
 
 // z-index

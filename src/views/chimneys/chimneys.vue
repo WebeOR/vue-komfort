@@ -519,7 +519,10 @@
 
 </template>
 
-<style>
+<style lang="scss">
+
+ @import './stylesheets/sections/chimneys.scss';
+ 
     .intro__additional-text {
   text-align: left;
 }
@@ -1129,3 +1132,4 @@ td {
   border: .5pt solid $blacked;
 }
 </style>
+
