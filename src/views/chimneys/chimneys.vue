@@ -518,3 +518,15 @@
   </main>
 
 </template>
+
+
+<style lang="scss">
+    
+    import buderus from './stilesheets/sections/chimneys.scss'
+    
+    export default {
+    name: 'chimneys',
+    components: {chimneys}
+  };
+    
+</style>
