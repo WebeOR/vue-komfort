@@ -1,5 +1,4 @@
 <template>
-
   <section id="s131" class="product">
     <div class="product__container">
       <h2 class="product__name">Buderus </h2>
@@ -50,7 +49,7 @@
           <table style="border-collapse:collapse;table-layout:fixed" width="580" border="0" cellspacing="0" cellpadding="0">
             <colgroup>
               <col width="300">
-                <col width="140" span="2">
+              <col width="140" span="2">
             </colgroup>
             <tbody>
               <tr height="30">
@@ -123,13 +122,10 @@
     </div>
 
   </section>
-
 </template>
 
 <script>
-
   export default {
     name: 'S-131'
   };
-
 </script>
