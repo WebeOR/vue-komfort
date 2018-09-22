@@ -502,3 +502,9 @@
 
   </main>
 </template>
+
+<style lang="scss">
+    
+    @import '../../stylesheets/nmk-furnaces.scss';
+    
+</style>
