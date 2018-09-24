@@ -1,5 +1,6 @@
-module.exports = {
+module.exports = ({ env }) => ({
   plugins: {
-    autoprefixer: {}
+    'autoprefixer': env === 'production' ? {} : false,
+    'css-mqpacker': env === 'production' ? {} : false
   }
-};
+});
