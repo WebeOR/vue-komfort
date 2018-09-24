@@ -1,6 +1,6 @@
 <template>
   <fade-transition appear>
-    <div id="wrapper">
+    <div id="wrapper" class="wrapper">
       <div id="nav">
         <ul>
           <li v-for="({ name }) in routes" :key="name.id">
@@ -49,13 +49,6 @@
 
   @import './stylesheets/base.scss';
 
-  #wrapper {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
   #nav {
     padding: 30px;
     a {

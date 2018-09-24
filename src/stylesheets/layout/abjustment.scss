@@ -22,13 +22,16 @@ body {
 .wrapper {
   max-width: 1180px;
   margin: $wrapperTop auto;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: $white;
   @include MDShadow-2
 }
 
 .container {
-  size: 100%;
-
+  width: 100%;
+  height: 100%;
   &_flex {
     display: flex;
     flex-flow: column wrap;
@@ -48,18 +51,10 @@ body {
 .main,
 .header {
   position: relative;
-  transform: translateZ(0);
-  transition: transform .3s;
-
-  @include MQ(maxL) {
-    &.nav-is-visible {
-      transform: translateX(-$nav-width-S);
-    }
-
-    .nav-on-left &.nav-is-visible {
-      transform: translateX($nav-width-S);
-    }
-  }
+}
+.main {
+  padding: 0 30px;
+  text-align: center;
 }
 
 .s-devider {
