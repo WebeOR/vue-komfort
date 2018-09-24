@@ -324,7 +324,6 @@ input[type="search"]::-webkit-search-results-decoration {
     float: right;
     overflow: visible;
     background: transparent;
-    @include clearfix;
 
     &.moves-out>li>a {
       /* reset mobile style */
@@ -393,7 +392,6 @@ input[type="search"]::-webkit-search-results-decoration {
       padding: 48px 64px;
       @include MDShadow-4;
       transform: translateX(0);
-      @include clearfix;
       transition: opacity 0.3s 0s, visibility 0s 0s;
 
       &.is-hidden {
@@ -732,7 +730,7 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 0;
     border: none;
 
-    @include placeholder {
+    &::placeholder {
       color: darken($headerSvg, 10%);
     }
 
@@ -765,7 +763,6 @@ input[type="search"]::-webkit-search-results-decoration {
       font-size: 2rem;
       font-weight: 300;
       background: transparent;
-      @include placeholder
     }
   }
 }

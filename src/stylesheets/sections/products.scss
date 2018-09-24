@@ -32,10 +32,8 @@ $border-color: #dbdbdb;
   }
 
   &__name {
-    display: block;
-    text-align: center;
+    margin: 10px auto 35px auto;
     padding: 10px 0 5px;
-    margin: 10px 200px 35px;
     border: solid $blacked;
     border-width: 0 0 2px;
   }
@@ -100,7 +98,6 @@ $border-color: #dbdbdb;
   }
 
   &__characteristics-item {
-    font-size: 0.9rem;
     line-height: 1.7;
     list-style-type: disc !important;
 
@@ -135,14 +132,12 @@ $border-color: #dbdbdb;
     display: block;
     width: 80%;
     margin: 30px auto 0px;
-    font-size: 0.9rem;
     line-height: 1.5;
 
     &_wide {
       display: block;
       width: 100%;
       padding: 10px 100px;
-      font-size: 0.9rem;
       line-height: 1.7;
     }
   }
@@ -156,11 +151,10 @@ $border-color: #dbdbdb;
     padding: 10px 15px;
     margin: 5px;
     text-align: center;
-    font-size: 0.9rem;
     color: $white $red;
     border-radius: 2px;
     @include MDShadow-1;
-    @include transition(.3s);
+    transition: .3s;
 
     &:hover {
       color: $white lighten($red, 10%);
