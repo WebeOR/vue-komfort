@@ -109,15 +109,15 @@ body {
     display: inline-block;
     padding: 7px 9px;
     margin: 5px;
-    color: $white $red;
+    color: $white;
+    background-color: $red;
     border-radius: 2px;
+    @include transition(.3s);
     @include MDShadow-1;
-    transition: .3s;
-
     &:hover {
-      color: $white lighten($red, 10%);
+      color: $white;
+      background-color: lighten($red, 10%)
     }
-
     &:active {
       @include MDShadow-2;
     }
