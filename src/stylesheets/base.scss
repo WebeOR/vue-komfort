@@ -14,3 +14,13 @@
 
 //@import 'media/phones';
 //@import 'media/tablets';
+
+.product-list {
+  display: flex;
+}
+
+.product-table {
+  margin: 25px auto;
+  border-collapse: collapse;
+  table-layout: fixed
+}
