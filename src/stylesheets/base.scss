@@ -2,11 +2,11 @@
 @import 'partials/_layout';
 @import 'partials/_mixins';
 
+@import 'libs/materialize';
+
 @import 'layout/abjustment';
 @import 'layout/fonts';
 @import 'layout/forms';
-
-@import 'libs/materialize';
 
 @import 'sections/header';
 @import 'sections/topMenu';

@@ -7,7 +7,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-
+  scroll-behavior: smooth;
   &.is-opened {
     overflow: hidden;
   }
@@ -23,10 +23,9 @@ body {
   max-width: 1180px;
   margin: $wrapperTop auto;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: $white;
-  @include MDShadow-2
+  @include font-smoothing;
+  @include MDShadow-2;
 }
 
 .container {
