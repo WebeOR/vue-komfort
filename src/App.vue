@@ -36,7 +36,7 @@
         { name: 'Zota' },
         { name: 'ZotaElectrical' }
       ]
-    })
+    }),
   };
 
 </script>
