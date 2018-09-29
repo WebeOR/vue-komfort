@@ -22,7 +22,7 @@
       target="_blank"
       class="product-item__link"
       ripple-light>Инструкция по эксплуатации</a>
-    <span class="product-item__price">{{ Product.price.value + ' ' + Product.price.currency }}</span>
+    <span class="product-item__price">{{ Product.price.value | currency('₽', 0 , currencyOptions ) }}</span>
   </li>
 </template>
 
@@ -35,7 +35,14 @@
         type: Object,
         required: true
       }
-    }
+    },
+    data: () => ({
+      currencyOptions: {
+        symbolOnLeft: false,
+        spaceBetweenAmountAndSymbol: true,
+        thousandsSeparator: ' '
+      }
+    })
   };
 
 </script>
@@ -87,7 +94,8 @@
       display: block;
       padding: 10px 15px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      color: $asphalt
     }
     &__price {
       display: block;
