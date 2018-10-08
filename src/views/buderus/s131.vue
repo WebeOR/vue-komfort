@@ -18,30 +18,7 @@
         <div class="product__description-container">
           <span class="product__characteristics-title">Характеристики:</span>
           <ul class="product__characteristics-list">
-            <li class="product__characteristics-item">
-              Новая конструкция теплообменника;
-            </li>
-            <li class="product__characteristics-item">
-              Улучшено качество и время горения благодаря увеличению объёма загрузочной камеры;
-            </li>
-            <li class="product__characteristics-item">
-              Возможно установить внешний электрический ТЭН;
-            </li>
-            <li class="product__characteristics-item">
-              Новый механизм управления растопочной заслонкой;
-            </li>
-            <li class="product__characteristics-item">
-              Загрузка спереди позволяет производить чистку ограниченных узлов котла даже во время его работы;
-            </li>
-            <li class="product__characteristics-item">
-              Изменена конструкция зольного ящика, он стал больше, его удобно вынимать и чистить;
-            </li>
-            <li class="product__characteristics-item">
-              Изменение другие узлов также позволило облегчить работы по чистке котла;
-            </li>
-            <li class="product__characteristics-item">
-              Дизайн колосниковых решеток был изменен с подвижных элементов на статические (легкое удаление и замена).
-            </li>
+
           </ul>
         </div>
 
@@ -52,66 +29,58 @@
               <col width="140" span="2">
             </colgroup>
             <tbody>
-              <tr height="30">
-                <td>Характеристики\Наименование</td>
-                <td>Logano S131-15 H</td>
-                <td>Logano S131-22 H</td>
-              </tr>
-              <tr height="30">
-                <td>Мощность, кВт</td>
-                <td>15</td>
-                <td>22</td>
-              </tr>
-              <tr height="30">
-                <td>Отапливаемая площадь, м²</td>
-                <td>150</td>
-                <td>220</td>
-              </tr>
-              <tr height="30">
-                <td>Объем топки, л</td>
-                <td>38</td>
-                <td>60</td>
-              </tr>
-              <tr height="30">
-                <td>Рабочая температура теплоносителя, ˚С</td>
-                <td>90</td>
-                <td>90</td>
-              </tr>
-              <tr height="30">
-                <td>Рабочее давление, Бар</td>
-                <td>2</td>
-                <td>2</td>
-              </tr>
-              <tr height="30">
-                <td>Диаметр дымохода, мм</td>
-                <td>150</td>
-                <td>150</td>
-              </tr>
-              <tr height="30">
-                <td>Вид топлива</td>
-                <td>дрова, уголь</td>
-                <td>дрова, уголь</td>
-              </tr>
-              <tr height="30">
-                <td>Высота, мм</td>
-                <td>997</td>
-                <td>966</td>
-              </tr>
-              <tr height="30">
-                <td>Ширина, мм</td>
-                <td>543</td>
-                <td>536</td>
-              </tr>
-              <tr height="30">
-                <td>Глубина, мм</td>
-                <td>838</td>
-                <td>838</td>
-              </tr>
-              <tr height="30">
-                <td>Цена, руб</td>
-                <td>48 190</td>
-                <td>62 820</td>
-              </tr>
+<tr height="30">
+Характеристики\Наименование
+Logano S131-15 H
+Logano S131-22 H
+</tr>
+<tr height="30">
+Мощность, кВт
+15
+22
+</tr>
+<tr height="30">
+Отапливаемая площадь, м²
+
+</tr>
+<tr height="30">
+Объем топки, л
+
+</tr>
+<tr height="30">
+Рабочая температура теплоносителя, ˚С
+
+</tr>
+<tr height="30">
+Рабочее давление, Бар
+
+</tr>
+<tr height="30">
+Диаметр дымохода, мм
+
+</tr>
+<tr height="30">
+Вид топлива
+</tr>
+<tr height="30">
+Высота, мм
+
+</tr>
+<tr height="30">
+Ширина, мм
+
+
+</tr>
+<tr height="30">
+Глубина, мм
+838
+838
+</tr>
+<tr height="30">
+Цена, руб
+48 190
+62 820
+</tr>
             </tbody>
           </table>
 
