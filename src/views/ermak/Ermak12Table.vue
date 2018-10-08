@@ -2,20 +2,21 @@
   <table
     class="product-table"
     width="931"
-    border="0"
+    align="center"
+    border="1"
     cellspacing="0"
     cellpadding="0">
     <colgroup>
       <col width="175">
-      <col width="116">
-      <col width="85">
-      <col width="64">
-      <col width="99">
-      <col width="85">
-      <col width="88">
-      <col width="74">
-      <col width="68">
-      <col width="77">
+      <col width="130">
+      <col width="100">
+      <col width="75">
+      <col width="100">
+      <col width="100">
+      <col width="100">
+      <col width="75">
+      <col width="75">
+      <col width="75">
     </colgroup>
     <tbody>
       <tr height="20">

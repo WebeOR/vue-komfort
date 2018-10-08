@@ -1,5 +1,5 @@
 <template>
-  <li class="product-item">
+  <!-- <li class="product-item">
     <h6 class="product-item__title">{{ Product.name }}</h6>
     <ul
       v-if="Product.images && Product.images.length"
@@ -23,7 +23,41 @@
       class="product-item__link"
       ripple-light>Инструкция по эксплуатации</a>
     <span class="product-item__price">{{ Product.price.value | currency('₽', 0 , currencyOptions ) }}</span>
-  </li>
+  </li> -->
+  <md-card
+    md-with-hover
+    class="md-product-card">
+    <md-card-media class="md-product-card__image-container">
+      <img
+        :src="Product.image"
+        :alt="Product.name"
+        class="md-product-card__image" />
+    </md-card-media>
+
+    <md-card-header>
+      <div class="md-title md-product-card__title">{{ Product.name }}</div>
+    </md-card-header>
+
+    <md-card-expand>
+      <md-card-actions md-alignment="space-between">
+        <md-button class="md-raised md-accent">Заказать</md-button>
+
+        <md-card-expand-trigger>
+          <md-button>Дополнительно</md-button>
+        </md-card-expand-trigger>
+      </md-card-actions>
+
+      <md-card-expand-content>
+        <md-card-content>
+          <a
+            v-if="Product.instruction && Product.instruction.length"
+            :href="Product.instruction"
+            target="_blank"
+            class="md-product-card__link">Инструкция по эксплуатации</a>
+        </md-card-content>
+      </md-card-expand-content>
+    </md-card-expand>
+  </md-card>
 </template>
 
 <script>
@@ -147,6 +181,10 @@
         }
       }
     }
+  }
+
+  .md-product-card {
+    flex: 1 1 20%;
   }
 
 </style>
