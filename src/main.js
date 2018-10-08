@@ -7,6 +7,11 @@ import store from './store';
 
 import './registerServiceWorker';
 
+import VueMaterial from 'vue-material';
+import 'vue-material/dist/vue-material.min.css';
+
+Vue.use(VueMaterial);
+
 import VueFilters from 'vue2-filters';
 import VueMoment from './assets/js/vue-moment.js'; // забираю кастомную сборку, потому что на NPM косячная
 
