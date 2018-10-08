@@ -2,7 +2,7 @@
   <table
     class="product-table"
     align="center"
-    border="0"
+    border="1"
     cellspacing="0"
     cellpadding="0">
     <colgroup>
