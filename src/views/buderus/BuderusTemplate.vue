@@ -112,7 +112,7 @@
     data: () => ({
       options: {
         currentPage: 0,
-        thresholdDistance: 500,
+        thresholdDistance: 100,
         thresholdTime: 350,
         autoplay: 10000,
         loop: true,
