@@ -8,12 +8,12 @@
         <h3 class="md-title">{{ Line.title }}</h3>
       </md-card-header>
       <md-card-content>
-        <div class="md-layout md-alignment-top-space-between">
+        <div class="md-layout md-gutter md-alignment-top-space-between">
           <img
             v-if="Line.image"
             :src="Line.image"
             :alt="Line.title"
-            class="md-layout-item md-size-40"
+            class="md-layout-item"
             style="object-fit:contain" />
           <slider
             v-if="Line.images"
@@ -33,7 +33,7 @@
           </slider>
           <div
             v-if="Line.characteristics && Line.characteristics.length"
-            class="md-layout-item md-size-50">
+            class="md-layout-item">
             <md-list>
               <md-subheader>Особенности и преимущества:</md-subheader>
               <md-list-item
@@ -66,6 +66,16 @@
       </md-card-actions>
     </md-card>
 
+    <div
+      v-if="Line.banner"
+      class="md-layout md-gutter md-alignment-center-center">
+      <md-card>
+        <img
+          :src="Line.banner"
+          :alt="Line.title" />
+      </md-card>
+    </div>
+
     <md-table
       v-if="Line.table"
       md-card
@@ -89,7 +99,6 @@
     </md-table>
 
     <md-divider></md-divider>
-
   </section>
 </template>
 
@@ -98,7 +107,7 @@
   import { slider, slideritem } from 'vue-concise-slider';
 
   export default {
-    name: 'Buderus-Template',
+    name: 'Energy-Template',
     components: {
       slider,
       slideritem
@@ -121,12 +130,7 @@
         timingFunction: 'ease',
         speed: 300
       }
-    }),
-    mounted () {
-      this.$nextTick( () => {
-
-      });
-    }
+    })
   };
 
 </script>

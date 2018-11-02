@@ -1,29 +1,4 @@
 <template>
-  <!-- <li class="product-item">
-    <h6 class="product-item__title">{{ Product.name }}</h6>
-    <ul
-      v-if="Product.images && Product.images.length"
-      flickity
-      class="product-item__slider-container">
-      <li
-        v-for="image in Product.images" :key="image"
-        class="carousel-cell">
-        <img :src="image" :alt="Product.name" class="product-item__image" />
-      </li>
-    </ul>
-    <div
-      v-else-if="Product.image && Product.image.length"
-      class="product-item__image-container">
-      <img :src="Product.image" :alt="Product.name" class="product-item__image" />
-    </div>
-    <a
-      v-if="Product.instruction && Product.instruction.length"
-      :href="Product.instruction"
-      target="_blank"
-      class="product-item__link"
-      ripple-light>Инструкция по эксплуатации</a>
-    <span class="product-item__price">{{ Product.price.value | currency('₽', 0 , currencyOptions ) }}</span>
-  </li> -->
   <md-card
     md-with-hover
     class="md-product-card">

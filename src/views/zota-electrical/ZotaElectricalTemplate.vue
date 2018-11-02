@@ -8,32 +8,24 @@
         <h3 class="md-title">{{ Line.title }}</h3>
       </md-card-header>
       <md-card-content>
-        <div class="md-layout md-alignment-top-space-between">
+        <div class="md-layout md-gutter md-alignment-top-space-between">
           <img
             v-if="Line.image"
             :src="Line.image"
             :alt="Line.title"
-            class="md-layout-item md-size-40"
+            class="md-layout-item"
             style="object-fit:contain" />
-          <slider
+          <img
             v-if="Line.images"
-            ref="slider"
-            :options="options"
-            class="md-layout-item md-size-50">
-            <slideritem
-              v-for="( image , index ) in Line.images"
-              :key="index">
-              <img
-                :key="index"
-                :src="image"
-                :alt="Line.title"
-                style="object-fit:contain" />
-            </slideritem>
-            <div slot="loading">loading...</div>
-          </slider>
+            v-for="( image , index ) in Line.images"
+            :key="index"
+            :src="image"
+            :alt="Line.title"
+            class="md-layout-item md-size-25"
+            style="object-fit:contain" />
           <div
             v-if="Line.characteristics && Line.characteristics.length"
-            class="md-layout-item md-size-50">
+            class="md-layout-item">
             <md-list>
               <md-subheader>Особенности и преимущества:</md-subheader>
               <md-list-item
@@ -89,43 +81,18 @@
     </md-table>
 
     <md-divider></md-divider>
-
   </section>
 </template>
 
 <script>
 
-  import { slider, slideritem } from 'vue-concise-slider';
-
   export default {
-    name: 'Buderus-Template',
-    components: {
-      slider,
-      slideritem
-    },
+    name: 'Zota-Electrical-Template',
     props: {
       'Line': {
         type: Object,
         required: true
       }
-    },
-    data: () => ({
-      options: {
-        currentPage: 0,
-        thresholdDistance: 100,
-        thresholdTime: 350,
-        autoplay: 10000,
-        loop: true,
-        loopedSlides: 1,
-        slidesToScroll: 1,
-        timingFunction: 'ease',
-        speed: 300
-      }
-    }),
-    mounted () {
-      this.$nextTick( () => {
-
-      });
     }
   };
 

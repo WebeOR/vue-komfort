@@ -11,13 +11,8 @@ $border-color: #dbdbdb;
 
   &__column {
     flex: 1 1 24%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
     margin: 0.5vh;
     border-radius: 2px;
-    @include MDShadow-1;
     @include transition(.3s);
 
     &:hover {

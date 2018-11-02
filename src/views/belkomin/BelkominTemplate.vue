@@ -10,13 +10,13 @@
       <md-card-content>
         <div class="md-layout md-alignment-top-space-between">
           <img
-            v-if="Line.image"
-            :src="Line.image"
+            v-if="Line.images.length == 1"
+            :src="Line.images[0]"
             :alt="Line.title"
             class="md-layout-item md-size-40"
             style="object-fit:contain" />
           <slider
-            v-if="Line.images"
+            v-if="Array.isArray(Line.images) && Line.images.length > 2"
             ref="slider"
             :options="options"
             class="md-layout-item md-size-50">
@@ -46,12 +46,12 @@
         </div>
         <p
           v-if="Line.descriptions"
-          v-for="( description , key ) in Line.descriptions"
-          :key="key">
+          v-for="( description , index ) in Line.descriptions"
+          :key="index">
           {{ description }}
         </p>
 
-        <p class="md-body-2">{{ Line.description }}</p>
+        <p v-if="Line.description && Line.description.length" class="md-body-2">{{ Line.description }}</p>
       </md-card-content>
       <md-card-actions>
         <md-button
@@ -61,7 +61,7 @@
           target="_blank"
           rel="nofollow"
           class="md-raised md-accent">
-          Документация
+          Инструкция по монтажу
         </md-button>
       </md-card-actions>
     </md-card>
@@ -72,8 +72,8 @@
       class="product-table">
       <md-table-row>
         <md-table-head
-          v-for="item in Line.table.head"
-          :key="item">
+          v-for="( item , index ) in Line.table.head"
+          :key="index">
           {{ item }}
         </md-table-head>
       </md-table-row>
@@ -88,7 +88,7 @@
       </md-table-row>
     </md-table>
 
-    <md-divider></md-divider>
+    <md-divider />
 
   </section>
 </template>
@@ -98,7 +98,7 @@
   import { slider, slideritem } from 'vue-concise-slider';
 
   export default {
-    name: 'Buderus-Template',
+    name: 'Belkomin-Template',
     components: {
       slider,
       slideritem

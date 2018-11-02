@@ -1,7 +1,7 @@
 <template>
   <div class="main">
 
-    <section class="intro">
+    <section class="product">
       <h1 class="md-display-2">Твёрдотопливные котлы Termokraft</h1>
       <p class="md-body-2">
         Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России
@@ -11,17 +11,6 @@
     <Termokraft-Template
       v-for="line in lines" :key="line.id"
       :Line="line" />
-
-    <nav class="families">
-      <span class="families__list-title">Другие семейства твёрдотопливных котлов:</span>
-      <ul class="families__list">
-        <li><a href="kentatsu.html" class="families__link" ripple-light>Kentatsu Furst Vulkan</a></li>
-        <li><a href="termokraft.html" class="families__link" ripple-light>Termokraft</a></li>
-        <li><a href="zota.html" class="families__link" ripple-light>Zota</a></li>
-        <li><a href="nmk.html" class="families__link" ripple-light>НМК</a></li>
-        <li><a href="energy-tt.html" class="families__link" ripple-light>Энергия-ТТ</a></li>
-      </ul>
-    </nav>
 
   </div>
 </template>
@@ -37,7 +26,7 @@
       lines: [
         {
           id: 'fakel',
-          title: 'Termokraft Fakel',
+          title: 'Fakel',
           image: '/img/termokraft/FAKEL.jpg',
           images: null,
           price: null,
@@ -74,7 +63,7 @@
 
         {
           id: 'taifun',
-          title: 'Termokraft Taifun',
+          title: 'Taifun',
           image: null,
           images: [
             '/img/termokraft/TAIFUN.jpg',
@@ -158,7 +147,7 @@
 
         {
           id: 'uragan',
-          title: 'Termokraft Uragan',
+          title: 'Uragan',
           image: null,
           images: [
             '/img/termokraft/URAGAN.jpg',
@@ -245,7 +234,7 @@
 
         {
           id: 'zeus',
-          title: 'Termokraft Zeus',
+          title: 'Zeus',
           image: null,
           images: [
             '/img/termokraft/ZEUS.png',
@@ -377,7 +366,7 @@
 
         {
           id: 'r2',
-          title: 'Termokraft R2',
+          title: 'R2',
           image: null,
           images: [
             '/img/termokraft/r2.png',
@@ -546,7 +535,7 @@
 
         {
           id: 'prof',
-          title: 'Termokraft URAGAN ProF',
+          title: 'URAGAN ProF',
           image: null,
           images: [
             '/img/termokraft/prof.png',
@@ -724,7 +713,7 @@
 
         {
           id: 'fakel-m',
-          title: 'Termokraft FAKEL-M',
+          title: 'FAKEL-M',
           image: null,
           images: [
             '/img/termokraft/fakel-m.jpg',

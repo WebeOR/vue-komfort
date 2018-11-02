@@ -1,4 +1,4 @@
-import Home from '../views/Home.vue';
+import Home from '../views/home/';
 
 /* @AlexQuidditch
    асинхронные роуты https://router.vuejs.org/ru/guide/advanced/lazy-loading.html
@@ -18,11 +18,12 @@ const NmkStoves = () => import( /* webpackChunkName: "nmk-stoves" */ '../views/n
 const Termokraft = () => import( /* webpackChunkName: "termokraft" */ '../views/termokraft');
 const Zota = () => import( /* webpackChunkName: "zota" */ '../views/zota');
 const ZotaElectrical = () => import( /* webpackChunkName: "zota-electrical" */ '../views/zota-electrical');
+const Belkomin = () => import( /* webpackChunkName: "belkomin" */ '../views/belkomin');
 
 export default [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
   },
   {
@@ -84,5 +85,10 @@ export default [
     path: '/zota/electrical',
     name: 'ZotaElectrical',
     component: ZotaElectrical
-  }
+  },
+  {
+    path: '/belkomin',
+    name: 'Belkomin',
+    component: Belkomin
+  },
 ];

@@ -1,7 +1,7 @@
 <template>
   <div class="main">
 
-    <section class="intro">
+    <section class="product">
       <h1 class="md-display-2">Твёрдотопливные котлы Buderus</h1>
       <p class="md-body-2">
         Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России
@@ -9,19 +9,9 @@
     </section>
 
     <Buderus-Template
-      v-for="line in lines" :key="line.id"
+      v-for="line in lines"
+      :key="line.id"
       :Line="line" />
-
-    <nav class="families">
-      <span class="families__list-title">Другие семейства твёрдотопливных котлов:</span>
-      <ul class="families__list">
-        <li><a href="kentatsu.html" class="families__link" ripple-light>Kentatsu Furst Vulkan</a></li>
-        <li><a href="termokraft.html" class="families__link" ripple-light>Termokraft</a></li>
-        <li><a href="zota.html" class="families__link" ripple-light>Zota</a></li>
-        <li><a href="nmk.html" class="families__link" ripple-light>НМК</a></li>
-        <li><a href="energy-tt.html" class="families__link" ripple-light>Энергия-ТТ</a></li>
-      </ul>
-    </nav>
 
   </div>
 </template>
@@ -32,9 +22,12 @@
 
   export default {
     name: 'Buderus',
+
     components: { BuderusTemplate },
+
     data: () => ({
       lines: [
+
         {
           id: 'S111-2',
           title: 'Buderus Logano S111-2',
@@ -174,6 +167,7 @@
             ]
           }
         },
+
         {
           id: 'S131',
           title: 'Buderus Logano S131',
@@ -262,13 +256,16 @@
             ]
           }
         }
+
       ]
     }),
+
     computed: {
       toolbar () {
         return this.lines.map( ({ id , title }) => ({ id , title }) );
       }
     },
+
     created () {
       this.$emit( 'set-toolbar' , this.toolbar );
     }

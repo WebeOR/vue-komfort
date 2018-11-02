@@ -60,7 +60,8 @@
 
     <md-table
       v-if="Line.table"
-      md-card>
+      md-card
+      class="product-table">
       <md-table-row>
         <md-table-head
           v-for="item in Line.table.head"

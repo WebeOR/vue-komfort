@@ -1,7 +1,7 @@
 <template>
   <div class="main">
 
-    <section class="intro">
+    <section class="product">
       <h1 class="md-display-2">Твёрдотопливные котлы Zota</h1>
       <p class="md-body-2">
         Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России.
@@ -37,6 +37,7 @@
     components: { ZotaTemplate },
     data: () => ({
       lines: [
+
         {
           id: 'box',
           title: 'Zota Box',
@@ -89,6 +90,7 @@
             ]
           }
         },
+
         {
           id: 'carbon',
           title: 'Zota Carbon',
@@ -212,6 +214,7 @@
             ]
           }
         },
+
         {
           id: 'master',
           title: 'Zota Master',
@@ -314,6 +317,7 @@
             ]
           }
         },
+
         {
           id: 'mix',
           title: 'Zota Mix',
@@ -391,6 +395,7 @@
             ]
           }
         },
+
         {
           id: 'pellet',
           title: 'Zota Pellet',
@@ -495,6 +500,7 @@
             ]
           }
         },
+
         {
           id: 'stakhanov',
           title: 'Zota Стаханов',
@@ -588,6 +594,7 @@
             ]
           }
         },
+
         {
           id: 'magna',
           title: 'Zota Magna',
@@ -708,6 +715,7 @@
             ]
           }
         },
+
         {
           id: 'topolM',
           title: 'Zota Тополь-М',
@@ -792,6 +800,7 @@
             ]
           }
         },
+
         {
           id: 'turboset',
           title: 'Автоматика TurboSet',
@@ -806,6 +815,7 @@
           docs: null,
           descriptions: null
         },
+
         {
           id: 'tens',
           title: 'Комплект ТЭНБ 2"',
@@ -864,6 +874,7 @@
             ]
           }
         },
+
         // {
         //   id: 'fr124',
         //   title: 'Регулятор тяги FR-124',
@@ -882,6 +893,7 @@
         // }
       ]
     }),
+
     computed: {
       toolbar () {
         return this.lines.map( ({ id , title }) => {
@@ -892,6 +904,7 @@
         });
       }
     },
+
     created () {
       this.$emit( 'set-toolbar' , this.toolbar );
     }

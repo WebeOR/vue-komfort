@@ -66,29 +66,16 @@
       </md-card-actions>
     </md-card>
 
-    <md-table
+    <table
       v-if="Line.table"
-      md-card
+      v-html="Line.table"
+      border="1"
+      cellspacing="0"
+      cellpadding="0"
       class="product-table">
-      <md-table-row>
-        <md-table-head
-          v-for="item in Line.table.head"
-          :key="item">
-          {{ item }}
-        </md-table-head>
-      </md-table-row>
-      <md-table-row
-        v-for="( row , index ) in Line.table.body"
-        :key="index">
-        <md-table-cell
-          v-for="( cell , index ) in row"
-          :key="index">
-          {{ cell }}
-        </md-table-cell>
-      </md-table-row>
-    </md-table>
+    </table>
 
-    <md-divider></md-divider>
+    <md-divider />
 
   </section>
 </template>
@@ -98,7 +85,7 @@
   import { slider, slideritem } from 'vue-concise-slider';
 
   export default {
-    name: 'Buderus-Template',
+    name: 'NMK-Template',
     components: {
       slider,
       slideritem

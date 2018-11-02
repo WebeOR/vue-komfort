@@ -2,7 +2,7 @@
 
   <main id="main" class="main">
 
-    <section class="intro">
+    <section class="product">
 
       <div class="intro__back-image-container">
         <img src="assets/img/slide-3.jpg" alt="kentatsu intro" class="intro__back-image">
