@@ -1,80 +1,89 @@
 <template>
   <app-wrapper>
 
-    <md-app-drawer :md-active.sync="menuVisible">
-      <md-toolbar class="md-transparent" md-elevation="1">Navigation</md-toolbar>
+    <md-app-drawer md-permanent="full">
+      <md-toolbar
+        class="md-transparent"
+        md-elevation="1">
+        <md-button :to="{ name: 'Home' }">Главная</md-button>
+      </md-toolbar>
 
       <md-list>
-        <md-list-item
-          v-for="{ name } in routes" :key="name"
-          :to="{ name }">
-          <span class="md-list-item-text">{{ name }}</span>
-        </md-list-item>
+        <template
+          v-for="category in categories">
+          <md-subheader :key="`sub-${ category.title }`">{{ category.title }}</md-subheader>
+          <md-list-item
+            v-for="{ name , text } in category.subCategories"
+            :key="`${ category.title } ${ name }`"
+            :to="{ name }">
+            <span class="md-list-item-text">{{ text }}</span>
+          </md-list-item>
+          <md-divider :key="`divider-${ category.title }`" />
+        </template>
       </md-list>
     </md-app-drawer>
 
     <md-app-toolbar class="md-dense md-primary">
       <div class="md-toolbar-row">
         <div class="md-toolbar-section-start">
-          <md-button
-            @click="menuVisible = !menuVisible"
-            class="md-icon-button">
-            <md-icon>menu</md-icon>
-          </md-button>
-
           <span class="md-title">Комфорт 124</span>
         </div>
 
         <div class="md-toolbar-section-end">
-          <md-button @click="showDialog = true" class="md-icon-button">
+          <md-button
+            @click="showDialog = true"
+            class="md-icon-button">
             <md-icon>more_vert</md-icon>
           </md-button>
         </div>
       </div>
 
       <div class="md-toolbar-row md-scrollbar">
-        <md-tabs
-          class="md-primary">
-          <md-tab
-            v-for="{ id , title } in toolbar" :key="id"
-            :href="'#' + id"
-            :md-label="title"
-            :to="{}" />
-        </md-tabs>
+        <fade-transition>
+          <md-tabs v-if="toolbar && toolbar.length" class="md-primary">
+            <md-tab
+              v-for="{ id , title } in toolbar"
+              :key="id"
+              :href="'#' + id"
+              :md-label="title"
+              :to="{}" />
+          </md-tabs>
+        </fade-transition>
       </div>
     </md-app-toolbar>
 
     <md-app-content>
 
-    <md-dialog :md-active.sync="showDialog">
-      <md-dialog-title>Preferences</md-dialog-title>
+      <md-dialog :md-active.sync="showDialog">
+        <md-dialog-title>Preferences</md-dialog-title>
 
-      <md-tabs md-dynamic-height>
-        <md-tab md-label="General">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-        </md-tab>
+        <md-tabs md-dynamic-height>
+          <md-tab md-label="General">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+          </md-tab>
 
-        <md-tab md-label="Activity">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-        </md-tab>
+          <md-tab md-label="Activity">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+          </md-tab>
 
-        <md-tab md-label="Account">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
-        </md-tab>
-      </md-tabs>
+          <md-tab md-label="Account">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
+          </md-tab>
+        </md-tabs>
 
-      <md-dialog-actions>
-        <md-button class="md-primary" @click="showDialog = false">Close</md-button>
-        <md-button class="md-primary" @click="showDialog = false">Save</md-button>
-      </md-dialog-actions>
-    </md-dialog>
+        <md-dialog-actions>
+          <md-button class="md-primary" @click="showDialog = false">Close</md-button>
+          <md-button class="md-primary" @click="showDialog = false">Save</md-button>
+        </md-dialog-actions>
+      </md-dialog>
+
       <fade-transition mode="out-in" appear>
         <router-view @set-toolbar="setToolbarMenu" />
       </fade-transition>
@@ -91,33 +100,109 @@
 
   export default {
     name: 'Komfort-App',
+
     components: {
       AppWrapper,
       FadeTransition
     },
+
     data: () => ({
       menuVisible: false,
       showDialog: false,
-      toolbar: {},
-      routes: [
-        { name: 'Buderus' },
-        { name: 'Chimneys' },
-        { name: 'EnergyTT' },
-        { name: 'Ermak' },
-        { name: 'Kastor' },
-        { name: 'Kentatsu' },
-        { name: 'NMK' },
-        { name: 'NmkStoves' },
-        { name: 'Termokraft' },
-        { name: 'Zota' },
-        { name: 'ZotaElectrical' }
+      toolbar: [],
+      categories: [
+        {
+          title: 'Твёрдотопливные котлы',
+          subCategories: [
+            {
+              name: 'Termokraft',
+              text: 'Термокрафт'
+            },
+            {
+              name: 'Belkomin',
+              text: 'Belkomin'
+            },
+            {
+              name: 'Zota',
+              text: 'Zota'
+            },
+            {
+              name: 'Kentatsu',
+              text: 'Kentatsu'
+            },
+            {
+              name: 'Buderus',
+              text: 'Buderus'
+            },
+            {
+              name: 'EnergyTT',
+              text: 'Энергия-ТТ'
+            },
+            {
+              name: 'NMK',
+              text: 'НМК'
+            },
+          ]
+        },
+        {
+          title: 'Электрические котлы',
+          subCategories: [
+            {
+              name: 'ZotaElectrical',
+              text: 'Zota'
+            },
+          ]
+        },
+        {
+          title: 'Банные печи',
+          subCategories: [
+            {
+              name: 'Ermak',
+              text: 'Ермак'
+            },
+            {
+              name: 'Kastor',
+              text: 'Кастор'
+            },
+            {
+              name: 'NmkStoves',
+              text: 'НМК'
+            },
+          ]
+        },
+        {
+          title: 'Дымоходы',
+          subCategories: [
+            {
+              name: 'Chimneys',
+              text: 'Дымок / Вулкан'
+            },
+          ]
+        }
       ]
     }),
+
+    watch: {
+      '$route' ({ name }) {
+        if ( name === 'Home' ) {
+          this.toolbar = [];
+        }
+      }
+    },
+
     methods: {
       setToolbarMenu (newMenu) {
         this.toolbar = newMenu;
       }
+    },
+
+    created () {
+      this.$router.beforeEach((to, from, next) => {
+        this.menuVisible = false;
+        next();
+      });
     }
+
   };
 
 </script>
@@ -134,7 +219,14 @@
   @import '~vue-material/dist/theme/all'; // Apply the theme
 
   .md-app {
-    max-height: 100vh
+    max-height: 100vh;
+    min-height: 100vh;
+  }
+  .md-drawer.md-theme-default {
+    width: 275px;
+  }
+  .md-toolbar .md-tabs {
+    padding-left: 0 !important;
   }
   .md-app-content {
     padding: 16px 24px !important;
@@ -150,6 +242,9 @@
     z-index: 90;
   }
 
+  .md-subheader {
+    font-weight: 700 !important;
+  }
   .md-list-item {
     .md-button,
     .md-button-clean {

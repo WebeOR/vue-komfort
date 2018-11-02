@@ -5,7 +5,8 @@
       v-on="$listeners"
       id="wrapper"
       class="wrapper page-container">
-      <md-app md-waterfall md-mode="fixed-last">
+      <md-app
+        md-mode="fixed">
         <slot></slot>
       </md-app>
     </div>
@@ -17,7 +18,7 @@
   import { FadeTransition } from 'vue2-transitions';
 
   export default {
-    name: 'app-wrapper',
+    name: 'App-Wrapper',
     components: { FadeTransition }
   };
 
@@ -31,7 +32,7 @@
   }
 
   .wrapper {
-    max-width: 1280px;
+    max-width: 1360px;
     margin: 0 auto;
   }
 
