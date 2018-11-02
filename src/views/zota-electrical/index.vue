@@ -1,1327 +1,969 @@
 <template>
-  <main id="main" class="main">
+  <div class="main">
 
-    <section id="intro" class="intro">
-
-      <div class="intro__back-image-container">
-        <img src="assets/img/zota/intro.jpg" alt="zota intro" class="intro__back-image">
-      </div>
-
-      <div class="intro__overlay">
-
-        <div class="container_flex">
-
-          <h1 class="intro__title">Электрические котлы Zota</h1>
-
-          <span class="intro__subtitle">
-              Выберите интересующий Вас вариант, и свяжитесь с менеджером, чтобы уточнить наличие и стоимость:
-              </span>
-
-          <ul class="intro__list">
-            <li><a href="#" data-roll="econom" class="intro__link" ripple-light>Econom</a></li>
-            <li><a href="#" data-roll="lux" class="intro__link" ripple-light>Lux</a></li>
-            <li><a href="#" data-roll="mk" class="intro__link" ripple-light>MK</a></li>
-            <li><a href="#" data-roll="prom" class="intro__link" ripple-light>Prom</a></li>
-            <li><a href="#" data-roll="smart" class="intro__link" ripple-light>Smart</a></li>
-          </ul>
-
-          <span class="intro__additional-text">
-              Принцип работы электрического котла отопления основан на преобразовании электрической энергии в тепловую. Коэффициент, показывающий эффективность работы электрокотла, называется КПД (коэффициент полезного действия). Котел электрический достигает КПД 93-96 %. Ведь у самого электричества нет таких значительных отходов, так как, например, в твердотопливных котлах использующие уголь или дрова. Только электрокотел для отопления имеет довольно внушительный показатель, в 93-96%, для достижения которого требуются изрядные топливные затраты (в данном изделии топливом выступает электричество) и продуманность конструкции, а также использование качественных и современных комплектующих в производстве. Поэтому не доверяйте тем производителям, которые обещают вам котел с минимальным энергопотреблением и 100% КПД.
-              </span>
-
-        </div>
-
-      </div>
-
+    <section class="product">
+      <h1 class="md-display-2">Электрические котлы Zota</h1>
+      <p class="md-body-2">
+        Принцип работы электрического котла отопления основан на преобразовании электрической энергии в тепловую. Коэффициент, показывающий эффективность работы электрокотла, называется КПД (коэффициент полезного действия). Котел электрический достигает КПД 93-96 %. Ведь у самого электричества нет таких значительных отходов, так как, например, в твердотопливных котлах использующие уголь или дрова. Только электрокотел для отопления имеет довольно внушительный показатель, в 93-96%, для достижения которого требуются изрядные топливные затраты (в данном изделии топливом выступает электричество) и продуманность конструкции, а также использование качественных и современных комплектующих в производстве. Поэтому не доверяйте тем производителям, которые обещают вам котел с минимальным энергопотреблением и 100% КПД.
+      </p>
     </section>
 
-    <section id="econom" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Zota Econom</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/econom.jpg" alt="Zota Econom" class="product__image">
-            </div>
-
-          </div>
-
-          <div class="product__description-container">
-
-            <span class="product__characteristics-title">Характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                Электрические котлы серии ZOTA «Econom» предназначены для автономного теплоснабжения жилых и производственных помещений площадью до 480 м&sup2; и могут быть использованы в системах с естественной (ZOTA «Econom» 3-15) и насосной циркуляцией;
-              </li>
-              <li class="product__characteristics-item">
-                Во все котлы установлены нагревательные элементы (блок-ТЭНы) различной мощности специальной конструкции из нержавеющей трубки;
-              </li>
-              <li class="product__characteristics-item">
-                Основным отличием от серии ZOTA «Lux» является размещение котла и блока управления котлом в разных корпусах;
-              </li>
-              <li class="product__characteristics-item">
-                Пульты управления электрокотлом 3-15 кВт работают как на бесшумных силовых реле, так и на магнитных пускателях.
-              </li>
-            </ul>
-          </div>
-
-          <div class="product__table-container" align="center">
-            <div class="product__table-container">
-              <table style="border-collapse:collapse;table-layout:fixed" width="845" cellspacing="0" cellpadding="0">
-                <colgroup>
-                  <col width="150">
-                  <col width="105">
-                  <col width="80">
-                  <col width="140">
-                  <col width="80" span="2">
-                  <col width="130">
-                  <col width="80">
-                </colgroup>
-                <tbody>
-                  <tr height="30">
-                    <td rowspan="2" height="60" width="150">Тип</td>
-                    <td rowspan="2" width="105">Цена</td>
-                    <td rowspan="2" width="80">Площадь обогрева</td>
-                    <td rowspan="2" width="140">Cтупени мощности</td>
-                    <td rowspan="2" width="80">Питание</td>
-                    <td rowspan="2" width="80">Размеры присоед.</td>
-                    <td rowspan="2" width="130">Размеры</td>
-                    <td rowspan="2" width="80">Масса</td>
-                  </tr>
-                  <tr height="30"></tr>
-                  <tr height="25">
-                    <td>ZOTA-3 «Econom»</td>
-                    <td>7 990 руб.</td>
-                    <td>30 кв.м</td>
-                    <td>1-2-3 </td>
-                    <td>220/380 В</td>
-                    <td>1 1/2" </td>
-                    <td>730х185х120 </td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-4,5 «Econom»</td>
-                    <td>8 190 руб.</td>
-                    <td>45 кв.м</td>
-                    <td>1,5-3-4,5 </td>
-                    <td>220/380 В</td>
-                    <td>1 1/2" </td>
-                    <td>730х185х120 </td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-6 «Econom»</td>
-                    <td>8 390 руб.</td>
-                    <td>60 кв.м</td>
-                    <td>2-4-6</td>
-                    <td>220/380 В</td>
-                    <td>1 1/2"</td>
-                    <td>730х185х120</td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-7,5 «Econom»</td>
-                    <td>9 110 руб.</td>
-                    <td>75 кв.м</td>
-                    <td>2,5-5-7,5 </td>
-                    <td>220/380 В</td>
-                    <td>1 1/2" </td>
-                    <td>730х185х120 </td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-9 «Econom»</td>
-                    <td>9 490 руб.</td>
-                    <td>90 кв.м</td>
-                    <td>3-6-9 </td>
-                    <td>220/380 В</td>
-                    <td>1 1/2"</td>
-                    <td>730х185х120</td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-12 «Econom»</td>
-                    <td>10 100 руб.</td>
-                    <td>120 кв.м</td>
-                    <td>4-8-12 </td>
-                    <td>380 В</td>
-                    <td>1 1/2" </td>
-                    <td>730х185х120 </td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-15 «Econom»</td>
-                    <td>11 690 руб.</td>
-                    <td>150 кв.м</td>
-                    <td>5-10-15 </td>
-                    <td>380 В</td>
-                    <td>1 1/2" </td>
-                    <td>730х185х120 </td>
-                    <td>12 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-18 «Econom»</td>
-                    <td>20 780 руб.</td>
-                    <td>180 кв.м</td>
-                    <td>6-12-18 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-21 «Econom»</td>
-                    <td>21 180 руб.</td>
-                    <td>210 кв.м</td>
-                    <td>7-14-21 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-24 «Econom»</td>
-                    <td>21 580 руб.</td>
-                    <td>240 кв.м</td>
-                    <td>8-16-24 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-27 «Econom»</td>
-                    <td>22 480 руб.</td>
-                    <td>270 кв.м</td>
-                    <td>9-18-27 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-30 «Econom»</td>
-                    <td>23 380 руб.</td>
-                    <td>300 кв.м</td>
-                    <td>10-20-30 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-33 «Econom»</td>
-                    <td>24 380 руб.</td>
-                    <td>330 кв.м</td>
-                    <td>11-22-33 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-36 «Econom»</td>
-                    <td>24 980 руб.</td>
-                    <td>360 кв.м</td>
-                    <td>12-24-36 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-39 «Econom»</td>
-                    <td>26 280 руб.</td>
-                    <td>390 кв.м</td>
-                    <td>13-26-39 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-42 «Econom»</td>
-                    <td>26 880 руб.</td>
-                    <td>420 кв.м</td>
-                    <td>14-28-42 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-45 «Econom»</td>
-                    <td>27 480 руб.</td>
-                    <td>450 кв.м</td>
-                    <td>15-30-45 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <tr height="25">
-                    <td>ZOTA-48 «Econom»</td>
-                    <td>28 080 руб.</td>
-                    <td>480 кв.м</td>
-                    <td>16-18-48 </td>
-                    <td>380 В</td>
-                    <td>1 1/4" </td>
-                    <td>760х206х200 </td>
-                    <td>20 кг</td>
-                  </tr>
-                  <!--[if supportMisalignedColumns]-->
-                  <tr style="display:none" height="0">
-                    <td style="width:113pt" width="150"></td>
-                    <td style="width:79pt" width="105"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:105pt" width="140"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:98pt" width="130"></td>
-                    <td style="width:60pt" width="80"></td>
-                  </tr>
-                  <!--[endif]-->
-                </tbody>
-              </table>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <div class="s-devider">
-      <div class="line"></div>
-    </div>
-
-    <section id="lux" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Zota Lux</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/lux.jpg" alt="Zota Lux" class="product__image">
-            </div>
-
-          </div>
-
-          <div class="product__description-container">
-
-            <span class="product__characteristics-title">Характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                небольшие габариты и вес;
-              </li>
-              <li class="product__characteristics-item">
-                упрощенный доступ к блокам ТЭН;
-              </li>
-              <li class="product__characteristics-item">
-                блоки ТЭН изготовлены из нержавеющей трубки диаметром 7,4 мм, их можно быстро заменить с помощью обычного ключа;
-              </li>
-              <li class="product__characteristics-item">
-                конструктивные особенности ТЭНов позволяют достичь пониженной ваттной нагрузки на единицу поверхности ниже номинальной, увеличив их ресурс;
-              </li>
-              <li class="product__characteristics-item">
-                применена система ротации силовых элементов и ТЭНов для увеличения их ресурса;
-              </li>
-              <li class="product__characteristics-item">
-                все электронные блоки и датчики соединены разъемами, что облегчает доступ ко всем модулям котла и улучшает ремонтопригодность. Применение разъемов различной конфигурации исключает возможность неправильного соединения проводов;
-              </li>
-              <li class="product__characteristics-item">
-                расширенный диапазон питающих напряжений, благодаря использованию импульсных источников питания для электронных блоков котла и управляющих цепей блока коммутации;
-              </li>
-              <li class="product__characteristics-item">
-                встроенный хронотермостат с часами реального времени с возможностью подключения двухтарифного счетчика;
-              </li>
-              <li class="product__characteristics-item">
-                погодозависимое регулирование с возможностью настройки параметров регулирования;
-              </li>
-              <li class="product__characteristics-item">
-                устройство эталонной установки температуры с применением сверхточных датчиков и специальной схемы электронной коррекции;
-              </li>
-              <li class="product__characteristics-item">
-                управление насосом с целью уменьшения энергопотребления;
-              </li>
-              <li class="product__characteristics-item">
-                самодиагностика неисправностей с выводом информации на цифровой индикатор;
-              </li>
-              <li class="product__characteristics-item">
-                звуковая сигнализация аварийных режимов;
-              </li>
-              <li class="product__characteristics-item">
-                меню пользователя с возможностью сохранения индивидуальных настроек.
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="product__table-container" align="center">
-            <table style="border-collapse:collapse;table-layout:fixed" width="785" cellspacing="0" cellpadding="0">
-              <colgroup>
-                <col width="150">
-                <col width="105">
-                <col width="80" span="4">
-                <col width="130">
-                <col width="80">
-              </colgroup>
-              <tbody>
-                <tr height="30">
-                  <td rowspan="2">Тип</td>
-                  <td rowspan="2">Цена</td>
-                  <td rowspan="2">Площадь обогрева</td>
-                  <td rowspan="2">Cтупени мощности</td>
-                  <td rowspan="2">Питание</td>
-                  <td rowspan="2">Размеры присоед.</td>
-                  <td rowspan="2">Размеры</td>
-                  <td rowspan="2">Масса</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-3 «Lux»</td>
-                  <td>15 800 руб.</td>
-                  <td>30 кв.м</td>
-                  <td>1-2-3 </td>
-                  <td>220/380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-4,5 «Lux»</td>
-                  <td>16 200 руб.</td>
-                  <td>45 кв.м</td>
-                  <td>1,5-3-4,5 </td>
-                  <td>220/380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-6 «Lux»</td>
-                  <td>16 900 руб.</td>
-                  <td>60 кв.м</td>
-                  <td>2-4-6 </td>
-                  <td>220/380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-7,5 «Lux»</td>
-                  <td>17 200 руб.</td>
-                  <td>75 кв.м</td>
-                  <td>2,5-5-7,5 </td>
-                  <td>220/380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-9 «Lux»</td>
-                  <td>17 800 руб.</td>
-                  <td>90 кв.м</td>
-                  <td>3-6-9 </td>
-                  <td>220/380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-12 «Lux»</td>
-                  <td>20 500 руб.</td>
-                  <td>120 кв.м</td>
-                  <td>4-8-12 </td>
-                  <td>380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-15 «Lux»</td>
-                  <td>21 900 руб.</td>
-                  <td>150 кв.м</td>
-                  <td>5-10-15 </td>
-                  <td>380 В</td>
-                  <td>1 1/2" </td>
-                  <td>730х290х160 </td>
-                  <td>19 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-18 «Lux»</td>
-                  <td>26 200 руб.</td>
-                  <td>180 кв.м</td>
-                  <td>6-12-18 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-21 «Lux»</td>
-                  <td>27 500 руб.</td>
-                  <td>210 кв.м</td>
-                  <td>7-14-21 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-24 «Lux»</td>
-                  <td>27 900 руб.</td>
-                  <td>240 кв.м</td>
-                  <td>8-16-24 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-27 «Lux»</td>
-                  <td>31 600 руб.</td>
-                  <td>270 кв.м</td>
-                  <td>9-18-27 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-30 «Lux»</td>
-                  <td>33 200 руб.</td>
-                  <td>300 кв.м</td>
-                  <td>10-20-30 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-33 «Lux»</td>
-                  <td>34 900 руб.</td>
-                  <td>330 кв.м</td>
-                  <td>11-22-33 </td>
-                  <td>380 В</td>
-                  <td>1 1/4" </td>
-                  <td>760х390х230 </td>
-                  <td>30 кг</td>
-                </tr>
-                <!--[if supportMisalignedColumns]-->
-                <tr style="display:none" height="0">
-                  <td style="width:113pt" width="150"></td>
-                  <td style="width:79pt" width="105"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:98pt" width="130"></td>
-                  <td style="width:60pt" width="80"></td>
-                </tr>
-                <!--[endif]-->
-              </tbody>
-            </table>
-
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <div class="s-devider">
-      <div class="line"></div>
-    </div>
-
-    <section id="mk" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Zota MK</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/mk.jpg" alt="Zota MK" class="product__image">
-            </div>
-
-          </div>
-
-          <div class="product__description-container">
-
-            <span class="product__characteristics-title">Характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                Мини-котельные ZOTA «MK» преднМини-котельные ZOTA «MK» предназначены для автономного отопления жилых и производственных помещений площадью от 30 до 360 м&sup2;. Главное отличие мини-котельной от электрокотла состоит в том, что это комплекс оборудования,
-                собранный в одном корпусе. Под кожухом мини-котельной расположен тэновый электрокотел с силовым блоком и блоком управления, а также оборудование (обвязка) необходимое для работы любой автономной системы отопления:
-                <br> 1. Расширительный мембранный бак (объем 12л),
-                <br> 2. Циркуляционный насос,
-                <br> 3. Группа безопасности.
-                <br> Данные отличия дают преимущества в процессе монтажа и эксплуатации небольших отопительных систем, т.к. в первую очередь экономится место – для размещения отопительной системы подобного типа не требуется отдельное помещение, уменьшаются
-                затраты на материалы и монтаж.
-              </li>
-            </ul>
-          </div>
-
-          <div class="product__table-container" align="center">
-            <table style="border-collapse:collapse;table-layout:fixed" width="785" cellspacing="0" cellpadding="0">
-              <colgroup>
-                <col width="150">
-                <col width="105">
-                <col width="80" span="4">
-                <col width="130">
-                <col width="80">
-              </colgroup>
-              <tbody>
-                <tr height="30">
-                  <td rowspan="2">Тип</td>
-                  <td rowspan="2">Цена</td>
-                  <td rowspan="2">Площадь обогрева</td>
-                  <td rowspan="2">Cтупени мощности</td>
-                  <td rowspan="2">Питание</td>
-                  <td rowspan="2">Размеры присоед.</td>
-                  <td rowspan="2">Размеры</td>
-                  <td rowspan="2">Масса</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-3 «MK»</td>
-                  <td>32 900 руб.</td>
-                  <td>30 кв.м</td>
-                  <td>1-2-3 </td>
-                  <td>220/380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-4,5 «MK»</td>
-                  <td>33 300 руб.</td>
-                  <td>45 кв.м</td>
-                  <td>1,5-3-4,5 </td>
-                  <td>220/380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-6 «MK»</td>
-                  <td>33 500 руб.</td>
-                  <td>60 кв.м</td>
-                  <td>2-4-6 </td>
-                  <td>220/380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-7,5 «MK»</td>
-                  <td>33 800 руб.</td>
-                  <td>75 кв.м</td>
-                  <td>2,5-5-7,5 </td>
-                  <td>220/380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-9 «MK»</td>
-                  <td>34 500 руб.</td>
-                  <td>90 кв.м</td>
-                  <td>3-6-9 </td>
-                  <td>220/380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-12 «MK»</td>
-                  <td>34 900 руб.</td>
-                  <td>120 кв.м</td>
-                  <td>4-8-12 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-15 «MK»</td>
-                  <td>35 700 руб.</td>
-                  <td>150 кв.м</td>
-                  <td>5-10-15 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>740х440х240 </td>
-                  <td>37 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-18 «MK»</td>
-                  <td>40 800 руб.</td>
-                  <td>180 кв.м</td>
-                  <td>6-12-18 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-21 «MK»</td>
-                  <td>41 900 руб.</td>
-                  <td>210 кв.м</td>
-                  <td>7-14-21 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-24 «MK»</td>
-                  <td>42 300 руб.</td>
-                  <td>240 кв.м</td>
-                  <td>8-16-24 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-27 «MK»</td>
-                  <td>43 300 руб.</td>
-                  <td>270 кв.м</td>
-                  <td>9-18-27 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-30 «MK»</td>
-                  <td>44 700 руб.</td>
-                  <td>300 кв.м</td>
-                  <td>10-20-30 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-33 «MK»</td>
-                  <td>45 300 руб.</td>
-                  <td>330 кв.м</td>
-                  <td>11-22-33 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-36 «MK»</td>
-                  <td>45 900 руб.</td>
-                  <td>360 кв.м</td>
-                  <td>12-24-36 </td>
-                  <td>380 В</td>
-                  <td>3/4" </td>
-                  <td>760х440х295 </td>
-                  <td>45 кг</td>
-                </tr>
-                <!--[if supportMisalignedColumns]-->
-                <tr style="display:none" height="0">
-                  <td style="width:113pt" width="150"></td>
-                  <td style="width:79pt" width="105"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:98pt" width="130"></td>
-                  <td style="width:60pt" width="80"></td>
-                </tr>
-                <!--[endif]-->
-              </tbody>
-            </table>
-
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <div class="s-devider">
-      <div class="line"></div>
-    </div>
-
-    <section id="prom" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Zota Prom</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/prom.jpg" alt="Zota Prom" class="product__image">
-            </div>
-
-          </div>
-
-          <div class="product__description-container">
-
-            <span class="product__characteristics-title">Характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                поддержание заданной температуры теплоносителя на подаче в диапазоне от 40 до 90°С;
-              </li>
-              <li class="product__characteristics-item">
-                отключение водонагревателя при перегрузке и коротком замыкании в нагрузке;
-              </li>
-              <li class="product__characteristics-item">
-                отключение водонагревателя при перегреве выше 95°С;
-              </li>
-              <li class="product__characteristics-item">
-                отключение водонагревателя при остановке циркуляционного насоса;
-              </li>
-              <li class="product__characteristics-item">
-                возможность подключения внешней сигнализации аварийного отключения;
-              </li>
-              <li class="product__characteristics-item">
-                контроль режима электроводонагревателя с помощью цифрового индикатора;
-              </li>
-              <li class="product__characteristics-item">
-                отображение температуры прямой и обратной воды на цифровом индикаторе;
-              </li>
-              <li class="product__characteristics-item">
-                трехступенчатое переключение мощности электроводонагревателя в автоматическом режиме в зависимости от заданной температуры;
-              </li>
-              <li class="product__characteristics-item">
-                автоматический перебор включенных тэнов по программе.
-              </li>
-            </ul>
-          </div>
-
-          <div class="product__table-container" align="center">
-            <table style="border-collapse:collapse;table-layout:fixed" width="845" cellspacing="0" cellpadding="0">
-              <colgroup>
-                <col width="150">
-                <col width="105">
-                <col width="80">
-                <col width="140">
-                <col width="80" span="2">
-                <col width="130">
-                <col width="80">
-              </colgroup>
-              <tbody>
-                <tr height="30">
-                  <td rowspan="2">Тип</td>
-                  <td rowspan="2">Цена</td>
-                  <td rowspan="2">Площадь обогрева</td>
-                  <td rowspan="2">Cтупени мощности</td>
-                  <td rowspan="2">Питание</td>
-                  <td rowspan="2">Размеры присоед.</td>
-                  <td rowspan="2">Размеры</td>
-                  <td rowspan="2">Масса</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-60 «Prom»</td>
-                  <td>70 890 руб.</td>
-                  <td>600 кв.м</td>
-                  <td>20-40-60 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>925x573x607 </td>
-                  <td>95 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-70 «Prom»</td>
-                  <td>71 890 руб.</td>
-                  <td>700 кв.м</td>
-                  <td>20-48-70 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>925x573x607 </td>
-                  <td>95 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-80 «Prom»</td>
-                  <td>73 690 руб.</td>
-                  <td>800 кв.м</td>
-                  <td>30-54-80 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>925x573x607 </td>
-                  <td>95 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-90 «Prom»</td>
-                  <td>74 590 руб.</td>
-                  <td>900 кв.м</td>
-                  <td>30-60-90 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>925x573x607 </td>
-                  <td>95 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-100 «Prom»</td>
-                  <td>77 290 руб.</td>
-                  <td>1000 кв.м</td>
-                  <td>33-66-100 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>925x573x607 </td>
-                  <td>95 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-160 «Prom»</td>
-                  <td>163 890 руб.</td>
-                  <td>1600 кв.м</td>
-                  <td>55-110-160 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1180х573х607 </td>
-                  <td>123 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-200 «Prom»</td>
-                  <td>183 890 руб.</td>
-                  <td>2000 кв.м</td>
-                  <td>65-130-200 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1180х573х607 </td>
-                  <td>123 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-250 «Prom»</td>
-                  <td>199 890 руб.</td>
-                  <td>2500 кв.м</td>
-                  <td>85-170-250 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1180х573х607 </td>
-                  <td>123 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-300 «Prom»</td>
-                  <td>229 890 руб.</td>
-                  <td>3000 кв.м</td>
-                  <td>100-200-300 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1560х573х607 </td>
-                  <td>156 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-350 «Prom»</td>
-                  <td>341 000 руб.</td>
-                  <td>3500 кв.м</td>
-                  <td>115-230-350 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1560х573х607 </td>
-                  <td>156 кг</td>
-                </tr>
-                <tr height="25">
-                  <td>ZOTA-400 «Prom»</td>
-                  <td>346 000 руб.</td>
-                  <td>4000 кв.м</td>
-                  <td>132-264-400 </td>
-                  <td>380 В</td>
-                  <td>ДУ 50 </td>
-                  <td>1560х573х607 </td>
-                  <td>156 кг</td>
-                </tr>
-                <!--[if supportMisalignedColumns]-->
-                <tr style="display:none" height="0">
-                  <td style="width:113pt" width="150"></td>
-                  <td style="width:79pt" width="105"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:105pt" width="140"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:60pt" width="80"></td>
-                  <td style="width:98pt" width="130"></td>
-                  <td style="width:60pt" width="80"></td>
-                </tr>
-                <!--[endif]-->
-              </tbody>
-            </table>
-
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <div class="s-devider">
-      <div class="line"></div>
-    </div>
-
-    <section id="smart" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Zota Smart</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/smart.jpg" alt="Zota Smart" class="product__image">
-            </div>
-
-          </div>
-
-          <div class="product__description-container">
-
-            <span class="product__characteristics-title">Характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                модуль-GSM установлен во все электрокотлы;
-              </li>
-              <li class="product__characteristics-item">
-                импульсный источник питания для силовых реле и блока управления котла;
-              </li>
-              <li class="product__characteristics-item">
-                индикация информации на графическом дисплее;
-              </li>
-              <li class="product__characteristics-item">
-                “черный ящик”, фиксирующий статистику работы;
-              </li>
-              <li class="product__characteristics-item">
-                часы реального времени;
-              </li>
-              <li class="product__characteristics-item">
-                контроль температуры реле силовых плат (при перегреве реле котел автоматически выключается и сигнализирует о неисправности);
-              </li>
-              <li class="product__characteristics-item">
-                программное включение/выключение котла и насоса;
-              </li>
-              <li class="product__characteristics-item">
-                программное включение/выключение котла и насоса;
-              </li>
-              <li class="product__characteristics-item">
-                погодозависимое регулирование.
-              </li>
-            </ul>
-          </div>
-
-          <div class="product__table-container">
-
-            <div id="Zota Smart_13871" x:publishsource="Excel" align="center">
-              <table style="border-collapse:collapse;table-layout:fixed;width:590pt" summary="Таблица технических характеристик" width="785" border="0" cellspacing="0" cellpadding="0">
-                <colgroup>
-                  <col style="mso-width-source:userset;mso-width-alt:4800;width:113pt" width="150">
-                  <col style="mso-width-source:userset;mso-width-alt:3360;width:79pt" width="105">
-                  <col style="mso-width-source:userset;mso-width-alt:2560;width:60pt" width="80" span="4">
-                  <col style="mso-width-source:userset;mso-width-alt:4160;width:98pt" width="130">
-                  <col style="mso-width-source:userset;mso-width-alt:2560;width:60pt" width="80">
-                </colgroup>
-                <tbody>
-                  <tr style="mso-height-source:userset;height:22.5pt" height="30">
-                    <td rowspan="2" class="xl6313871" style="height:45.0pt;width:113pt" height="60" width="150">Тип</td>
-                    <td rowspan="2" class="xl6313871" style="width:79pt" width="105">Цена</td>
-                    <td rowspan="2" class="xl6613871" style="border-bottom:.5pt solid #000;width:60pt" width="80">Площадь обогрева</td>
-                    <td rowspan="2" class="xl6613871" style="border-bottom:.5pt solid #000;width:60pt" width="80">Cтупени мощности</td>
-                    <td rowspan="2" class="xl6313871" style="width:60pt" width="80">Питание</td>
-                    <td rowspan="2" class="xl6613871" style="border-bottom:.5pt solid #000;width:60pt" width="80">Размеры присоед.</td>
-                    <td rowspan="2" class="xl6313871" style="width:98pt" width="130"><span data-tooltip="Размеры, (мм)">Размеры</span>
-                    </td>
-                    <td rowspan="2" class="xl6313871" style="width:60pt" width="80">Масса</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:22.5pt" height="30"></tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-4,5 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">31&nbsp;990 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">45&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1,5-3-4,5&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">220/380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/2"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">720х290х185&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">19&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-6 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">32&nbsp;700 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">60&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">2-4-6&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">220/380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/2"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">720х290х185&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">19&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-7,5 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">33&nbsp;600 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">75&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">2,5-5-7,5&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">220/380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/2"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">720х290х185&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">19&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-9 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">34&nbsp;200 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">90&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">3-6-9&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">220/380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/2"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">720х290х185&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">19&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-12 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">35&nbsp;100 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">120&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">4-8-12&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/2"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">720х290х185&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">19&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-15 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">40&nbsp;300 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">150&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">5-10-15&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-18 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">42&nbsp;400 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">180&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">6-12-18&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-21 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">44&nbsp;300 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">210&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">7-14-21&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-24 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">45&nbsp;500 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">240&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">8-16-24&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-27 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">46&nbsp;900 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">270&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">9-18-27&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-30 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">47&nbsp;800 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">300&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">10-20-30&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-33 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">49&nbsp;300 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">330&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">11-22-33&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <tr style="mso-height-source:userset;height:18.75pt" height="25">
-                    <td class="xl6413871" style="height:18.75pt;border-top:none;width:113pt" height="25" width="150">ZOTA-36 «Smart»</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:79pt" width="105">49&nbsp;900 руб.</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">360&nbsp;кв.м</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">12-24-36&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">380&nbsp;В</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">1 1/4"&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:98pt" width="130">760х390х263&nbsp;</td>
-                    <td class="xl6513871" style="border-top:none;border-left:none;width:60pt" width="80">30&nbsp;кг</td>
-                  </tr>
-                  <!--[if supportMisalignedColumns]-->
-                  <tr style="display:none" height="0">
-                    <td style="width:113pt" width="150"></td>
-                    <td style="width:79pt" width="105"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:60pt" width="80"></td>
-                    <td style="width:98pt" width="130"></td>
-                    <td style="width:60pt" width="80"></td>
-                  </tr>
-                  <!--[endif]-->
-                </tbody>
-              </table>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section id="tens" class="product">
-
-      <div class="product__container">
-
-        <h2 class="product__name">Комплект ТЭНБ 2"</h2>
-
-        <div class="container_flex-row">
-
-          <div class="product__image-container" style="max-width: 50%">
-
-            <div class="carousel-cell">
-              <img src="assets/img/zota/tens.jpg" alt='Комплект ТЭНБ 2"' class="product__image" style="height: auto">
-            </div>
-
-          </div>
-
-          <div class="product__description-container" style="min-height: auto">
-
-            <span class="product__characteristics-title">Комплектация и характеристики:</span>
-
-            <ul class="product__characteristics-list">
-              <li class="product__characteristics-item">
-                ТЭНБ (3; 4,5; 6; 7,5; 9; 12; 15 кВт) – блок нагревательных элементов;
-              </li>
-              <li class="product__characteristics-item">
-                ПУ ЭВТ (3; 6; 9; 12; 15 кВт) – панель управления нагревательными элементами с датчиками температуры теплоносителя и воздуха;
-              </li>
-              <li class="product__characteristics-item">
-                Кабель соединительный медный сечение - 4 кв. мм, длина = 2 м;
-              </li>
-              <li class="product__characteristics-item">
-                ТЭНБ – блок с тремя нагревательными элементами из нержавеющей стали. Оригинальная форма нагревателей в виде спиралей обеспечивает больший срок службы и возможность безаварийной работы с незамерзающими теплоносителями;
-              </li>
-              <li class="product__characteristics-item">
-                ПУ ЭВТ – панель управления, позволяет контролировать температуру по двум температурным каналам: по температуре теплоносителя и по температуре воздуха. Использование панели управления возможно не только для обеспечения функции безопасности системы топления,
-                но и для поддержания необходимой и достаточной температуры, которая сэкономит Вам деньги при оплате счетов за электричество.
-              </li>
-            </ul>
-          </div>
-
-          <div class="product__table-container" align="center">
-            <table style="border-collapse:collapse;table-layout:fixed" cellspacing="0" cellpadding="0" width="380">
-              <colgroup>
-                <col width="150">
-                <col width="100">
-                <col width="130">
-              </colgroup>
-              <tbody>
-                <tr height="40">
-                  <td>Тип</td>
-                  <td>Цена</td>
-                  <td>Артикул</td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 3 кВт</td>
-                  <td>5 840 руб.</td>
-                  <td>КТ 344332 0003 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 4,5 кВт</td>
-                  <td>6 030 руб.</td>
-                  <td>КТ 344332 0004 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 6 кВт</td>
-                  <td>6 070 руб.</td>
-                  <td>КТ 344332 0006 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 7,5 кВт</td>
-                  <td>6 470 руб.</td>
-                  <td>КТ 344332 0007 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 9 кВт</td>
-                  <td>6 570 руб.</td>
-                  <td>КТ 344332 0009 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 12 кВт</td>
-                  <td>7 070 руб.</td>
-                  <td>КТ 344332 0012 </td>
-                </tr>
-                <tr height="20">
-                  <td>Комплект 15 кВт</td>
-                  <td>7 470 руб.</td>
-                  <td>КТ 344332 0015 </td>
-                </tr>
-                <!--[if supportMisalignedColumns]-->
-                <tr style="display:none" height="0">
-                  <td style="width:113pt" width="150"></td>
-                  <td style="width:75pt" width="100"></td>
-                  <td style="width:98pt" width="130"></td>
-                </tr>
-                <!--[endif]-->
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <div class="s-devider">
-      <div class="line"></div>
-    </div>
-
-    <div class="families">
-      <ul class="families__list">
-        <li><a href="./" class="families__link" ripple-light>На главную</a></li>
-      </ul>
-
-    </div>
-
-  </main>
+    <Zota-Electrical-Template
+      v-for="line in lines" :key="line.id"
+      :Line="line" />
+
+  </div>
 </template>
 
-<style lang="scss">
-    
-    @import '../../stylesheets/zotae.scss';
-    
-</style>
+<script>
+
+  import ZotaElectricalTemplate from './ZotaElectricalTemplate.vue';
+
+  export default {
+    name: 'Zota-Electrical',
+
+    components: { ZotaElectricalTemplate },
+
+    data: () => ({
+      lines: [
+
+        {
+          id: 'econom',
+          title: 'Zota Econom',
+          image: '/img/zota/econom.jpg',
+          price: null,
+          characteristics: [
+            'Электрические котлы серии ZOTA «Econom» предназначены для автономного теплоснабжения жилых и производственных помещений площадью до 480 м2 и могут быть использованы в системах с естественной (ZOTA «Econom» 3-15) и насосной циркуляцией;',
+            'Во все котлы установлены нагревательные элементы (блок-ТЭНы) различной мощности специальной конструкции из нержавеющей трубки;',
+            'Основным отличием от серии ZOTA «Lux» является размещение котла и блока управления котлом в разных корпусах;',
+            'Пульты управления электрокотлом 3-15 кВт работают как на бесшумных силовых реле, так и на магнитных пускателях.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Площадь обогрева',
+              'Cтупени мощности',
+              'Питание',
+              'Размеры присоед.',
+              'Размеры',
+              'Масса',
+            ],
+            body: [
+              [
+                'ZOTA-3 «Econom»',
+                '7 990 руб.',
+                '30 кв.м',
+                '1-2-3 ',
+                '220/380 В',
+                '1 1/2" ',
+                '730х185х120 ',
+                '12 кг',
+              ],
+              [
+                'ZOTA-4,5 «Econom»',
+                '8 190 руб.',
+                '45 кв.м',
+                '1,5-3-4,5 ',
+                '220/380 В',
+                '1 1/2" ',
+                '730х185х120 ',
+                '12 кг',
+              ],
+              [
+                'ZOTA-6 «Econom»',
+                '8 390 руб.',
+                '60 кв.м',
+                '2-4-6',
+                '220/380 В',
+                '1 1/2"',
+                '730х185х120',
+                '12 кг',
+              ],
+              [
+                'ZOTA-7,5 «Econom»',
+                '9 110 руб.',
+                '75 кв.м',
+                '2,5-5-7,5 ',
+                '220/380 В',
+                '1 1/2" ',
+                '730х185х120 ',
+                '12 кг',
+              ],
+              [
+                'ZOTA-9 «Econom»',
+                '9 490 руб.',
+                '90 кв.м',
+                '3-6-9 ',
+                '220/380 В',
+                '1 1/2"',
+                '730х185х120',
+                '12 кг',
+              ],
+              [
+                'ZOTA-12 «Econom»',
+                '10 100 руб.',
+                '120 кв.м',
+                '4-8-12 ',
+                '380 В',
+                '1 1/2" ',
+                '730х185х120 ',
+                '12 кг',
+              ],
+              [
+                'ZOTA-15 «Econom»',
+                '11 690 руб.',
+                '150 кв.м',
+                '5-10-15 ',
+                '380 В',
+                '1 1/2" ',
+                '730х185х120 ',
+                '12 кг',
+              ],
+              [
+                'ZOTA-18 «Econom»',
+                '20 780 руб.',
+                '180 кв.м',
+                '6-12-18 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-21 «Econom»',
+                '21 180 руб.',
+                '210 кв.м',
+                '7-14-21 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-24 «Econom»',
+                '21 580 руб.',
+                '240 кв.м',
+                '8-16-24 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-27 «Econom»',
+                '22 480 руб.',
+                '270 кв.м',
+                '9-18-27 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-30 «Econom»',
+                '23 380 руб.',
+                '300 кв.м',
+                '10-20-30 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-33 «Econom»',
+                '24 380 руб.',
+                '330 кв.м',
+                '11-22-33 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-36 «Econom»',
+                '24 980 руб.',
+                '360 кв.м',
+                '12-24-36 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-39 «Econom»',
+                '26 280 руб.',
+                '390 кв.м',
+                '13-26-39 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-42 «Econom»',
+                '26 880 руб.',
+                '420 кв.м',
+                '14-28-42 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-45 «Econom»',
+                '27 480 руб.',
+                '450 кв.м',
+                '15-30-45 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ],
+              [
+                'ZOTA-48 «Econom»',
+                '28 080 руб.',
+                '480 кв.м',
+                '16-18-48 ',
+                '380 В',
+                '1 1/4" ',
+                '760х206х200 ',
+                '20 кг',
+              ]
+            ]
+          }
+        },
+
+        {
+          id: 'lux',
+          title: 'Zota Lux',
+          image: '/img/zota/lux.jpg',
+          price: null,
+          characteristics: [
+            'небольшие габариты и вес;',
+            'упрощенный доступ к блокам ТЭН;',
+            'блоки ТЭН изготовлены из нержавеющей трубки диаметром 7,4 мм, их можно быстро заменить с помощью обычного ключа;',
+            'конструктивные особенности ТЭНов позволяют достичь пониженной ваттной нагрузки на единицу поверхности ниже номинальной, увеличив их ресурс;',
+            'применена система ротации силовых элементов и ТЭНов для увеличения их ресурса;',
+            'все электронные блоки и датчики соединены разъемами, что облегчает доступ ко всем модулям котла и улучшает ремонтопригодность. Применение разъемов различной конфигурации исключает возможность неправильного соединения проводов;',
+            'расширенный диапазон питающих напряжений, благодаря использованию импульсных источников питания для электронных блоков котла и управляющих цепей блока коммутации;',
+            'встроенный хронотермостат с часами реального времени с возможностью подключения двухтарифного счетчика;',
+            'погодозависимое регулирование с возможностью настройки параметров регулирования;',
+            'устройство эталонной установки температуры с применением сверхточных датчиков и специальной схемы электронной коррекции;',
+            'управление насосом с целью уменьшения энергопотребления;',
+            'самодиагностика неисправностей с выводом информации на цифровой индикатор;',
+            'звуковая сигнализация аварийных режимов;',
+            'меню пользователя с возможностью сохранения индивидуальных настроек.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Площадь обогрева',
+              'Cтупени мощности',
+              'Питание',
+              'Размеры присоед.',
+              'Размеры',
+              'Масса',
+            ],
+            body: [
+              [
+                'ZOTA-3 «Lux»',
+                '15 800 руб.',
+                '30 кв.м',
+                '1-2-3',
+                '220/380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-4,5 «Lux»',
+                '16 200 руб.',
+                '45 кв.м',
+                '1,5-3-4,5',
+                '220/380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-6 «Lux»',
+                '16 900 руб.',
+                '60 кв.м',
+                '2-4-6',
+                '220/380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-7,5 «Lux»',
+                '17 200 руб.',
+                '75 кв.м',
+                '2,5-5-7,5',
+                '220/380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-9 «Lux»',
+                '17 800 руб.',
+                '90 кв.м',
+                '3-6-9',
+                '220/380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-12 «Lux»',
+                '20 500 руб.',
+                '120 кв.м',
+                '4-8-12',
+                '380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-15 «Lux»',
+                '21 900 руб.',
+                '150 кв.м',
+                '5-10-15',
+                '380 В',
+                '1 1/2"',
+                '730х290х160',
+                '19 кг',
+              ],
+              [
+                'ZOTA-18 «Lux»',
+                '26 200 руб.',
+                '180 кв.м',
+                '6-12-18',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+              [
+                'ZOTA-21 «Lux»',
+                '27 500 руб.',
+                '210 кв.м',
+                '7-14-21',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+              [
+                'ZOTA-24 «Lux»',
+                '27 900 руб.',
+                '240 кв.м',
+                '8-16-24',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+              [
+                'ZOTA-27 «Lux»',
+                '31 600 руб.',
+                '270 кв.м',
+                '9-18-27',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+              [
+                'ZOTA-30 «Lux»',
+                '33 200 руб.',
+                '300 кв.м',
+                '10-20-30',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+              [
+                'ZOTA-33 «Lux»',
+                '34 900 руб.',
+                '330 кв.м',
+                '11-22-33',
+                '380 В',
+                '1 1/4"',
+                '760х390х230',
+                '30 кг',
+              ],
+            ]
+          }
+        },
+
+        {
+          id: 'mk',
+          title: 'Zota MK',
+          image: '/img/zota/mk.jpg',
+          price: null,
+          characteristics: [
+            'Мини-котельные ZOTA «MK» предназначены для автономного отопления жилых и производственных помещений площадью от 30 до 360 м2.',
+            'Главное отличие мини-котельной от электрокотла состоит в том, что это комплекс оборудования, собранный в одном корпусе.',
+            'Под кожухом мини-котельной расположен тэновый электрокотел с силовым блоком и блоком управления, а также оборудование (обвязка) необходимое для работы любой автономной системы отопления:',
+            '1. Расширительный мембранный бак (объем 12л),',
+            '2. Циркуляционный насос,',
+            '3. Группа безопасности.',
+            'Данные отличия дают преимущества в процессе монтажа и эксплуатации небольших отопительных систем, т.к. в первую очередь экономится место – для размещения отопительной системы подобного типа не требуется отдельное помещение, уменьшаются затраты на материалы и монтаж.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Площадь обогрева',
+              'Cтупени мощности',
+              'Питание',
+              'Размеры присоед.',
+              'Размеры',
+              'Масса',
+            ],
+            body: [
+              [
+                'ZOTA-3 «MK»',
+                '32 900 руб.',
+                '30 кв.м',
+                '1-2-3',
+                '220/380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-4,5 «MK»',
+                '33 300 руб.',
+                '45 кв.м',
+                '1,5-3-4,5',
+                '220/380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-6 «MK»',
+                '33 500 руб.',
+                '60 кв.м',
+                '2-4-6',
+                '220/380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-7,5 «MK»',
+                '33 800 руб.',
+                '75 кв.м',
+                '2,5-5-7,5',
+                '220/380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-9 «MK»',
+                '34 500 руб.',
+                '90 кв.м',
+                '3-6-9',
+                '220/380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-12 «MK»',
+                '34 900 руб.',
+                '120 кв.м',
+                '4-8-12',
+                '380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-15 «MK»',
+                '35 700 руб.',
+                '150 кв.м',
+                '5-10-15',
+                '380 В',
+                '3/4"',
+                '740х440х240',
+                '37 кг',
+              ],
+              [
+                'ZOTA-18 «MK»',
+                '40 800 руб.',
+                '180 кв.м',
+                '6-12-18',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-21 «MK»',
+                '41 900 руб.',
+                '210 кв.м',
+                '7-14-21',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-24 «MK»',
+                '42 300 руб.',
+                '240 кв.м',
+                '8-16-24',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-27 «MK»',
+                '43 300 руб.',
+                '270 кв.м',
+                '9-18-27',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-30 «MK»',
+                '44 700 руб.',
+                '300 кв.м',
+                '10-20-30',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-33 «MK»',
+                '45 300 руб.',
+                '330 кв.м',
+                '11-22-33',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+              [
+                'ZOTA-36 «MK»',
+                '45 900 руб.',
+                '360 кв.м',
+                '12-24-36',
+                '380 В',
+                '3/4"',
+                '760х440х295',
+                '45 кг',
+              ],
+            ]
+          }
+        },
+
+        {
+          id: 'prom',
+          title: 'Zota Prom',
+          image: '/img/zota/prom.jpg',
+          price: null,
+          characteristics: [
+            'поддержание заданной температуры теплоносителя на подаче в диапазоне от 40 до 90°С;',
+            'отключение водонагревателя при перегрузке и коротком замыкании в нагрузке;',
+            'отключение водонагревателя при перегреве выше 95°С;',
+            'отключение водонагревателя при остановке циркуляционного насоса;',
+            'возможность подключения внешней сигнализации аварийного отключения;',
+            'контроль режима электроводонагревателя с помощью цифрового индикатора;',
+            'отображение температуры прямой и обратной воды на цифровом индикаторе;',
+            'трехступенчатое переключение мощности электроводонагревателя в автоматическом режиме в зависимости от заданной температуры;',
+            'автоматический перебор включенных тэнов по программе.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Площадь обогрева',
+              'Cтупени мощности',
+              'Питание',
+              'Размеры присоед.',
+              'Размеры',
+              'Масса',
+            ],
+            body: [
+              [
+                'ZOTA-60 «Prom»',
+                '70 890 руб.',
+                '600 кв.м',
+                '20-40-60',
+                '380 В',
+                'ДУ 50',
+                '925x573x607',
+                '95 кг',
+              ],
+              [
+                'ZOTA-70 «Prom»',
+                '71 890 руб.',
+                '700 кв.м',
+                '20-48-70',
+                '380 В',
+                'ДУ 50',
+                '925x573x607',
+                '95 кг',
+              ],
+              [
+                'ZOTA-80 «Prom»',
+                '73 690 руб.',
+                '800 кв.м',
+                '30-54-80',
+                '380 В',
+                'ДУ 50',
+                '925x573x607',
+                '95 кг',
+              ],
+              [
+                'ZOTA-90 «Prom»',
+                '74 590 руб.',
+                '900 кв.м',
+                '30-60-90',
+                '380 В',
+                'ДУ 50',
+                '925x573x607',
+                '95 кг',
+              ],
+              [
+                'ZOTA-100 «Prom»',
+                '77 290 руб.',
+                '1000 кв.м',
+                '33-66-100',
+                '380 В',
+                'ДУ 50',
+                '925x573x607',
+                '95 кг',
+              ],
+              [
+                'ZOTA-160 «Prom»',
+                '163 890 руб.',
+                '1600 кв.м',
+                '55-110-160',
+                '380 В',
+                'ДУ 50',
+                '1180х573х607',
+                '123 кг',
+              ],
+              [
+                'ZOTA-200 «Prom»',
+                '183 890 руб.',
+                '2000 кв.м',
+                '65-130-200',
+                '380 В',
+                'ДУ 50',
+                '1180х573х607',
+                '123 кг',
+              ],
+              [
+                'ZOTA-250 «Prom»',
+                '199 890 руб.',
+                '2500 кв.м',
+                '85-170-250',
+                '380 В',
+                'ДУ 50',
+                '1180х573х607',
+                '123 кг',
+              ],
+              [
+                'ZOTA-300 «Prom»',
+                '229 890 руб.',
+                '3000 кв.м',
+                '100-200-300',
+                '380 В',
+                'ДУ 50',
+                '1560х573х607',
+                '156 кг',
+              ],
+              [
+                'ZOTA-350 «Prom»',
+                '341 000 руб.',
+                '3500 кв.м',
+                '115-230-350',
+                '380 В',
+                'ДУ 50',
+                '1560х573х607',
+                '156 кг',
+              ],
+              [
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
+              ],
+            ]
+          }
+        },
+
+        {
+          id: 'smart',
+          title: 'Zota Smart',
+          image: '/img/zota/smart.jpg',
+          price: null,
+          characteristics: [
+            'модуль-GSM установлен во все электрокотлы;',
+            'импульсный источник питания для силовых реле и блока управления котла;',
+            'индикация информации на графическом дисплее;',
+            '“черный ящик”, фиксирующий статистику работы;',
+            'часы реального времени;',
+            'контроль температуры реле силовых плат (при перегреве реле котел автоматически выключается и сигнализирует о неисправности);',
+            'программное включение/выключение котла и насоса;',
+            'программное включение/выключение котла и насоса;',
+            'погодозависимое регулирование.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Площадь обогрева',
+              'Cтупени мощности',
+              'Питание',
+              'Размеры присоед.',
+              'Размеры',
+              'Масса',
+            ],
+            body: [
+              [
+                'ZOTA-4,5 «Smart»',
+                '31 990 руб.',
+                '45 кв.м',
+                '1,5-3-4,5 ',
+                '220/380 В',
+                '1 1/2" ',
+                '720х290х185 ',
+                '19 кг',
+              ],
+              [
+                'ZOTA-6 «Smart»',
+                '32 700 руб.',
+                '60 кв.м',
+                '2-4-6 ',
+                '220/380 В',
+                '1 1/2" ',
+                '720х290х185 ',
+                '19 кг',
+              ],
+              [
+                'ZOTA-7,5 «Smart»',
+                '33 600 руб.',
+                '75 кв.м',
+                '2,5-5-7,5 ',
+                '220/380 В',
+                '1 1/2" ',
+                '720х290х185 ',
+                '19 кг',
+              ],
+              [
+                'ZOTA-9 «Smart»',
+                '34 200 руб.',
+                '90 кв.м',
+                '3-6-9 ',
+                '220/380 В',
+                '1 1/2" ',
+                '720х290х185 ',
+                '19 кг',
+              ],
+              [
+                'ZOTA-12 «Smart»',
+                '35 100 руб.',
+                '120 кв.м',
+                '4-8-12 ',
+                '380 В',
+                '1 1/2" ',
+                '720х290х185 ',
+                '19 кг',
+              ],
+              [
+                'ZOTA-15 «Smart»',
+                '40 300 руб.',
+                '150 кв.м',
+                '5-10-15 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-18 «Smart»',
+                '42 400 руб.',
+                '180 кв.м',
+                '6-12-18 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-21 «Smart»',
+                '44 300 руб.',
+                '210 кв.м',
+                '7-14-21 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-24 «Smart»',
+                '45 500 руб.',
+                '240 кв.м',
+                '8-16-24 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-27 «Smart»',
+                '46 900 руб.',
+                '270 кв.м',
+                '9-18-27 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-30 «Smart»',
+                '47 800 руб.',
+                '300 кв.м',
+                '10-20-30 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-33 «Smart»',
+                '49 300 руб.',
+                '330 кв.м',
+                '11-22-33 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+              [
+                'ZOTA-36 «Smart»',
+                '49 900 руб.',
+                '360 кв.м',
+                '12-24-36 ',
+                '380 В',
+                '1 1/4" ',
+                '760х390х263 ',
+                '30 кг',
+              ],
+            ]
+          }
+        },
+
+        {
+          id: 'tens',
+          title: 'Комплект ТЭНБ 2"',
+          image: '/img/zota/tens.jpg',
+          price: null,
+          characteristics: [
+            'ТЭНБ (3; 4,5; 6; 7,5; 9; 12; 15 кВт) – блок нагревательных элементов;',
+            'ПУ ЭВТ (3; 6; 9; 12; 15 кВт) – панель управления нагревательными элементами с датчиками температуры теплоносителя и воздуха;',
+            'Кабель соединительный медный сечение - 4 кв. мм, длина = 2 м;',
+            'ТЭНБ – блок с тремя нагревательными элементами из нержавеющей стали. Оригинальная форма нагревателей в виде спиралей обеспечивает больший срок службы и возможность безаварийной работы с незамерзающими теплоносителями;',
+            'ПУ ЭВТ – панель управления, позволяет контролировать температуру по двум температурным каналам: по температуре теплоносителя и по температуре воздуха. Использование панели управления возможно не только для обеспечения функции безопасности системы топления,',
+            'но и для поддержания необходимой и достаточной температуры, которая сэкономит Вам деньги при оплате счетов за электричество.',
+          ],
+          docs: null,
+          descriptions: null,
+          table: {
+            head: [
+              'Тип',
+              'Цена',
+              'Артикул',
+            ],
+            body: [
+              [
+                'Комплект 3 кВт',
+                '5 840 руб.',
+                'КТ 344332 0003',
+              ],
+              [
+                'Комплект 4,5 кВт',
+                '6 030 руб.',
+                'КТ 344332 0004',
+              ],
+              [
+                'Комплект 6 кВт',
+                '6 070 руб.',
+                'КТ 344332 0006',
+              ],
+              [
+                'Комплект 7,5 кВт',
+                '6 470 руб.',
+                'КТ 344332 0007',
+              ],
+              [
+                'Комплект 9 кВт',
+                '6 570 руб.',
+                'КТ 344332 0009',
+              ],
+              [
+                'Комплект 12 кВт',
+                '7 070 руб.',
+                'КТ 344332 0012',
+              ],
+              [
+                'Комплект 15 кВт',
+                '7 470 руб.',
+                'КТ 344332 0015',
+              ],
+            ]
+          }
+        },
+
+      ]
+    }),
+
+    computed: {
+      toolbar () {
+        return this.lines.map( ({ id , title }) => {
+          return {
+            id,
+            title: title.includes('Zota') ? title.slice(5) : title
+          };
+        });
+      }
+    },
+
+    created () {
+      this.$emit( 'set-toolbar' , this.toolbar );
+    }
+  };
+
+</script>
+
