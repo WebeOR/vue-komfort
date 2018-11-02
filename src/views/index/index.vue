@@ -1,7 +1,7 @@
 <template>
   <main id="main" class="main">
 
-    <section class="intro">
+    <section class="product">
 
       <div id="slider" class="slider">
 
@@ -201,7 +201,7 @@
 </template>
 
 <style lang="scss">
-  
+
     @import '../../stylesheets/index.scss';
-    
+
 </style>
