@@ -9014,10 +9014,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-concise-slider@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/vue-concise-slider/-/vue-concise-slider-3.2.1.tgz#a5ef367ebd351c2859233c159bbe6207dcc8307d"
-  integrity sha512-0k2ZUnlUZe+DKieCrI0NP18p//OCsrZD84a2WVOJexVR31tthWNaBbIIr6gE00u8tVFW5/wyPucsvGHU1aDDuA==
+"vue-concise-slider@git+https://github.com/AlexQuidditch/vue-concise-slider.git":
+  version "3.2.2"
+  resolved "git+https://github.com/AlexQuidditch/vue-concise-slider.git#d50455a56ccf1c5ae912cd623222cf9838affdbd"
   dependencies:
     babel-preset-env "^1.7.0"
     babel-runtime "^6.26.0"

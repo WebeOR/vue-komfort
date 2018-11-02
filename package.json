@@ -18,7 +18,7 @@
     "register-service-worker": "^1.0.0",
     "smoothscroll-polyfill": "^0.4.3",
     "vue": "^2.5.17",
-    "vue-concise-slider": "^3.2.1",
+    "vue-concise-slider": "git+https://github.com/AlexQuidditch/vue-concise-slider.git",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-material-checkbox": "^1.1.2",
     "vue-material-ripple": "^1.1.0",
