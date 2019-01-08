@@ -44,12 +44,14 @@
             </md-list>
           </div>
         </div>
+
+      <div v-if="Line.descriptions">
         <p
-          v-if="Line.descriptions"
           v-for="( description , key ) in Line.descriptions"
           :key="key">
           {{ description }}
         </p>
+      </div>
 
         <p class="md-body-2">{{ Line.description }}</p>
       </md-card-content>
