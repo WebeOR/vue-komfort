@@ -10,12 +10,13 @@
         :Product="product" />
     </ul>
 
-    <p
-      v-if="Line.descriptions"
-      v-for="( description , key ) in Line.descriptions"
-      :key="key">
-      {{ description }}
-    </p>
+    <div v-if="Line.descriptions">
+      <p
+        v-for="( description , key ) in Line.descriptions"
+        :key="key">
+        {{ description }}
+      </p>
+    </div>
 
     <table
       v-if="Line.table"
