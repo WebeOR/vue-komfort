@@ -168,6 +168,10 @@
               name: 'NmkStoves',
               text: 'НМК'
             },
+            {
+              name: 'VezuviyStoves',
+              text: 'Везувий'
+            },
           ]
         },
         {
@@ -240,6 +244,10 @@
   .md-app.md-reveal .md-app-toolbar {
     position: fixed !important;
     z-index: 90;
+  }
+
+  .md-app.md-fixed .md-app-scroller {
+    scroll-behavior: smooth;
   }
 
   .md-subheader {

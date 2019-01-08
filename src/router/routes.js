@@ -15,6 +15,7 @@ const Kastor = () => import( /* webpackChunkName: "kastor" */ '../views/kastor')
 const Kentatsu = () => import( /* webpackChunkName: "kentatsu" */ '../views/kentatsu');
 const NMK = () => import( /* webpackChunkName: "nmk" */ '../views/nmk');
 const NmkStoves = () => import( /* webpackChunkName: "nmk-stoves" */ '../views/nmk-stoves');
+const VezuviyStoves = () => import( /* webpackChunkName: "vezuviy-stoves" */ '../views/stoves/vezuviy');
 const Termokraft = () => import( /* webpackChunkName: "termokraft" */ '../views/termokraft');
 const Zota = () => import( /* webpackChunkName: "zota" */ '../views/zota');
 const ZotaElectrical = () => import( /* webpackChunkName: "zota-electrical" */ '../views/zota-electrical');
@@ -70,6 +71,11 @@ export default [
     path: '/nmk/stoves',
     name: 'NmkStoves',
     component: NmkStoves
+  },
+  {
+    path: '/vezuviy',
+    name: 'VezuviyStoves',
+    component: VezuviyStoves
   },
   {
     path: '/termokraft',
