@@ -4,7 +4,8 @@
     <section class="product">
       <h1 class="md-display-2">Твёрдотопливные котлы Termokraft</h1>
       <p class="md-body-2">
-        Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны. Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России
+        Котельная на твёрдом топливе может использоваться даже там, куда не подведены ни газопровод, ни линия электропередач, - твердотопливные котлы полностью автономны.
+        Это преимущество твердотопливных отопительных котлов в сочетании с невысокой стоимостью котла, а также доступностью и дешевизной топлива, обусловливает их популярность в России
       </p>
     </section>
 
@@ -27,8 +28,12 @@
         {
           id: 'fakel',
           title: 'Fakel',
-          image: '/img/termokraft/FAKEL.jpg',
-          images: null,
+          image: null,
+          images: [
+            '/img/termokraft/FAKEL.png',
+            '/img/termokraft/FAKEL-2.png',
+            '/img/termokraft/FAKEL-3.png',
+          ],
           price: null,
           characteristics: [
             'Мощность, кВт - 10',
@@ -66,8 +71,8 @@
           title: 'Taifun',
           image: null,
           images: [
-            '/img/termokraft/TAIFUN.jpg',
-            '/img/termokraft/taifun-2.png'
+            '/img/termokraft/TAIFUN.png',
+            '/img/termokraft/taifun-2.png',
           ],
           price: null,
           characteristics: [
@@ -150,8 +155,9 @@
           title: 'Uragan',
           image: null,
           images: [
-            '/img/termokraft/URAGAN.jpg',
-            '/img/termokraft/URAGAN-2.png'
+            '/img/termokraft/URAGAN.png',
+            '/img/termokraft/URAGAN-2.png',
+            '/img/termokraft/URAGAN-3.png'
           ],
           price: null,
           characteristics: [
@@ -238,7 +244,8 @@
           image: null,
           images: [
             '/img/termokraft/ZEUS.png',
-            '/img/termokraft/zeus-2.jpg'
+            '/img/termokraft/ZEUS-2.png',
+            '/img/termokraft/ZEUS-3.png',
           ],
           price: null,
           characteristics: [
