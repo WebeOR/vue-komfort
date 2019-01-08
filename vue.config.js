@@ -1,11 +1,13 @@
 /* eslint-disable */
 
+const { NODE_ENV } = process.env;
+
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  productionSourceMap: true,
+  productionSourceMap: false,
   configureWebpack: config => {
-    if (process.env.NODE_ENV === 'production') {
+    if ( NODE_ENV === 'production' ) {
       config.optimization.minimizer = [
         new UglifyJSPlugin({
           uglifyOptions: {
