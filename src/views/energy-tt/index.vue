@@ -168,9 +168,6 @@
     .md-card {
       overflow: hidden;
     }
-    .md-table-head {
-      vertical-align: top;
-    }
     .md-table-head-container,
     .md-table-head-label {
       height: initial;

@@ -101,12 +101,6 @@
               instruction: null,
               price: null
             },
-            {
-              name: 'Helo 20 Sil Helo',
-              image: '/img/kastor/20_sil_helo.jpg',
-              instruction: null,
-              price: null
-            },
           ]
         },
 
@@ -134,12 +128,6 @@
               instruction: null,
               price: null
             },
-            {
-              name: 'KL 271',
-              image: '/img/kastor/27_kl.jpg',
-              instruction: null,
-              price: null
-            },
           ]
         },
 
@@ -150,6 +138,7 @@
         return this.lines.map( ({ id , title }) => ({ id , title }) );
       }
     },
+
     created () {
       this.$emit( 'set-toolbar' , this.toolbar );
     }

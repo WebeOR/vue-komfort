@@ -22,7 +22,6 @@
 
   export default {
     name: 'NMK-Stoves',
-
     components: { NMKStoveTemplate },
 
     data: () => ({
