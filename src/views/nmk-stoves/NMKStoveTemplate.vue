@@ -15,22 +15,12 @@
             :alt="Line.title"
             class="md-layout-item md-size-40"
             style="object-fit:contain" />
-          <slider
+
+          <Slider
             v-if="Line.images"
-            ref="slider"
-            :options="options"
-            class="md-layout-item md-size-50">
-            <slideritem
-              v-for="( image , index ) in Line.images"
-              :key="index">
-              <img
-                :key="index"
-                :src="image"
-                :alt="Line.title"
-                style="object-fit:contain" />
-            </slideritem>
-            <div slot="loading">loading...</div>
-          </slider>
+            :slides="Line.images"
+            />
+
           <div
             v-if="Line.characteristics && Line.characteristics.length"
             class="md-layout-item md-size-50">
@@ -45,15 +35,16 @@
           </div>
         </div>
 
-        <p
-          v-if="Line.descriptions"
-          v-for="( description , key ) in Line.descriptions"
-          :key="key">
-          {{ description }}
-        </p>
-
+        <div v-if="Line.descriptions">
+          <p
+            v-for="( description , key ) in Line.descriptions"
+            :key="key">
+            {{ description }}
+          </p>
+        </div>
         <p class="md-body-2">{{ Line.description }}</p>
       </md-card-content>
+
       <md-card-actions>
         <md-button
           v-for="( doc , index ) in Line.docs"
@@ -83,20 +74,21 @@
 
 <script>
 
-  import { slider, slideritem } from 'vue-concise-slider';
+  import Slider from '../../components/Slider.vue';
 
   export default {
     name: 'NMK-Stoves-Template',
     components: {
-      slider,
-      slideritem
+      Slider
     },
+
     props: {
       'Line': {
         type: Object,
         required: true
       }
     },
+
     data: () => ({
       options: {
         currentPage: 0,
@@ -110,11 +102,13 @@
         speed: 300
       }
     }),
+
     mounted () {
       this.$nextTick( () => {
 
       });
-    }
+    },
+
   };
 
 </script>

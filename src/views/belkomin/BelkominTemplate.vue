@@ -10,27 +10,17 @@
       <md-card-content>
         <div class="md-layout md-alignment-top-space-between">
           <img
-            v-if="Line.images.length == 1"
-            :src="Line.images[0]"
+            v-if="Line.image"
+            :src="Line.image"
             :alt="Line.title"
             class="md-layout-item md-size-40"
             style="object-fit:contain" />
-          <slider
-            v-if="Array.isArray(Line.images) && Line.images.length > 2"
-            ref="slider"
-            :options="options"
-            class="md-layout-item md-size-50">
-            <slideritem
-              v-for="( image , index ) in Line.images"
-              :key="index">
-              <img
-                :key="index"
-                :src="image"
-                :alt="Line.title"
-                style="object-fit:contain" />
-            </slideritem>
-            <div slot="loading">loading...</div>
-          </slider>
+
+          <Slider
+            v-if="Line.images.length"
+            :slides="Line.images"
+            />
+
           <div
             v-if="Line.characteristics && Line.characteristics.length"
             class="md-layout-item md-size-50">
@@ -44,12 +34,14 @@
             </md-list>
           </div>
         </div>
-        <p
-          v-if="Line.descriptions"
-          v-for="( description , index ) in Line.descriptions"
-          :key="index">
-          {{ description }}
-        </p>
+
+        <div v-if="Line.descriptions">
+          <p
+            v-for="( description , index ) in Line.descriptions"
+            :key="index">
+            {{ description }}
+          </p>
+        </div>
 
         <p v-if="Line.description && Line.description.length" class="md-body-2">{{ Line.description }}</p>
       </md-card-content>
@@ -95,38 +87,30 @@
 
 <script>
 
-  import { slider, slideritem } from 'vue-concise-slider';
+  import Slider from '../../components/Slider.vue';
 
   export default {
     name: 'Belkomin-Template',
     components: {
-      slider,
-      slideritem
+      Slider
     },
+
     props: {
       'Line': {
         type: Object,
         required: true
       }
     },
+
     data: () => ({
-      options: {
-        currentPage: 0,
-        thresholdDistance: 100,
-        thresholdTime: 350,
-        autoplay: 10000,
-        loop: true,
-        loopedSlides: 1,
-        slidesToScroll: 1,
-        timingFunction: 'ease',
-        speed: 300
-      }
     }),
+
     mounted () {
       this.$nextTick( () => {
 
       });
-    }
+    },
+
   };
 
 </script>

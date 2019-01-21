@@ -90,14 +90,14 @@
       </md-table-row>
     </md-table>
 
-    <md-divider></md-divider>
+    <md-divider />
   </section>
 </template>
 
 <script>
 
   export default {
-    name: 'KEntatsu-Template',
+    name: 'Kentatsu-Template',
     props: {
       'Line': {
         type: Object,

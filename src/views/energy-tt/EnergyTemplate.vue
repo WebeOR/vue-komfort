@@ -15,22 +15,12 @@
             :alt="Line.title"
             class="md-layout-item"
             style="object-fit:contain" />
-          <slider
-            v-if="Line.images"
-            ref="slider"
-            :options="options"
-            class="md-layout-item md-size-50">
-            <slideritem
-              v-for="( image , index ) in Line.images"
-              :key="index">
-              <img
-                :key="index"
-                :src="image"
-                :alt="Line.title"
-                style="object-fit:contain" />
-            </slideritem>
-            <div slot="loading">loading...</div>
-          </slider>
+
+          <Slider
+            v-if="Line.images.length"
+            :slides="Line.images"
+            />
+
           <div
             v-if="Line.characteristics && Line.characteristics.length"
             class="md-layout-item">
@@ -100,19 +90,18 @@
       </md-table-row>
     </md-table>
 
-    <md-divider></md-divider>
+    <md-divider />
   </section>
 </template>
 
 <script>
 
-  import { slider, slideritem } from 'vue-concise-slider';
+  import Slider from '../../components/Slider.vue';
 
   export default {
     name: 'Energy-Template',
     components: {
-      slider,
-      slideritem
+      Slider
     },
     props: {
       'Line': {

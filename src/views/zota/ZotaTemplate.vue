@@ -80,11 +80,13 @@
       </md-table-row>
     </md-table>
 
-    <md-divider></md-divider>
+    <md-divider />
   </section>
 </template>
 
 <script>
+
+  import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
   export default {
     name: 'Zota-Template',
