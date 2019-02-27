@@ -1,12 +1,13 @@
 <template>
   <md-card
     md-with-hover
-    class="md-product-card">
-    <md-card-media class="md-product-card__image-container">
-      <img
+    class="product-item md-layout-item"
+    style="margin-bottom:20px">
+    <md-card-media>
+      <Preview
         :src="Product.image"
         :alt="Product.name"
-        class="md-product-card__image" />
+        />
     </md-card-media>
 
     <md-card-header>
@@ -17,18 +18,19 @@
       <md-card-actions md-alignment="space-between">
         <md-button class="md-raised md-accent">Заказать</md-button>
 
-        <md-card-expand-trigger>
+        <md-card-expand-trigger
+          v-if="Product.instruction && Product.instruction.length">
           <md-button>Дополнительно</md-button>
         </md-card-expand-trigger>
       </md-card-actions>
 
       <md-card-expand-content>
         <md-card-content>
-          <a
+          <md-button
             v-if="Product.instruction && Product.instruction.length"
             :href="Product.instruction"
             target="_blank"
-            class="md-product-card__link">Инструкция по эксплуатации</a>
+            class="md-product-card__link">Инструкция по эксплуатации</md-button>
         </md-card-content>
       </md-card-expand-content>
     </md-card-expand>
@@ -37,129 +39,34 @@
 
 <script>
 
-  export default {
-    name: 'Product-Item',
-    props: {
-      'Product': {
-        type: Object,
-        required: true
-      }
-    },
-    data: () => ({
-      currencyOptions: {
-        symbolOnLeft: false,
-        spaceBetweenAmountAndSymbol: true,
-        thousandsSeparator: ' '
-      }
-    })
-  };
+import Preview from '../components/Preview.vue';
+
+export default {
+  name: 'Product-Item',
+  components: {
+    Preview,
+  },
+
+  props: {
+    'Product': {
+      type: Object,
+      required: true
+    }
+  },
+};
 
 </script>
 
 <style lang="scss">
 
-  @import '../stylesheets/partials/_variables.scss';
-  @import '../stylesheets/partials/_mixins.scss';
+@import '../stylesheets/partials/_layout.scss';
 
-  $height: 250px;
-  $border-color: #dbdbdb;
-
-  .product-item {
-    flex: 1 1 24%;
-    margin: 0.5vh;
-    border-radius: 2px;
-    @include MDShadow-1;
-    @include transition(.2s);
-    &:hover {
-      @include MDShadow-2;
-    }
-    &__title {
-      display: block;
-      text-align: center;
-      width: 100%;
-      padding: 10px;
-      font-size: 1.5rem;
-      height: 48px;
-      color: $white;
-      background-color: lighten($red, 5%);
-    }
-    &__image-container {
-      justify-content: center;
-    }
-    &__slider-container {
-      max-width: 50%;
-      height: $height;
-    }
-    &__image {
-      height: $height;
-      &._half {
-        max-width: 100%;
-      }
-      &._wide {
-        width: 100%;
-      }
-    }
-    &__link {
-      display: block;
-      padding: 10px 15px;
-      text-align: center;
-      font-size: 1rem;
-      color: $asphalt
-    }
-    &__price {
-      display: block;
-      width: 100%;
-      height: 48px;
-      text-align: center;
-      font-size: 1.5rem;
-      line-height: 48px;
-      color: $white;
-      background-color: lighten($red, 5%);
-    }
-
-    .carousel-cell {
-      display: block;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-    }
-
-    .carousel-cell-image {
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
-      margin: 0 auto;
-      opacity: 0;
-      background-size: cover;
-      transition: opacity .4s ease-in-out;
-      &.flickity-lazyloaded,
-      &.flickity-lazyerror {
-        opacity: 1;
-      }
-    }
-
-    .flickity-page-dots {
-      bottom: 2%;
-      .dot {
-        opacity: 0.8;
-        size: 12px;
-        background: transparent;
-        border: 2px solid $red;
-        @include transition(.3s);
-        @include MDShadow-2;
-        &:hover {
-          opacity: 1;
-        }
-        &.is-selected {
-          background: $red;
-          box-shadow: 0 0 5px rgba($red, .5);
-        }
-      }
-    }
+.product-item {
+  @include MQ(xsmall) {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 1 100% !important;
   }
-
-  .md-product-card {
-    flex: 1 1 20%;
-  }
+}
 
 </style>
