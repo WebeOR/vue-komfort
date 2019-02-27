@@ -48,7 +48,7 @@
 
         <h2 class="product__name">Двухконтурный вариант</h2>
 
-        <ul class="md-layout md-gutter md-amd-cardgnment-center">
+        <ul class="md-layout md-gutter">
           <Chimney-Card
             v-for="item in double"
             :key="item.src"
@@ -94,7 +94,6 @@
 
   export default {
     name: 'Chimneys',
-
     components: { ChimneyCard },
 
     data: () => ({
@@ -258,9 +257,3 @@
 
   };
 </script>
-
-
-<style lang="scss">
-  @import '../../stylesheets/chimneys.scss';
-</style>
-

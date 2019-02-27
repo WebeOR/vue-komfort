@@ -35,10 +35,11 @@
     flex: 1 1 24%;
     margin: 8px;
     border-radius: 2px;
-    @include transition(.3s);
+    transition: box-shadow .2s ease-in;
 
     &:hover {
       @include MDShadow-2;
-    }}
+    }
+  }
 
 </style>
