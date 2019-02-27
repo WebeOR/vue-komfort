@@ -6,13 +6,13 @@
     @click.native="showPreview(alt, src)"
     v-on="$listeners"
     v-bind="$attrs"
-    class="md-layout-item md-image"
-    style="object-fit:contain;min-height:250px"
+    class="preview md-layout-item md-image md-small-size-100"
     />
     <!-- src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg" -->
 </template>
 
 <script>
+
 import VLazyImage from 'v-lazy-image';
 
 export default {
@@ -45,14 +45,19 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 
-.v-lazy-image {
-  filter: blur(10px);
-  transition: filter 0.7s;
-}
-.v-lazy-image-loaded {
-  filter: blur(0);
+.preview {
+  object-fit: contain;
+  min-height: 250px;
+  user-select: none;
+  .v-lazy-image {
+    filter: blur(10px);
+    transition: filter 0.7s;
+  }
+  .v-lazy-image-loaded {
+    filter: blur(0);
+  }
 }
 
 </style>
