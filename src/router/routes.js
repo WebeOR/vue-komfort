@@ -20,6 +20,7 @@ const Termokraft = () => import( /* webpackChunkName: "termokraft" */ '../views/
 const Zota = () => import( /* webpackChunkName: "zota" */ '../views/zota');
 const ZotaElectrical = () => import( /* webpackChunkName: "zota-electrical" */ '../views/zota-electrical');
 const Belkomin = () => import( /* webpackChunkName: "belkomin" */ '../views/belkomin');
+const Gikamini = () => import( /* webpackChunkName: "gikamini" */ '../views/gikamini');
 
 export default [
   {
@@ -96,5 +97,10 @@ export default [
     path: '/belkomin',
     name: 'Belkomin',
     component: Belkomin
+  },
+  {
+    path: '/gikamini',
+    name: 'Gikamini',
+    component: Gikamini
   },
 ];
