@@ -8,21 +8,16 @@
         <h3 class="md-title">{{ Line.title }}</h3>
       </md-card-header>
       <md-card-content>
-        <div class="md-layout md-gutter md-alignment-top-space-between">
-          <img
-            v-if="Line.image"
+        <div class="md-layout md-alignment-top-space-between">
+          <Preview
             :src="Line.image"
             :alt="Line.title"
-            class="md-layout-item"
-            style="object-fit:contain" />
-          <img
-            v-if="Line.images"
-            v-for="( image , index ) in Line.images"
-            :key="index"
-            :src="image"
-            :alt="Line.title"
-            class="md-layout-item md-size-25"
-            style="object-fit:contain" />
+            class="md-size-50"
+            />
+          <Slider
+            :slides="Line.images"
+            :title="Line.title"
+            />
           <div
             v-if="Line.characteristics && Line.characteristics.length"
             class="md-layout-item">
@@ -31,17 +26,19 @@
               <md-list-item
                 v-for="( characteristic , key ) in Line.characteristics"
                 :key="key">
-                {{ characteristic }}
+                <md-card-content>{{ characteristic }}</md-card-content>
               </md-list-item>
             </md-list>
           </div>
         </div>
-        <p
-          v-if="Line.descriptions"
-          v-for="( description , key ) in Line.descriptions"
-          :key="key">
-          {{ description }}
-        </p>
+
+        <div v-if="Line.descriptions && Line.descriptions.length" class="md-tab">
+          <md-card-content
+            v-for="( description , key ) in Line.descriptions"
+            :key="key">
+            {{ description }}
+          </md-card-content>
+        </div>
 
         <p class="md-body-2">{{ Line.description }}</p>
       </md-card-content>
@@ -86,14 +83,22 @@
 
 <script>
 
-  export default {
-    name: 'Zota-Electrical-Template',
-    props: {
-      'Line': {
-        type: Object,
-        required: true
-      }
+import Preview from '../../components/Preview.vue';
+import Slider from '../../components/Slider.vue';
+
+export default {
+  name: 'Zota-Electrical-Template',
+  components: {
+    Preview,
+    Slider,
+  },
+
+  props: {
+    'Line': {
+      type: Object,
+      required: true
     }
-  };
+  }
+};
 
 </script>
