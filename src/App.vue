@@ -72,7 +72,7 @@ import AppWrapper         from './components/layout/AppWrapper.vue';
 import AppFooter          from './components/layout/AppFooter.vue';
 import AppSidebarList     from './components/layout/AppSidebarList.vue';
 
-import CartButton         from './components/ToolbarCartButton.vue';
+import CartButton         from './components/CartButton.vue';
 
 import PreviewModal       from './components/PreviewModal.vue';
 import CartModal          from './components/cart';
