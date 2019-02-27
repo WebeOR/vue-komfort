@@ -8,19 +8,16 @@
         <h3 class="md-title">{{ Line.title }}</h3>
       </md-card-header>
       <md-card-content>
-        <div class="md-layout md-gutter md-alignment-top-space-between">
-          <img
-            v-if="Line.image"
+        <div class="md-layout md-alignment-top-space-between">
+          <Preview
             :src="Line.image"
             :alt="Line.title"
-            class="md-layout-item"
-            style="object-fit:contain" />
-
-          <Slider
-            v-if="Line.images.length"
-            :slides="Line.images"
+            class="md-size-40"
             />
-
+          <Slider
+            :slides="Line.images"
+            :title="Line.title"
+            />
           <div
             v-if="Line.characteristics && Line.characteristics.length"
             class="md-layout-item">
@@ -29,18 +26,18 @@
               <md-list-item
                 v-for="( characteristic , key ) in Line.characteristics"
                 :key="key">
-                {{ characteristic }}
+                <md-card-content>{{ characteristic }}</md-card-content>
               </md-list-item>
             </md-list>
           </div>
         </div>
 
-        <div v-if="Line.descriptions">
-          <p
+        <div v-if="Line.descriptions && Line.descriptions.length" class="md-tab">
+          <md-card-content
             v-for="( description , key ) in Line.descriptions"
             :key="key">
             {{ description }}
-          </p>
+          </md-card-content>
         </div>
 
         <p class="md-body-2">{{ Line.description }}</p>
@@ -84,8 +81,8 @@
         :key="index">
         <md-table-cell
           v-for="( cell , index ) in row"
-          :key="index">
-          {{ cell }}
+          :key="index"
+          v-html="cell">
         </md-table-cell>
       </md-table-row>
     </md-table>
@@ -96,32 +93,22 @@
 
 <script>
 
-  import Slider from '../../components/Slider.vue';
+import Preview from '../../components/Preview.vue';
+import Slider from '../../components/Slider.vue';
 
-  export default {
-    name: 'Energy-Template',
-    components: {
-      Slider
-    },
-    props: {
-      'Line': {
-        type: Object,
-        required: true
-      }
-    },
-    data: () => ({
-      options: {
-        currentPage: 0,
-        thresholdDistance: 100,
-        thresholdTime: 350,
-        autoplay: 10000,
-        loop: true,
-        loopedSlides: 1,
-        slidesToScroll: 1,
-        timingFunction: 'ease',
-        speed: 300
-      }
-    })
-  };
+export default {
+  name: 'Energy-Template',
+  components: {
+    Preview,
+    Slider,
+  },
+
+  props: {
+    'Line': {
+      type: Object,
+      required: true
+    }
+  },
+};
 
 </script>

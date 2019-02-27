@@ -30,7 +30,7 @@
         {
           id: 'energy',
           title: 'Энергия-ТТ',
-          image: null,
+          image: '',
           images: [
             '/img/energy-tt/energy.jpg',
             '/img/energy-tt/energy-1.jpg',
