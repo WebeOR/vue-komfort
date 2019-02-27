@@ -27,11 +27,10 @@
 
     data: () => ({
       lines: [
-
         {
           id: 'vezuviy__pechi-stalnye_optimum-01',
           title: 'ПЕЧЬ ОПТИМУМ СТАНДАРТ 14 (ДТ-3)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_optimum/optimum-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_optimum/optimum-1-2.jpg',
@@ -48,16 +47,16 @@
             'Вес камней, кг 110',
             'Диаметр дымохода, мм 115',
             'Объем парильного помещения, м3 6-14',
-
           ],
-          docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
-            link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
-          },
-          {
-            title: 'Евразийский экономический союз декларации о соответствии',
-            link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
-          },
+          docs: [
+            {
+              title: 'Инструкция по монтажу и эксплуатации',
+              link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
+            },
+            {
+              title: 'Декларации о соответствии',
+              link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
+            },
           ],
 
           descriptions: [
@@ -75,7 +74,7 @@
         {
           id: 'vezuviy__pechi-stalnye_optimum-02',
           title: 'ПЕЧЬ ОПТИМУМ СТАНДАРТ 14 (ДТ-3) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_optimum/optimum-2-1.jpg',
             '/img/vezuviy__pechi-stalnye_optimum/optimum-2-2.jpg',
@@ -95,11 +94,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -118,7 +117,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-03',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 12 (ДТ-3)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-2.jpg',
@@ -141,11 +140,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -198,7 +197,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-04',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 12 (ДТ-3) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-2-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-2.jpg',
@@ -219,11 +218,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -279,7 +278,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-05',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 12 (ДТ-3С)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-2.jpg',
@@ -302,11 +301,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -359,7 +358,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-06',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 12 (ДТ-3С) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-4-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-2.jpg',
@@ -380,11 +379,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -437,7 +436,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-07',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-3.jpg',
@@ -460,11 +459,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -519,7 +518,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-08',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-2-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-3.jpg',
@@ -540,11 +539,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -599,7 +598,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-09',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-2-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-4.jpg',
@@ -621,11 +620,11 @@
             'Объем парильного помещения, м3 12-24',
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -685,7 +684,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-10',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4С)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-3.jpg',
@@ -709,11 +708,11 @@
             'Вес, кг 65',
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -772,7 +771,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-11',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4С) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-4-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-3.jpg',
@@ -796,11 +795,11 @@
             'Вес, кг 65',
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -859,7 +858,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-12',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4) С Т/О',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-4.jpg',
@@ -883,11 +882,11 @@
             'Вес, кг 66',
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -946,7 +945,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-13',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-5.jpg',
@@ -970,11 +969,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -1027,7 +1026,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-14',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 28 ДТ-4',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-6.jpg',
@@ -1049,11 +1048,11 @@
             'Объем парильного помещения, м3 14-30',
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -1112,7 +1111,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-15',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4С)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-5.jpg',
@@ -1137,11 +1136,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -1200,7 +1199,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-16',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4С) Б/В',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-4-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-2-4.jpg',
@@ -1222,11 +1221,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -1285,7 +1284,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-17',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4) Т/О',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-1-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-1-7.jpg',
@@ -1309,11 +1308,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -1372,7 +1371,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-18',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 16 (ДТ-4С) С Т/О',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-3-2.jpg',
@@ -1396,11 +1395,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -1459,7 +1458,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-19',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 28 ДТ-4С',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-3-3.jpg',
@@ -1480,11 +1479,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -1537,7 +1536,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-20',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 22 (ДТ-4С) Т/О',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-3-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-3-4.jpg',
@@ -1560,11 +1559,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -1617,7 +1616,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-21',
           title: 'ПЕЧЬ СКИФ С ЗАКРЫТОЙ КАМЕНКОЙ (ДТ-4)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-5-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-5-2.jpg',
@@ -1640,11 +1639,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
 
@@ -1699,7 +1698,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-22',
           title: 'ПЕЧЬ СКИФ КОВКА 16 (220)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-6-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-6-2.jpg',
@@ -1722,11 +1721,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -1779,7 +1778,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-23',
           title: 'ПЕЧЬ СКИФ КОВКА 22 (220)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-6-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-6-3.jpg',
@@ -1800,11 +1799,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
 
@@ -1858,7 +1857,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-24',
           title: 'ПЕЧЬ СКИФ КОВКА 16 ПАНОРАМА',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-7-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-7-2.jpg',
@@ -1881,11 +1880,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
 
@@ -1939,7 +1938,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-25',
           title: 'ПЕЧЬ СКИФ КОВКА 22 ПАНОРАМА',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-7-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-7-3.jpg',
@@ -1960,11 +1959,11 @@
           ],
           docs: [
             {
-              title: 'Банные печи - инструкция по монтажу и эксплуатации',
+              title: 'Инструкция по монтажу и эксплуатации',
               link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
             },
             {
-              title: 'Евразийский экономический союз декларации о соответствии',
+              title: 'Декларации о соответствии',
               link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
             },
           ],
@@ -2017,7 +2016,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-26',
           title: 'ПЕЧЬ СКИФ С ЗАКРЫТОЙ КАМЕНКОЙ (270)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-8-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-8-2.jpg',
@@ -2041,11 +2040,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2105,7 +2104,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-27',
           title: 'ПЕЧЬ СКИФ КОВКА 28 ПАНОРАМА',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-7-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-7-4.jpg',
@@ -2127,11 +2126,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2189,7 +2188,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-28',
           title: 'ПЕЧЬ СКИФ КОВКА 16 (205)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-9-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-9-2.jpg',
@@ -2213,11 +2212,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2275,7 +2274,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-29',
           title: 'ПЕЧЬ СКИФ КОВКА 22 (205)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-9-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-9-3.jpg',
@@ -2295,11 +2294,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2356,7 +2355,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-30',
           title: 'ПЕЧЬ СКИФ СТАНДАРТ 38 (ДТК-2)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-10-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-10-2.jpg',
@@ -2380,11 +2379,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2441,7 +2440,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-31',
           title: 'ПЕЧЬ СКИФ КОВКА 28 (205)',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-9-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-9-4.jpg',
@@ -2463,11 +2462,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 
@@ -2524,7 +2523,7 @@
         {
           id: 'vezuviy__pechi-stalnye_skif-32',
           title: 'ПЕЧЬ СКИФ КОВКА 38 (205) 2016',
-          image: null,
+          image: '',
           images: [
             '/img/vezuviy__pechi-stalnye_skif/skif-11-1.jpg',
             '/img/vezuviy__pechi-stalnye_skif/skif-11-2.jpg',
@@ -2546,11 +2545,11 @@
 
           ],
           docs: [{
-            title: 'Банные печи - инструкция по монтажу и эксплуатации',
+            title: 'Инструкция по монтажу и эксплуатации',
             link: 'http://vezuviy.su/upload/medialibrary/ee9/20181018.pdf',
           },
           {
-            title: 'Евразийский экономический союз декларации о соответствии',
+            title: 'Декларации о соответствии',
             link: 'http://vezuviy.su/upload/medialibrary/d70/d70408f3e5197e62ac432b01f2cc083e.pdf',
           },
 

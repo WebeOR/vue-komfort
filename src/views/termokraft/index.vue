@@ -28,7 +28,10 @@
         {
           id: 'fakel',
           title: 'Fakel',
-          image: null,
+          picture: [
+            '/img/termokraft/FAKEL.png',
+          ],
+          image: '',
           images: [
             '/img/termokraft/FAKEL.png',
             '/img/termokraft/FAKEL-2.png',
@@ -69,7 +72,7 @@
         {
           id: 'taifun',
           title: 'Taifun',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/TAIFUN.png',
             '/img/termokraft/taifun-2.png',
@@ -153,7 +156,7 @@
         {
           id: 'uragan',
           title: 'Uragan',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/URAGAN.png',
             '/img/termokraft/URAGAN-2.png',
@@ -241,7 +244,7 @@
         {
           id: 'zeus',
           title: 'Zeus',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/ZEUS.png',
             '/img/termokraft/ZEUS-2.png',
@@ -374,7 +377,7 @@
         {
           id: 'r2',
           title: 'R2',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/r2.png',
             '/img/termokraft/r2-2.png'
@@ -543,7 +546,7 @@
         {
           id: 'prof',
           title: 'URAGAN ProF',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/prof.png',
             '/img/termokraft/prof-2.png'
@@ -721,7 +724,7 @@
         {
           id: 'fakel-m',
           title: 'FAKEL-M',
-          image: null,
+          image: '',
           images: [
             '/img/termokraft/fakel-m.jpg',
             '/img/termokraft/fakel-m-2.png'

@@ -31,7 +31,7 @@
         {
           id: 'sibir',
           title: 'НМК Сибирь',
-          image: null,
+          image: '',
           images: [
             '/img/nmk/sibir.jpg',
             '/img/nmk/sibir-2.jpg'
@@ -58,7 +58,7 @@
           id: 'gefest',
           title: 'НМК Гефест',
           image: '/img/nmk/gefest.jpg',
-          images: null,
+          images: [],
           price: {
             value: 21570,
             currency: 'rub'
@@ -82,7 +82,7 @@
           id: 'magnum',
           title: 'НМК Магнум',
           image: '/img/nmk/magnum.jpg',
-          images: null,
+          images: [],
           price: {
             value: 32700,
             currency: 'rub'
@@ -107,7 +107,7 @@
           id: 'sunfire',
           title: 'НМК Sunfire',
           image: '/img/nmk/sunfire.jpg',
-          images: null,
+          images: [],
           price: {
             value: 62000,
             currency: 'rub'

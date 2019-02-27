@@ -29,7 +29,7 @@
         {
           id: '',
           title: '',
-          image: null,
+          image: '',
           images: [
             '',
           ],
