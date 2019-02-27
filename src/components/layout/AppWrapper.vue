@@ -5,8 +5,7 @@
       v-on="$listeners"
       id="wrapper"
       class="wrapper page-container">
-      <md-app
-        md-mode="fixed">
+      <md-app md-waterfall md-mode="fixed">
         <slot></slot>
       </md-app>
     </div>
