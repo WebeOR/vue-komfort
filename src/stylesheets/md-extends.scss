@@ -1,0 +1,83 @@
+@import './partials/layout';
+
+.md-app {
+  max-height: 100vh;
+  min-height: 100vh;
+}
+.md-drawer.md-theme-default {
+  width: 275px;
+}
+.md-toolbar .md-tabs {
+  padding-left: 0 !important;
+}
+.md-app-content {
+  padding: 16px 24px !important;
+  min-height: 100%;
+  height: initial !important;
+}
+.md-app-container {
+  scroll-behavior: smooth;
+}
+.md-app.md-fixed-last .md-app-toolbar,
+.md-app.md-flexible .md-app-toolbar,
+.md-app.md-overlap .md-app-toolbar,
+.md-app.md-reveal .md-app-toolbar {
+  position: fixed !important;
+  z-index: 90;
+}
+
+.md-app.md-fixed .md-app-scroller {
+  scroll-behavior: smooth;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  .main {
+    flex: 1 1 auto;
+  }
+}
+
+.md-display-2 {
+  font-size: 42px !important;
+  @include MQ(xsmall) {
+    font-size: 8vw !important;
+    line-height: 36px !important;
+  }
+}
+
+.md-subheader {
+  font-weight: 700 !important;
+}
+.md-list-item {
+  .md-button,
+  .md-button-clean {
+    white-space: unset;
+  }
+}
+
+.md-table .md-table-content {
+  width: 100%;
+}
+
+.md-toolbar-row.md-scrollbar {
+  overflow-x: auto
+}
+
+.md-card .md-button .md-ripple {
+  padding: 0 16px;
+}
+
+.md-tabs-navigation .md-button-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.md-dialog-container {
+  max-width: 500px;
+}
+
+.md-badge.md-theme-default {
+  background-color: #448aff
+}

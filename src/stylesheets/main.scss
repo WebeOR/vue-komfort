@@ -1,0 +1,65 @@
+@import './partials/layout';
+@import './md-extends.scss';
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  height: initial !important;
+}
+
+ul, ol {
+  &.md-layout {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.product {
+  .md-card-content {
+    padding: 0 !important;
+  }
+  > .md-card {
+    margin: 24px 0 !important;
+  }
+}
+
+.toolbar {
+  &__menu-button {
+    display: none !important;
+    @include MQ(xsmall) {
+      display: inherit !important;
+    }
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.product-table {
+  margin: 25px auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  @include MQ(xsmall) {
+    display: none !important;
+  }
+  .md-table-head {
+    font-size: 14px;
+  }
+  .md-table-cell {
+    font-size: 14px;
+    text-align: center;
+  }
+  .md-table-head {
+    padding: 0 8px !important;
+  }
+  .md-table-head-label {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+}
