@@ -29,10 +29,9 @@ function toLongLocaleDate (date) {
 function currencyFormat ( value , locale = 'RUB') {
   value = Number(value);
   if ( isNaN(value) ) return null;
-  return Number(value).toLocaleString('ru-RU', {
+  return value.toLocaleString('ru-RU', {
     style: 'currency',
     currency: locale,
-    maximumSignificantDigits: 20
   });
 }
 
