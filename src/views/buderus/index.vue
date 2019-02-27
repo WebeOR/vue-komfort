@@ -32,6 +32,7 @@
           id: 'S111-2',
           title: 'Buderus Logano S111-2',
           image: '/img/buderus/111.jpg',
+          images: [],
           price: null,
           characteristics: [
             'Котел BUDERUS LOGANO S111-2 мощностью до 28 кВт – представитель обновленной линейки котлов Buderus Logano S111;',
@@ -171,6 +172,7 @@
         {
           id: 'S131',
           title: 'Buderus Logano S131',
+          image: '',
           images: [
             '/img/buderus/131-1.jpg',
             '/img/buderus/131-2.jpg',
