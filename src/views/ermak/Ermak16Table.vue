@@ -3,8 +3,7 @@
     class="product-table"
     align="center"
     border="1"
-    cellspacing="0"
-    cellpadding="0">
+    cellspacing="0">
     <colgroup>
       <col width="175">
       <col width="116">
@@ -23,7 +22,7 @@
         <td colspan="11" height="20" width="1064">Печь-каменка Ермак 16</td>
       </tr>
       <tr height="40">
-        <td rowspan="2">Модель печи-каменки</td>
+        <td rowspan="2">Модель</td>
         <td rowspan="2">Объём отапливаемого помещения, м&sup3;</td>
         <td rowspan="2">Мощность, кВт</td>
         <td rowspan="2">Масса, кг</td>
@@ -52,7 +51,7 @@
         <td>135</td>
       </tr>
       <tr height="20">
-        <td>Ермак 16-ПС</td>
+        <td>16-ПС</td>
         <td>62</td>
         <td>600</td>
         <td>515</td>
@@ -60,7 +59,7 @@
         <td>125… 225</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 16-С</td>
+        <td>Элит 16-С</td>
         <td>54</td>
         <td>595</td>
         <td>445</td>
@@ -68,7 +67,7 @@
         <td>135</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 16-ПС</td>
+        <td>Элит 16-ПС</td>
         <td>58</td>
         <td>600</td>
         <td>515</td>
@@ -76,7 +75,7 @@
         <td>125… 225</td>
       </tr>
       <tr height="20">
-        <td height="20">Ермак 16-ПС/сетка</td>
+        <td>16-ПС/сетка</td>
         <td rowspan="2">8-16</td>
         <td rowspan="2">16</td>
         <td>75</td>
@@ -89,15 +88,12 @@
         <td>50… 150</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 16-ПС/сетка</td>
+        <td>Элит 16-ПС/сетка</td>
         <td>70</td>
         <td>735</td>
         <td>595</td>
         <td>785</td>
         <td>50… 150</td>
-      </tr>
-      <tr height="20">
-        <td colspan="11" height="20">*стоимость уточняйте у менеджера</td>
       </tr>
     </tbody>
   </table>

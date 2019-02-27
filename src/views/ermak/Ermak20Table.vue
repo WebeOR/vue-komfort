@@ -1,11 +1,9 @@
 <template>
   <table
     class="product-table"
-    width="1064"
     align="center"
     border="1"
-    cellspacing="0"
-    cellpadding="0">
+    cellspacing="0">
     <colgroup>
       <col width="175">
       <col width="125">
@@ -40,7 +38,7 @@
         <td>Высота</td>
       </tr>
       <tr height="20">
-        <td>Ермак 20</td>
+        <td>20</td>
         <td rowspan="4">12-24</td>
         <td rowspan="4">20</td>
         <td>70</td>
@@ -53,7 +51,7 @@
         <td>200</td>
       </tr>
       <tr height="20">
-        <td>Ермак 20-ПС</td>
+        <td>20-ПС</td>
         <td>75</td>
         <td>700</td>
         <td>515</td>
@@ -61,7 +59,7 @@
         <td>200… 300</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 20-С</td>
+        <td>Элит 20-С</td>
         <td>60</td>
         <td>700</td>
         <td>445</td>
@@ -69,15 +67,12 @@
         <td>200</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 20-ПС</td>
+        <td>Элит 20-ПС</td>
         <td>65</td>
         <td>700</td>
         <td>515</td>
         <td>760</td>
         <td>200… 300</td>
-      </tr>
-      <tr height="20">
-        <td colspan="11">*стоимость уточняйте у менеджера</td>
       </tr>
     </tbody>
   </table>

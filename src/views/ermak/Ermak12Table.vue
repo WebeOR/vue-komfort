@@ -1,14 +1,12 @@
 <template>
   <table
     class="product-table"
-    width="931"
     align="center"
     border="1"
-    cellspacing="0"
-    cellpadding="0">
+    cellspacing="0">
     <colgroup>
-      <col width="175">
-      <col width="130">
+      <col width="120">
+      <col width="125">
       <col width="100">
       <col width="75">
       <col width="100">
@@ -23,7 +21,7 @@
         <td colspan="10">Печь-каменка Ермак 12</td>
       </tr>
       <tr height="40">
-        <td rowspan="2">Модель печи-каменки</td>
+        <td rowspan="2">Модель</td>
         <td rowspan="2">Объём отапливаемого помещения, м³</td>
         <td rowspan="2">Мощность, кВт</td>
         <td rowspan="2">Масса, кг</td>
@@ -38,7 +36,7 @@
         <td>Высота</td>
       </tr>
       <tr height="20">
-        <td height="20">Ермак 12</td>
+        <td height="20">12</td>
         <td rowspan="4">6-12</td>
         <td rowspan="4">12</td>
         <td>52</td>
@@ -50,28 +48,25 @@
         <td>685</td>
       </tr>
       <tr height="20">
-        <td>Ермак -Элит 12-С</td>
+        <td>Элит 12-С</td>
         <td>42</td>
         <td>595</td>
         <td>395</td>
         <td>685</td>
       </tr>
       <tr height="20">
-        <td>Ермак 12-ПС</td>
+        <td>12-ПС</td>
         <td>40</td>
         <td>595</td>
         <td>445</td>
         <td>685</td>
       </tr>
       <tr height="20">
-        <td>Ермак-Элит 12-ПС</td>
+        <td>Элит 12-ПС</td>
         <td>40</td>
         <td>595</td>
         <td>445</td>
         <td>685</td>
-      </tr>
-      <tr height="20">
-        <td colspan="10">*стоимость уточняйте у менеджера</td>
       </tr>
     </tbody>
   </table>

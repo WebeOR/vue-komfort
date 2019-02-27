@@ -16,14 +16,6 @@
       :key="line.id"
       :Line="line" />
 
-    <div class="families">
-      <span class="families__list-title">Другие семейства банных печей:</span>
-      <ul class="families__list">
-        <li><a href="nmk-furnaces" class="families__link" ripple-light>НМК</a></li>
-        <li><a href="kastor" class="families__link" ripple-light>Кастор</a></li>
-      </ul>
-    </div>
-
   </div>
 </template>
 
